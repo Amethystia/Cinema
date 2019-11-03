@@ -1,9 +1,0 @@
-E:\GAMEOPEDIA\GAMEOPEDIA\GMES.Business\bin\Debug\GMES.Business.exe.config
-E:\GAMEOPEDIA\GAMEOPEDIA\GMES.Business\bin\Debug\GMES.Business.exe
-E:\GAMEOPEDIA\GAMEOPEDIA\GMES.Business\bin\Debug\GMES.Business.pdb
-E:\GAMEOPEDIA\GAMEOPEDIA\GMES.Business\bin\Debug\MySql.Data.dll
-E:\GAMEOPEDIA\GAMEOPEDIA\GMES.Business\obj\Debug\GMES.Business.csprojAssemblyReference.cache
-E:\GAMEOPEDIA\GAMEOPEDIA\GMES.Business\obj\Debug\GMES.Business.csproj.CoreCompileInputs.cache
-E:\GAMEOPEDIA\GAMEOPEDIA\GMES.Business\obj\Debug\GMES.Business.csproj.CopyComplete
-E:\GAMEOPEDIA\GAMEOPEDIA\GMES.Business\obj\Debug\GMES.Business.exe
-E:\GAMEOPEDIA\GAMEOPEDIA\GMES.Business\obj\Debug\GMES.Business.pdb

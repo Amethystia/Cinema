@@ -1,6 +1,0 @@
-E:\TokoBuku\TOKO_BUKU\DM_Modeling\bin\Release\DM_Modeling.exe.config
-E:\TokoBuku\TOKO_BUKU\DM_Modeling\bin\Release\DM_Modeling.exe
-E:\TokoBuku\TOKO_BUKU\DM_Modeling\bin\Release\DM_Modeling.pdb
-E:\TokoBuku\TOKO_BUKU\DM_Modeling\obj\Release\DM_Modeling.csproj.CoreCompileInputs.cache
-E:\TokoBuku\TOKO_BUKU\DM_Modeling\obj\Release\DM_Modeling.exe
-E:\TokoBuku\TOKO_BUKU\DM_Modeling\obj\Release\DM_Modeling.pdb
