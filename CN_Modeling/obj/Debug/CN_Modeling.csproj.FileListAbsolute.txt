@@ -1,0 +1,12 @@
+E:\Cinema\CN_Modeling\bin\Debug\DM_Modeling.exe.config
+E:\Cinema\CN_Modeling\bin\Debug\DM_Modeling.exe
+E:\Cinema\CN_Modeling\bin\Debug\DM_Modeling.pdb
+E:\Cinema\CN_Modeling\obj\Debug\CN_Modeling.csproj.CoreCompileInputs.cache
+E:\Cinema\CN_Modeling\obj\Debug\DM_Modeling.exe
+E:\Cinema\CN_Modeling\obj\Debug\DM_Modeling.pdb
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Modeling\bin\Debug\DM_Modeling.exe.config
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Modeling\bin\Debug\DM_Modeling.exe
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Modeling\bin\Debug\DM_Modeling.pdb
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Modeling\obj\Debug\CN_Modeling.csprojAssemblyReference.cache
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Modeling\obj\Debug\DM_Modeling.exe
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Modeling\obj\Debug\DM_Modeling.pdb

@@ -1,0 +1,90 @@
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csprojAssemblyReference.cache
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.Properties.Resources.resources
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.GenerateResource.cache
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.CoreCompileInputs.cache
+E:\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.exe.config
+E:\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.exe
+E:\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.pdb
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmLogin.resources
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.exe
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.pdb
+E:\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.exe
+E:\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.exe
+E:\Cinema\CN_Main\CN_Main\bin\Debug\MySql.Data.dll
+E:\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.pdb
+E:\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.exe.config
+E:\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.pdb
+E:\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.exe.config
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.CopyComplete
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.exe.config
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.exe
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.pdb
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.exe
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.exe
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\bin\Debug\MySql.Data.dll
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.pdb
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.exe.config
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.pdb
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.exe.config
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csprojAssemblyReference.cache
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmLogin.resources
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.Properties.Resources.resources
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.GenerateResource.cache
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.CopyComplete
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.exe
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.pdb
+C:\Users\Asus\Documents\GitHub\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.frm_user.resources
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.frm_user.resources
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMovies.resources
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmHome.resources
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMDI.resources
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMovieDetails.resources
+E:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmCinemas.resources
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.exe.config
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.exe
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.pdb
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.exe
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.exe
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\bin\Debug\MySql.Data.dll
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.pdb
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.exe.config
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.pdb
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.exe.config
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csprojAssemblyReference.cache
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmLogin.resources
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMDI.resources
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmHome.resources
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmCinemas.resources
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMovieDetails.resources
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMovies.resources
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.frm_user.resources
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.Properties.Resources.resources
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.GenerateResource.cache
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.CoreCompileInputs.cache
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.CopyComplete
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.exe
+C:\Users\ASUS X441U\Videos\Cinema-2.0\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.pdb
+C:\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.exe.config
+C:\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.exe
+C:\Cinema\CN_Main\CN_Main\bin\Debug\CN_Main.pdb
+C:\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.exe
+C:\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.exe
+C:\Cinema\CN_Main\CN_Main\bin\Debug\MySql.Data.dll
+C:\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.pdb
+C:\Cinema\CN_Main\CN_Main\bin\Debug\GMES.Business.exe.config
+C:\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.pdb
+C:\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.exe.config
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csprojAssemblyReference.cache
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmLogin.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMDI.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmHome.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmCinemas.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMovieDetails.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMovies.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.frm_user.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.Properties.Resources.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.GenerateResource.cache
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.CoreCompileInputs.cache
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.CopyComplete
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.exe
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.pdb
