@@ -77,6 +77,7 @@ C:\Cinema\CN_Main\CN_Main\bin\Debug\DM_Modeling.exe.config
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csprojAssemblyReference.cache
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmLogin.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMDI.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmSeats.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmHome.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmCinemas.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMovieDetails.resources
@@ -88,3 +89,4 @@ C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.CoreCompileInputs.cache
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.csproj.CopyComplete
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.exe
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.pdb
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmPromo.resources

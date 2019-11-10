@@ -1,5 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System.Data;
+using System;
 
 namespace CN_Business
 {
@@ -10,13 +11,30 @@ namespace CN_Business
         MySqlConnection conn = new MySqlConnection("server=localhost; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True");
         string query;
 
-        public DataSet get_movies_data(DataSet ds)
+        public DataSet get_movies_data(DataSet ds, string cinema_name)
         {
             DataSet DataSetMovie = new DataSet();
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
-                query = string.Format(@"select DISTINCT movie_name from movies");
+                query = string.Format(@"select DISTINCT movie_name from cinemas where cinema_name= '"+ cinema_name + "'");
+                adapter = new MySqlDataAdapter(query, conn);
+                adapter.Fill(DataSetMovie);
+                conn.Close();
+                return DataSetMovie;
+            }
+
+            conn.Close();
+            return null;
+        }
+
+        public DataSet get_moviedetail_data(DataSet ds, string movie_name)
+        {
+            DataSet DataSetMovie = new DataSet();
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+                query = string.Format(@"select DISTINCT cinema_name from cinemas where movie_name= '" + movie_name + "'");
                 adapter = new MySqlDataAdapter(query, conn);
                 adapter.Fill(DataSetMovie);
                 conn.Close();
@@ -44,13 +62,13 @@ namespace CN_Business
             return null;
         }
 
-        public DataSet get_cinemas_data(DataSet dataset, string Movie_Names)
+        public DataSet get_cinemas_data(DataSet dataset)
         {
             DataSet DataSetCinema = new DataSet();
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
-                query = string.Format(@"select DISTINCT cinema_name from cinemas where movie_name= '" + Movie_Names + "'");
+                query = string.Format(@"select DISTINCT cinema_name from cinemas ");
                 adapter = new MySqlDataAdapter(query, conn);
                 DataSetCinema.Clear();
                 adapter.Fill(DataSetCinema);
@@ -128,7 +146,38 @@ namespace CN_Business
                 conn.Close();
                 return DSClass;
             }
-
+            conn.Close();
+            return null;
+        }
+        public DataSet get_slide_data(DataSet dataset)
+        {
+            DataSet DSClass = new DataSet();
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+                query = string.Format(@"select DISTINCT movie_image,movie_name from movies");
+                adapter = new MySqlDataAdapter(query, conn);
+                DSClass.Clear();
+                adapter.Fill(DSClass);
+                conn.Close();
+                return DSClass;
+            }
+            conn.Close();
+            return null;
+        }
+        public DataSet get_release_data(DataSet dataset)
+        {
+            DataSet DSClass = new DataSet();
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+                query = string.Format(@"select movie_name,movie_image from movies where movie_release <= '" + DateTime.Today.ToString("yyyy-MM-dd") + "' order by(movie_release) desc");
+                adapter = new MySqlDataAdapter(query, conn);
+                DSClass.Clear();
+                adapter.Fill(DSClass);
+                conn.Close();
+                return DSClass;
+            }
             conn.Close();
             return null;
         }

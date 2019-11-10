@@ -34,7 +34,7 @@ namespace CN_Main
             OpenFormInPanel(new FrmHome());
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_Home_Click(object sender, EventArgs e)
         {
             OpenFormInPanel(new FrmHome());
         }
@@ -45,7 +45,12 @@ namespace CN_Main
         }
         private void btn_Cinemas_Click(object sender, EventArgs e)
         {
-            OpenFormInPanel(new FrmCinemas(""));
+            OpenFormInPanel(new FrmCinemas());
+        }
+
+        private void btn_Promotion_Click(object sender, EventArgs e)
+        {
+            OpenFormInPanel(new FrmPromo());
         }
 
         private void btn_Close_Click(object sender, EventArgs e)

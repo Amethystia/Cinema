@@ -144,7 +144,7 @@
             this.CB_Movie.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CB_Movie.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CB_Movie.FormattingEnabled = true;
-            this.CB_Movie.Location = new System.Drawing.Point(142, 179);
+            this.CB_Movie.Location = new System.Drawing.Point(142, 211);
             this.CB_Movie.Name = "CB_Movie";
             this.CB_Movie.Size = new System.Drawing.Size(280, 21);
             this.CB_Movie.TabIndex = 76;
@@ -155,18 +155,19 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(41, 211);
+            this.label1.Location = new System.Drawing.Point(41, 184);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 75;
             this.label1.Text = "Select Cinema :";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(41, 179);
+            this.label14.Location = new System.Drawing.Point(41, 211);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(75, 13);
             this.label14.TabIndex = 72;
@@ -188,7 +189,7 @@
             this.CB_Cinemas.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.CB_Cinemas.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.CB_Cinemas.FormattingEnabled = true;
-            this.CB_Cinemas.Location = new System.Drawing.Point(142, 211);
+            this.CB_Cinemas.Location = new System.Drawing.Point(142, 184);
             this.CB_Cinemas.Name = "CB_Cinemas";
             this.CB_Cinemas.Size = new System.Drawing.Size(280, 21);
             this.CB_Cinemas.TabIndex = 73;
