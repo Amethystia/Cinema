@@ -37,21 +37,23 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(32)))), ((int)(((byte)(45)))));
+            this.textBox1.BackColor = System.Drawing.Color.White;
             this.textBox1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.textBox1.Location = new System.Drawing.Point(433, 69);
+            this.textBox1.Location = new System.Drawing.Point(650, 106);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(330, 327);
+            this.textBox1.Size = new System.Drawing.Size(493, 501);
             this.textBox1.TabIndex = 11;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(32)))), ((int)(((byte)(45)))));
-            this.pictureBox1.Location = new System.Drawing.Point(28, 21);
+            this.pictureBox1.Location = new System.Drawing.Point(42, 32);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(322, 375);
+            this.pictureBox1.Size = new System.Drawing.Size(483, 577);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -64,23 +66,25 @@
             this.btn_back.FlatAppearance.BorderSize = 0;
             this.btn_back.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_back.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_back.Location = new System.Drawing.Point(742, 4);
+            this.btn_back.Location = new System.Drawing.Point(1113, 6);
+            this.btn_back.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_back.Name = "btn_back";
-            this.btn_back.Size = new System.Drawing.Size(61, 40);
+            this.btn_back.Size = new System.Drawing.Size(92, 62);
             this.btn_back.TabIndex = 16;
             this.btn_back.UseVisualStyleBackColor = false;
             this.btn_back.Click += new System.EventHandler(this.btn_back_Click);
             // 
             // FrmMovieDetails
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.DimGray;
-            this.ClientSize = new System.Drawing.Size(804, 417);
+            this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ClientSize = new System.Drawing.Size(1206, 642);
             this.Controls.Add(this.btn_back);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FrmMovieDetails";
             this.Load += new System.EventHandler(this.FrmMovieDetails_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

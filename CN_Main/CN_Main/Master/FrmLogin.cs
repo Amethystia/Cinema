@@ -15,8 +15,7 @@ namespace CN_Main
         }
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-            //untuk maksimize screen
-            WindowState = FormWindowState.Maximized;
+
 
             //untuk load place holder waktu masuk form
             LoadPlaceHolder();
@@ -26,7 +25,7 @@ namespace CN_Main
         // seperti place holder gitu
         private void LoadPlaceHolder()
         {
-            this.ActiveControl = label1;
+            
             txt_UserName.GotFocus += new EventHandler(this.UNGotFocus);
             txt_UserName.LostFocus += new EventHandler(this.UNLostFocus);
             txt_Password.GotFocus += new EventHandler(this.PWDGotFocus);
@@ -81,10 +80,7 @@ namespace CN_Main
         #endregion
 
         #region BusinessLogic
-        private void MN_Exit_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+    
 
         //validasi ada isi atau nga
         public void  PerformValidation()
@@ -116,17 +112,17 @@ namespace CN_Main
                     if (status == "Login Success")
                     {
                         MessageBox.Show("Login Success, Welcome: " + txt_UserName.Text);
-                        //-- Show form kedua -- 
-                        //FrmMDI.FrmMDI FormMdi = new FrmMDI.FrmMDI();
-                        //this.Hide();
-                        //FormMdi.ShowDialog();
-                        //this.Close();
-                    }
+                    //-- Show form kedua -- 
+                    FrmMDI FormMdi = new FrmMDI();
+                    this.Hide();
+                    FormMdi.ShowDialog();
+                    this.Close();
+                }
                     else if (status != "Login Success")
                     {
                         MessageBox.Show("Invalid User Name / Password");
                     }
-                 }
+                }
         }
 
         private void btn_Cancel_Click(object sender, EventArgs e)
@@ -134,10 +130,54 @@ namespace CN_Main
             clearTxt();
         }
 
-        private void lbl_CreateUser_Click(object sender, EventArgs e)
+        private void exitBtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+
+
+        private void txt_UserName_Click(object sender, EventArgs e)
+        {
+            //txt_UserName.Clear();
+
+        }
+
+        private void txt_Password_Click(object sender, EventArgs e)
+        {
+            //txt_Password.Clear();
+        
+        }
+
+        private void btn_register_Click(object sender, EventArgs e)
         {
             frm_user FormUser = new frm_user();
             FormUser.ShowDialog();
+        }
+
+        private void txt_Password_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                PerformValidation();
+                if (result == true)
+                {
+                    string status = LoginService.LoginServices(txt_UserName.Text, txt_Password.Text);
+                    if (status == "Login Success")
+                    {
+                        MessageBox.Show("Login Success, Welcome: " + txt_UserName.Text);
+                        //-- Show form kedua -- 
+                        FrmMDI FormMdi = new FrmMDI();
+                        this.Hide();
+                        FormMdi.ShowDialog();
+                        this.Close();
+                    }
+                    else if (status != "Login Success")
+                    {
+                        MessageBox.Show("Invalid User Name / Password");
+                    }
+                }
+            }
         }
     }
 }
