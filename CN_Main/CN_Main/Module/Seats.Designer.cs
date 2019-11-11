@@ -31,6 +31,13 @@
             this.button42 = new System.Windows.Forms.Button();
             this.button41 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btn_BuyTickets = new System.Windows.Forms.Button();
+            this.txt_CustomerName = new System.Windows.Forms.TextBox();
+            this.Txt_Theather = new System.Windows.Forms.TextBox();
+            this.txt_MovieName = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.label4 = new System.Windows.Forms.Label();
@@ -75,13 +82,6 @@
             this.button36 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.txt_MovieName = new System.Windows.Forms.TextBox();
-            this.Txt_Theather = new System.Windows.Forms.TextBox();
-            this.txt_CustomerName = new System.Windows.Forms.TextBox();
-            this.btn_BuyTickets = new System.Windows.Forms.Button();
             this.Theather = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -128,6 +128,64 @@
             this.panel2.Size = new System.Drawing.Size(285, 372);
             this.panel2.TabIndex = 144;
             this.panel2.Visible = false;
+            // 
+            // btn_BuyTickets
+            // 
+            this.btn_BuyTickets.Location = new System.Drawing.Point(101, 238);
+            this.btn_BuyTickets.Name = "btn_BuyTickets";
+            this.btn_BuyTickets.Size = new System.Drawing.Size(75, 23);
+            this.btn_BuyTickets.TabIndex = 102;
+            this.btn_BuyTickets.Text = "Buy Tickets";
+            this.btn_BuyTickets.UseVisualStyleBackColor = true;
+            this.btn_BuyTickets.Click += new System.EventHandler(this.btn_BuyTickets_Click);
+            // 
+            // txt_CustomerName
+            // 
+            this.txt_CustomerName.Location = new System.Drawing.Point(81, 177);
+            this.txt_CustomerName.Name = "txt_CustomerName";
+            this.txt_CustomerName.Size = new System.Drawing.Size(100, 20);
+            this.txt_CustomerName.TabIndex = 101;
+            // 
+            // Txt_Theather
+            // 
+            this.Txt_Theather.Location = new System.Drawing.Point(81, 129);
+            this.Txt_Theather.Name = "Txt_Theather";
+            this.Txt_Theather.Size = new System.Drawing.Size(100, 20);
+            this.Txt_Theather.TabIndex = 100;
+            // 
+            // txt_MovieName
+            // 
+            this.txt_MovieName.Location = new System.Drawing.Point(81, 76);
+            this.txt_MovieName.Name = "txt_MovieName";
+            this.txt_MovieName.Size = new System.Drawing.Size(100, 20);
+            this.txt_MovieName.TabIndex = 99;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(89, 161);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(31, 13);
+            this.label9.TabIndex = 98;
+            this.label9.Text = "Price";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(89, 113);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(34, 13);
+            this.label8.TabIndex = 97;
+            this.label8.Text = "Seats";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(98, 60);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(67, 13);
+            this.label7.TabIndex = 96;
+            this.label7.Text = "Movie Name";
             // 
             // radioButton2
             // 
@@ -215,6 +273,7 @@
             this.button31.Text = "31";
             this.button31.UseVisualStyleBackColor = false;
             this.button31.Visible = false;
+            this.button31.Click += new System.EventHandler(this.lounges_click);
             // 
             // button32
             // 
@@ -228,6 +287,7 @@
             this.button32.Text = "32";
             this.button32.UseVisualStyleBackColor = false;
             this.button32.Visible = false;
+            this.button32.Click += new System.EventHandler(this.lounges_click);
             // 
             // button33
             // 
@@ -241,6 +301,7 @@
             this.button33.Text = "33";
             this.button33.UseVisualStyleBackColor = false;
             this.button33.Visible = false;
+            this.button33.Click += new System.EventHandler(this.lounges_click);
             // 
             // button34
             // 
@@ -254,6 +315,7 @@
             this.button34.Text = "34";
             this.button34.UseVisualStyleBackColor = false;
             this.button34.Visible = false;
+            this.button34.Click += new System.EventHandler(this.lounges_click);
             // 
             // button21
             // 
@@ -267,6 +329,7 @@
             this.button21.Text = "21";
             this.button21.UseVisualStyleBackColor = false;
             this.button21.Visible = false;
+            this.button21.Click += new System.EventHandler(this.lounges_click);
             // 
             // button22
             // 
@@ -280,6 +343,7 @@
             this.button22.Text = "22";
             this.button22.UseVisualStyleBackColor = false;
             this.button22.Visible = false;
+            this.button22.Click += new System.EventHandler(this.lounges_click);
             // 
             // button23
             // 
@@ -293,6 +357,7 @@
             this.button23.Text = "23";
             this.button23.UseVisualStyleBackColor = false;
             this.button23.Visible = false;
+            this.button23.Click += new System.EventHandler(this.lounges_click);
             // 
             // button24
             // 
@@ -306,6 +371,7 @@
             this.button24.Text = "24";
             this.button24.UseVisualStyleBackColor = false;
             this.button24.Visible = false;
+            this.button24.Click += new System.EventHandler(this.lounges_click);
             // 
             // button25
             // 
@@ -319,6 +385,7 @@
             this.button25.Text = "25";
             this.button25.UseVisualStyleBackColor = false;
             this.button25.Visible = false;
+            this.button25.Click += new System.EventHandler(this.lounges_click);
             // 
             // button26
             // 
@@ -332,6 +399,7 @@
             this.button26.Text = "26";
             this.button26.UseVisualStyleBackColor = false;
             this.button26.Visible = false;
+            this.button26.Click += new System.EventHandler(this.lounges_click);
             // 
             // button27
             // 
@@ -345,6 +413,7 @@
             this.button27.Text = "27";
             this.button27.UseVisualStyleBackColor = false;
             this.button27.Visible = false;
+            this.button27.Click += new System.EventHandler(this.lounges_click);
             // 
             // button28
             // 
@@ -358,6 +427,7 @@
             this.button28.Text = "28";
             this.button28.UseVisualStyleBackColor = false;
             this.button28.Visible = false;
+            this.button28.Click += new System.EventHandler(this.lounges_click);
             // 
             // button29
             // 
@@ -371,6 +441,7 @@
             this.button29.Text = "29";
             this.button29.UseVisualStyleBackColor = false;
             this.button29.Visible = false;
+            this.button29.Click += new System.EventHandler(this.lounges_click);
             // 
             // button30
             // 
@@ -384,6 +455,7 @@
             this.button30.Text = "30";
             this.button30.UseVisualStyleBackColor = false;
             this.button30.Visible = false;
+            this.button30.Click += new System.EventHandler(this.lounges_click);
             // 
             // button11
             // 
@@ -397,6 +469,7 @@
             this.button11.Text = "11";
             this.button11.UseVisualStyleBackColor = false;
             this.button11.Visible = false;
+            this.button11.Click += new System.EventHandler(this.lounges_click);
             // 
             // button12
             // 
@@ -410,6 +483,7 @@
             this.button12.Text = "12";
             this.button12.UseVisualStyleBackColor = false;
             this.button12.Visible = false;
+            this.button12.Click += new System.EventHandler(this.lounges_click);
             // 
             // button13
             // 
@@ -423,6 +497,7 @@
             this.button13.Text = "13";
             this.button13.UseVisualStyleBackColor = false;
             this.button13.Visible = false;
+            this.button13.Click += new System.EventHandler(this.lounges_click);
             // 
             // button14
             // 
@@ -436,6 +511,7 @@
             this.button14.Text = "14";
             this.button14.UseVisualStyleBackColor = false;
             this.button14.Visible = false;
+            this.button14.Click += new System.EventHandler(this.lounges_click);
             // 
             // button15
             // 
@@ -449,6 +525,7 @@
             this.button15.Text = "15";
             this.button15.UseVisualStyleBackColor = false;
             this.button15.Visible = false;
+            this.button15.Click += new System.EventHandler(this.lounges_click);
             // 
             // button16
             // 
@@ -462,6 +539,7 @@
             this.button16.Text = "16";
             this.button16.UseVisualStyleBackColor = false;
             this.button16.Visible = false;
+            this.button16.Click += new System.EventHandler(this.lounges_click);
             // 
             // button17
             // 
@@ -475,6 +553,7 @@
             this.button17.Text = "17";
             this.button17.UseVisualStyleBackColor = false;
             this.button17.Visible = false;
+            this.button17.Click += new System.EventHandler(this.lounges_click);
             // 
             // button18
             // 
@@ -488,6 +567,7 @@
             this.button18.Text = "18";
             this.button18.UseVisualStyleBackColor = false;
             this.button18.Visible = false;
+            this.button18.Click += new System.EventHandler(this.lounges_click);
             // 
             // button19
             // 
@@ -501,6 +581,7 @@
             this.button19.Text = "19";
             this.button19.UseVisualStyleBackColor = false;
             this.button19.Visible = false;
+            this.button19.Click += new System.EventHandler(this.lounges_click);
             // 
             // button20
             // 
@@ -514,6 +595,7 @@
             this.button20.Text = "20";
             this.button20.UseVisualStyleBackColor = false;
             this.button20.Visible = false;
+            this.button20.Click += new System.EventHandler(this.lounges_click);
             // 
             // button10
             // 
@@ -527,6 +609,7 @@
             this.button10.Text = "10";
             this.button10.UseVisualStyleBackColor = false;
             this.button10.Visible = false;
+            this.button10.Click += new System.EventHandler(this.lounges_click);
             // 
             // button9
             // 
@@ -540,6 +623,7 @@
             this.button9.Text = "9";
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Visible = false;
+            this.button9.Click += new System.EventHandler(this.lounges_click);
             // 
             // button8
             // 
@@ -553,6 +637,7 @@
             this.button8.Text = "8";
             this.button8.UseVisualStyleBackColor = false;
             this.button8.Visible = false;
+            this.button8.Click += new System.EventHandler(this.lounges_click);
             // 
             // button7
             // 
@@ -566,6 +651,7 @@
             this.button7.Text = "7";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Visible = false;
+            this.button7.Click += new System.EventHandler(this.lounges_click);
             // 
             // button6
             // 
@@ -579,6 +665,7 @@
             this.button6.Text = "6";
             this.button6.UseVisualStyleBackColor = false;
             this.button6.Visible = false;
+            this.button6.Click += new System.EventHandler(this.lounges_click);
             // 
             // button5
             // 
@@ -592,6 +679,7 @@
             this.button5.Text = "5";
             this.button5.UseVisualStyleBackColor = false;
             this.button5.Visible = false;
+            this.button5.Click += new System.EventHandler(this.lounges_click);
             // 
             // button4
             // 
@@ -605,6 +693,7 @@
             this.button4.Text = "4";
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Visible = false;
+            this.button4.Click += new System.EventHandler(this.lounges_click);
             // 
             // button3
             // 
@@ -617,6 +706,7 @@
             this.button3.TabStop = false;
             this.button3.Text = "3";
             this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.lounges_click);
             // 
             // button2
             // 
@@ -629,6 +719,7 @@
             this.button2.TabStop = false;
             this.button2.Text = "2";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.lounges_click);
             // 
             // button1
             // 
@@ -641,6 +732,7 @@
             this.button1.TabStop = false;
             this.button1.Text = "1";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.lounges_click);
             // 
             // button35
             // 
@@ -654,6 +746,7 @@
             this.button35.Text = "35";
             this.button35.UseVisualStyleBackColor = false;
             this.button35.Visible = false;
+            this.button35.Click += new System.EventHandler(this.lounges_click);
             // 
             // button36
             // 
@@ -667,11 +760,12 @@
             this.button36.Text = "36";
             this.button36.UseVisualStyleBackColor = false;
             this.button36.Visible = false;
+            this.button36.Click += new System.EventHandler(this.lounges_click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(296, 321);
+            this.label5.Location = new System.Drawing.Point(284, 321);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(83, 13);
             this.label5.TabIndex = 148;
@@ -685,63 +779,6 @@
             this.label6.Size = new System.Drawing.Size(95, 13);
             this.label6.TabIndex = 149;
             this.label6.Text = "AVAILABLE SEAT";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(98, 60);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 13);
-            this.label7.TabIndex = 96;
-            this.label7.Text = "Movie Name";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(89, 113);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(50, 13);
-            this.label8.TabIndex = 97;
-            this.label8.Text = "Theather";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(89, 161);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 13);
-            this.label9.TabIndex = 98;
-            this.label9.Text = "Customer Name";
-            // 
-            // txt_MovieName
-            // 
-            this.txt_MovieName.Location = new System.Drawing.Point(81, 76);
-            this.txt_MovieName.Name = "txt_MovieName";
-            this.txt_MovieName.Size = new System.Drawing.Size(100, 20);
-            this.txt_MovieName.TabIndex = 99;
-            // 
-            // Txt_Theather
-            // 
-            this.Txt_Theather.Location = new System.Drawing.Point(81, 129);
-            this.Txt_Theather.Name = "Txt_Theather";
-            this.Txt_Theather.Size = new System.Drawing.Size(100, 20);
-            this.Txt_Theather.TabIndex = 100;
-            // 
-            // txt_CustomerName
-            // 
-            this.txt_CustomerName.Location = new System.Drawing.Point(81, 177);
-            this.txt_CustomerName.Name = "txt_CustomerName";
-            this.txt_CustomerName.Size = new System.Drawing.Size(100, 20);
-            this.txt_CustomerName.TabIndex = 101;
-            // 
-            // btn_BuyTickets
-            // 
-            this.btn_BuyTickets.Location = new System.Drawing.Point(101, 238);
-            this.btn_BuyTickets.Name = "btn_BuyTickets";
-            this.btn_BuyTickets.Size = new System.Drawing.Size(75, 23);
-            this.btn_BuyTickets.TabIndex = 102;
-            this.btn_BuyTickets.Text = "Buy Tickets";
-            this.btn_BuyTickets.UseVisualStyleBackColor = true;
             // 
             // Theather
             // 
@@ -803,8 +840,8 @@
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmSeats";
+            this.Load += new System.EventHandler(this.Cinema_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.ResumeLayout(false);

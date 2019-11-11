@@ -29,7 +29,7 @@ namespace CN_Main
                 slidepic2.ImageLocation = datasetslide.Tables[0].Rows[1][0].ToString();
                 slidepic3.ImageLocation = datasetslide.Tables[0].Rows[2][0].ToString();
                 slidepic4.ImageLocation = datasetslide.Tables[0].Rows[3][0].ToString();
-                //slide video 
+                //slide BIG
             }
             catch
             {
@@ -129,7 +129,7 @@ namespace CN_Main
 
             if (IsOpen == false)
             {
-                //FrmMovieDetails md = new FrmMovieDetails("");
+                //FrmMovieDetails md = new FrmMovieDetails("");                //FrmMovieDetails md = new FrmMovieDetails("");
                 //md.MdiParent = this.ParentForm;
                 //md.Show();
                 //md.Dock = DockStyle.Fill;

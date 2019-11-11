@@ -47,6 +47,7 @@
             this.CB_Date = new System.Windows.Forms.ComboBox();
             this.label10 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btn_book = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -224,11 +225,21 @@
             this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(12)))), ((int)(((byte)(32)))), ((int)(((byte)(45)))));
             this.textBox1.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Bold);
             this.textBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(102)))), ((int)(((byte)(204)))));
-            this.textBox1.Location = new System.Drawing.Point(415, 158);
+            this.textBox1.Location = new System.Drawing.Point(415, 194);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(330, 245);
+            this.textBox1.Size = new System.Drawing.Size(295, 209);
             this.textBox1.TabIndex = 11;
+            // 
+            // btn_book
+            // 
+            this.btn_book.Location = new System.Drawing.Point(414, 165);
+            this.btn_book.Name = "btn_book";
+            this.btn_book.Size = new System.Drawing.Size(75, 23);
+            this.btn_book.TabIndex = 31;
+            this.btn_book.Text = "BOOK";
+            this.btn_book.UseVisualStyleBackColor = true;
+            this.btn_book.Click += new System.EventHandler(this.btn_book_Click);
             // 
             // FrmMovieDetails
             // 
@@ -236,6 +247,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DimGray;
             this.ClientSize = new System.Drawing.Size(804, 417);
+            this.Controls.Add(this.btn_book);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.CB_Date);
             this.Controls.Add(this.label10);
@@ -282,5 +294,6 @@
         private System.Windows.Forms.ComboBox CB_Date;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btn_book;
     }
 }

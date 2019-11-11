@@ -27,12 +27,11 @@ namespace CN_Main
         DataSet datasettime = new DataSet();
         DataSet datasettheather = new DataSet();
         DataSet datasetclass = new DataSet();
+        DataSet datasetcinemaid= new DataSet();
         public static int get_number;
         private void FrmMovieDetails_Load(object sender, EventArgs e)
         {
             get_number = FrmMovies.sent_number;
-            //Time2.Text = FrmMovies.list_movie_time2[get_number].ToString();
-            //Time3.Text = FrmMovies.list_movie_time3[get_number].ToString();
             pictureBox1.Image = Bitmap.FromFile(FrmMovies.list_image_url[get_number].ToString());
 
             textBox1.ScrollBars = ScrollBars.Both;
@@ -51,7 +50,7 @@ namespace CN_Main
             CB_Cinemas.DisplayMember = "cinema_name";
         }
 
-        public static string movie_name;
+        public static string movie_name,theather,cinemaid;
 
         private void btn_back_Click(object sender, EventArgs e)
         {
@@ -129,9 +128,19 @@ namespace CN_Main
 
             cinemaService = new CinemaService();
             datasetclass = cinemaService.get_class_data(dsmovie, Cinema_Name, movieName, Date, Time, Theather);
+            datasetcinemaid = cinemaService.get_cinemaid_data(dsmovie, Cinema_Name, movieName, Date, Time, Theather);
+            cinemaid = datasetcinemaid.ToString();
             CB_Class.DataSource = datasetclass.Tables[0];
             CB_Class.DisplayMember = "class";
         }
 
+        private void btn_book_Click(object sender, EventArgs e)
+        {
+            movie_name = FrmMovies.list_movie_name[get_number].ToString();
+            theather = datasettheather.Tables[0].Rows[CB_Theather.SelectedIndex][0].ToString();
+
+            FrmSeats frm = new FrmSeats();
+            frm.Show();
+        }
     }
 }

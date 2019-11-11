@@ -17,7 +17,7 @@ namespace CN_Main
             InitializeComponent();
         }
 
-        private void OpenFormInPanel(object FormChild)
+        public void OpenFormInPanel(object FormChild)
         {
             if (this.Panel_Container.Controls.Count > 0)
                 this.Panel_Container.Controls.RemoveAt(0);
