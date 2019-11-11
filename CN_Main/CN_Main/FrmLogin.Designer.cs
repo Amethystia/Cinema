@@ -35,12 +35,12 @@
             this.btn_Cancel = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.PictureBox();
             this.panelform = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.passPic = new System.Windows.Forms.PictureBox();
             this.userPic = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.btn_register = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.exitBtn)).BeginInit();
             this.panelform.SuspendLayout();
@@ -59,7 +59,7 @@
             this.txt_UserName.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_UserName.Name = "txt_UserName";
             this.txt_UserName.Size = new System.Drawing.Size(148, 27);
-            this.txt_UserName.TabIndex = 0;
+            this.txt_UserName.TabIndex = 1;
             this.txt_UserName.Text = "User Name";
             this.txt_UserName.Click += new System.EventHandler(this.txt_UserName_Click);
             // 
@@ -73,10 +73,9 @@
             this.txt_Password.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_Password.Name = "txt_Password";
             this.txt_Password.Size = new System.Drawing.Size(148, 27);
-            this.txt_Password.TabIndex = 1;
+            this.txt_Password.TabIndex = 2;
             this.txt_Password.Text = "Password";
             this.txt_Password.Click += new System.EventHandler(this.txt_Password_Click);
-            this.txt_Password.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_Password_KeyDown);
             // 
             // btn_Login
             // 
@@ -88,8 +87,8 @@
             this.btn_Login.Location = new System.Drawing.Point(47, 270);
             this.btn_Login.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Login.Name = "btn_Login";
-            this.btn_Login.Size = new System.Drawing.Size(250, 40);
-            this.btn_Login.TabIndex = 2;
+            this.btn_Login.Size = new System.Drawing.Size(250, 35);
+            this.btn_Login.TabIndex = 4;
             this.btn_Login.Text = "Login";
             this.btn_Login.UseVisualStyleBackColor = false;
             this.btn_Login.Click += new System.EventHandler(this.btn_Login_Click);
@@ -100,8 +99,8 @@
             this.btn_Cancel.Location = new System.Drawing.Point(47, 315);
             this.btn_Cancel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_Cancel.Name = "btn_Cancel";
-            this.btn_Cancel.Size = new System.Drawing.Size(250, 43);
-            this.btn_Cancel.TabIndex = 3;
+            this.btn_Cancel.Size = new System.Drawing.Size(250, 35);
+            this.btn_Cancel.TabIndex = 6;
             this.btn_Cancel.Text = "Cancel";
             this.btn_Cancel.UseVisualStyleBackColor = true;
             this.btn_Cancel.Click += new System.EventHandler(this.btn_Cancel_Click);
@@ -138,17 +137,9 @@
             this.panelform.Size = new System.Drawing.Size(332, 467);
             this.panelform.TabIndex = 10;
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Location = new System.Drawing.Point(0, 384);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(332, 3);
-            this.panel3.TabIndex = 13;
-            // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.Black;
+            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel2.Location = new System.Drawing.Point(47, 245);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(250, 1);
@@ -156,7 +147,7 @@
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
+            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel1.Location = new System.Drawing.Point(47, 185);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(250, 1);
@@ -164,7 +155,7 @@
             // 
             // passPic
             // 
-            this.passPic.Image = global::CN_Main.Properties.Resources.pass2;
+            this.passPic.Image = global::CN_Main.Properties.Resources.pass1;
             this.passPic.Location = new System.Drawing.Point(47, 203);
             this.passPic.Name = "passPic";
             this.passPic.Size = new System.Drawing.Size(46, 31);
@@ -174,7 +165,7 @@
             // 
             // userPic
             // 
-            this.userPic.Image = global::CN_Main.Properties.Resources.user2;
+            this.userPic.Image = global::CN_Main.Properties.Resources.user1;
             this.userPic.Location = new System.Drawing.Point(48, 146);
             this.userPic.Name = "userPic";
             this.userPic.Size = new System.Drawing.Size(46, 31);
@@ -192,6 +183,14 @@
             this.pictureBox1.TabIndex = 9;
             this.pictureBox1.TabStop = false;
             // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.Location = new System.Drawing.Point(0, 384);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(332, 3);
+            this.panel3.TabIndex = 13;
+            // 
             // btn_register
             // 
             this.btn_register.BackColor = System.Drawing.Color.PaleGoldenrod;
@@ -201,7 +200,7 @@
             this.btn_register.Location = new System.Drawing.Point(47, 406);
             this.btn_register.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.btn_register.Name = "btn_register";
-            this.btn_register.Size = new System.Drawing.Size(250, 43);
+            this.btn_register.Size = new System.Drawing.Size(250, 35);
             this.btn_register.TabIndex = 4;
             this.btn_register.Text = "Register";
             this.btn_register.UseVisualStyleBackColor = false;

@@ -2,6 +2,7 @@
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 using CN_Business;
 
 namespace CN_Main
@@ -9,6 +10,8 @@ namespace CN_Main
     public partial class FrmCinemas : Form
     {
         private CinemaService cinemaService;
+        MySqlConnection cs = new MySqlConnection("Data Source='localhost';initial catalog= cinema_simd;integrated Security=true");
+        MySqlDataAdapter da = new MySqlDataAdapter();
         DataSet dsmovie = new DataSet();
         DataSet datasetduration = new DataSet();
         DataSet datasetcinema = new DataSet();
@@ -17,37 +20,19 @@ namespace CN_Main
         DataSet datasettheather = new DataSet();
         DataSet datasetclass = new DataSet();
 
-        public FrmCinemas()
+        public FrmCinemas(string moname)
         {
             InitializeComponent();
-            LoadCB_Cinemaname(); // done get movie name
+
+            LoadCB_Moviename(); // done get movie name
+
            
-        }
-
-        public void LoadCB_Cinemaname()
-        {
-            // Disabled Due Change Schema
-            //string Movie_Names;
-            //Movie_Names = dsmovie.Tables[0].Rows[CB_Movie.SelectedIndex][0].ToString();
-
-            cinemaService = new CinemaService();
-            datasetcinema = cinemaService.get_cinemas_data(dsmovie);
-            CB_Cinemas.DataSource = datasetcinema.Tables[0];
-            CB_Cinemas.DisplayMember = "cinema_name";
-        }
-
-        private void CB_Cinemas_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            LoadCB_Moviename();
         }
 
         public void LoadCB_Moviename()
         {
-            string Cinema_Name;
-            Cinema_Name = datasetcinema.Tables[0].Rows[CB_Cinemas.SelectedIndex][0].ToString();
-
             cinemaService = new CinemaService();
-            dsmovie = cinemaService.get_movies_data(dsmovie, Cinema_Name);
+            dsmovie = cinemaService.get_movies_data(dsmovie);
             CB_Movie.DataSource = dsmovie.Tables[0];
             CB_Movie.DisplayMember = "movie_name";
 
@@ -61,9 +46,19 @@ namespace CN_Main
         }
         private void CB_Movie_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LoadCB_Date();
+            LoadCB_Cinemaname();
         }
 
+        public void LoadCB_Cinemaname()
+        {
+            string Movie_Names;
+            Movie_Names = dsmovie.Tables[0].Rows[CB_Movie.SelectedIndex][0].ToString();
+
+            cinemaService = new CinemaService();
+            datasetcinema = cinemaService.get_cinemas_data(dsmovie, Movie_Names);
+            CB_Cinemas.DataSource = datasetcinema.Tables[0];
+            CB_Cinemas.DisplayMember = "cinema_name";
+        } 
         public void LoadCB_Date()
         {
             string Movie_Name;
@@ -77,7 +72,10 @@ namespace CN_Main
             CB_Date.DisplayMember = "date";
         }
 
-       
+        private void CB_Cinemas_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            LoadCB_Date();
+        }
         public void LoadCB_Time()
         {
             string Movie_Name;
@@ -140,11 +138,6 @@ namespace CN_Main
         private void CB_Class_SelectedIndexChanged(object sender, EventArgs e)
         {
             LoadCB_Class();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

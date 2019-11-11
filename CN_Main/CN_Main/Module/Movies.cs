@@ -20,20 +20,10 @@ namespace CN_Main
         }
 
         PictureBox[] images = new PictureBox[8];
-        //Region Movies
-            public static ArrayList list_image_url = new ArrayList();
-            public static ArrayList list_movie_name = new ArrayList();
-            public static ArrayList list_movie_imdb = new ArrayList();
-            public static ArrayList list_movie_description = new ArrayList();
-
-        //Region Cinemas
-            public static ArrayList list_Cinema_Name = new ArrayList();
-            //Movie Name
-            public static ArrayList list_theather = new ArrayList();
-            public static ArrayList list_date = new ArrayList();
-            public static ArrayList list_movie_time = new ArrayList();
-            public static ArrayList list_Movie_class = new ArrayList();
-
+        public static ArrayList list_image_url = new ArrayList();
+        public static ArrayList list_movie_name = new ArrayList();
+        public static ArrayList list_movie_imdb = new ArrayList();
+        public static ArrayList list_movie_description = new ArrayList();
         int b = 0;
         int c = 0;
         public static int j = 0;
@@ -44,27 +34,14 @@ namespace CN_Main
 
         private void FrmMovies_Load(object sender, EventArgs e)
         {
-
-            //Region Movies
             list_image_url.Clear();
             list_movie_name.Clear();
             list_movie_imdb.Clear();
             list_movie_description.Clear();
-
-            //Region Cinemas
-            list_Cinema_Name.Clear();
-            list_theather.Clear();
-            list_date.Clear();
-            list_movie_time.Clear();
-            list_Movie_class.Clear();
-
-            //Region Button
             btn_Previous.Visible = false;
 
-            //End Region
-
             images = new PictureBox[] {pictureBox1,pictureBox2,pictureBox3,pictureBox4,pictureBox5,
-            pictureBox6,pictureBox7,pictureBox8};
+                pictureBox6,pictureBox7,pictureBox8};
 
             DBConnection cla = new DBConnection();
             DataTable tab = cla.table_get_data("select * from Movies");
@@ -76,16 +53,6 @@ namespace CN_Main
                 list_movie_description.Add(tab.Rows[i][3]);
                 list_image_url.Add(tab.Rows[i][4]);
             }
-
-            DataTable tab2 = cla.table_get_data("select * from Cinemas");
-
-            for (int i = 0; i < tab2.Rows.Count; i++)
-            {
-                list_Cinema_Name.Add(tab2.Rows[i][0]);
-                list_movie_time.Add(tab2.Rows[i][4]);
-                list_Movie_class.Add(tab2.Rows[i][5]);
-            }
-
 
             max_count = tab.Rows.Count;
 
