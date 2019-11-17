@@ -13,6 +13,5 @@ C:\Users\Asus\Documents\GitHub\Cinema\CN_Modeling\obj\Debug\DM_Modeling.pdb
 C:\Cinema\CN_Modeling\bin\Debug\DM_Modeling.exe.config
 C:\Cinema\CN_Modeling\bin\Debug\DM_Modeling.exe
 C:\Cinema\CN_Modeling\bin\Debug\DM_Modeling.pdb
-C:\Cinema\CN_Modeling\obj\Debug\CN_Modeling.csprojAssemblyReference.cache
 C:\Cinema\CN_Modeling\obj\Debug\DM_Modeling.exe
 C:\Cinema\CN_Modeling\obj\Debug\DM_Modeling.pdb

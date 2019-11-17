@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.35, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.6.8.8\lib\net45\MySql.Data.dll</HintPath>
     </Reference>
@@ -102,10 +103,10 @@
     <Compile Include="Module\Movies.Designer.cs">
       <DependentUpon>Movies.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module\User.cs">
+    <Compile Include="Master\User.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module\User.Designer.cs">
+    <Compile Include="Master\User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -137,7 +138,7 @@
     <EmbeddedResource Include="Module\Movies.resx">
       <DependentUpon>Movies.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Module\User.resx">
+    <EmbeddedResource Include="Master\User.resx">
       <DependentUpon>User.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">

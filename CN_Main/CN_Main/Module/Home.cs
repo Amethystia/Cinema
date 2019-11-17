@@ -129,78 +129,7 @@ namespace CN_Main
 
             if (IsOpen == false)
             {
-                //FrmMovieDetails md = new FrmMovieDetails("");                //FrmMovieDetails md = new FrmMovieDetails("");
-                //md.MdiParent = this.ParentForm;
-                //md.Show();
-                //md.Dock = DockStyle.Fill;
             }
         }
-
-
-        //private void subpic1_Click(object sender, EventArgs e)
-        //{
-        //    Movied mod = new Movied(mtitle1.Text);
-        //    mod.MdiParent = this.ParentForm;
-        //    mod.Dock = DockStyle.Fill;
-        //    mod.Show();
-        //}
-
-
-
-        //private void subpic2_Click(object sender, EventArgs e)
-        //{
-        //    Movied mod = new Movied(mtitle2.Text);
-        //    mod.MdiParent = this.ParentForm;
-        //    mod.Dock = DockStyle.Fill;
-        //    mod.Show();
-        //}
-
-        //private void subpic3_Click(object sender, EventArgs e)
-        //{
-        //    Movied mod = new Movied(mtitle3.Text);
-        //    mod.MdiParent = this.ParentForm;
-        //    mod.Dock = DockStyle.Fill;
-        //    mod.Show();
-        //}
-
-        //private void subpic4_Click(object sender, EventArgs e)
-        //{
-        //    Movied mod = new Movied(mtitle4.Text);
-        //    mod.MdiParent = this.ParentForm;
-        //    mod.Dock = DockStyle.Fill;
-        //    mod.Show();
-        //}
-
-        //private void slidepic3_Click(object sender, EventArgs e)
-        //{
-        //    Movied mod = new Movied(ds.Tables[0].Rows[2][1].ToString());
-        //    mod.MdiParent = this.ParentForm;
-        //    mod.Dock = DockStyle.Fill;
-        //    mod.Show();
-        //}
-        //private void slidepic4_Click(object sender, EventArgs e)
-        //{
-        //    Movied mod = new Movied(ds.Tables[0].Rows[3][1].ToString());
-        //    mod.MdiParent = this.ParentForm;
-        //    mod.Dock = DockStyle.Fill;
-        //    mod.Show();
-        //}
-
-        //private void slidepic2_Click(object sender, EventArgs e)
-        //{
-        //    Movied mod = new Movied(ds.Tables[0].Rows[1][1].ToString());
-        //    mod.MdiParent = this.ParentForm;
-        //    mod.Dock = DockStyle.Fill;
-        //    mod.Show();
-        //}
-
-        //private void slideshowpic1_Click(object sender, EventArgs e)
-        //{
-        //    Movied mod = new Movied(ds.Tables[0].Rows[0][1].ToString());
-        //    mod.MdiParent = this.ParentForm;
-        //    mod.Dock = DockStyle.Fill;
-        //    mod.Show();
-        //}
-
     }
 }

@@ -32,19 +32,19 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPromo));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.slideshow3 = new System.Windows.Forms.PictureBox();
-            this.slideshow2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.slideshow1 = new System.Windows.Forms.PictureBox();
+            this.slideshow2 = new System.Windows.Forms.PictureBox();
+            this.slideshow3 = new System.Windows.Forms.PictureBox();
             this.slideshow4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.slidetimer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.slideshow3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slideshow2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slideshow1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.slideshow4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -64,22 +64,22 @@
             this.panel2.Controls.Add(this.slideshow3);
             this.panel2.Controls.Add(this.slideshow4);
             this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel2.Location = new System.Drawing.Point(0, 44);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(899, 406);
+            this.panel2.Size = new System.Drawing.Size(899, 450);
             this.panel2.TabIndex = 0;
             // 
-            // slideshow3
+            // slideshow1
             // 
-            this.slideshow3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.slideshow3.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshow3.InitialImage")));
-            this.slideshow3.Location = new System.Drawing.Point(0, 0);
-            this.slideshow3.Name = "slideshow3";
-            this.slideshow3.Size = new System.Drawing.Size(899, 406);
-            this.slideshow3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.slideshow3.TabIndex = 23;
-            this.slideshow3.TabStop = false;
+            this.slideshow1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.slideshow1.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshow1.InitialImage")));
+            this.slideshow1.Location = new System.Drawing.Point(0, 0);
+            this.slideshow1.Name = "slideshow1";
+            this.slideshow1.Size = new System.Drawing.Size(899, 450);
+            this.slideshow1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.slideshow1.TabIndex = 26;
+            this.slideshow1.TabStop = false;
             // 
             // slideshow2
             // 
@@ -87,10 +87,32 @@
             this.slideshow2.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshow2.InitialImage")));
             this.slideshow2.Location = new System.Drawing.Point(0, 0);
             this.slideshow2.Name = "slideshow2";
-            this.slideshow2.Size = new System.Drawing.Size(899, 406);
+            this.slideshow2.Size = new System.Drawing.Size(899, 450);
             this.slideshow2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slideshow2.TabIndex = 24;
             this.slideshow2.TabStop = false;
+            // 
+            // slideshow3
+            // 
+            this.slideshow3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.slideshow3.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshow3.InitialImage")));
+            this.slideshow3.Location = new System.Drawing.Point(0, 0);
+            this.slideshow3.Name = "slideshow3";
+            this.slideshow3.Size = new System.Drawing.Size(899, 450);
+            this.slideshow3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.slideshow3.TabIndex = 23;
+            this.slideshow3.TabStop = false;
+            // 
+            // slideshow4
+            // 
+            this.slideshow4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.slideshow4.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshow4.InitialImage")));
+            this.slideshow4.Location = new System.Drawing.Point(0, 0);
+            this.slideshow4.Name = "slideshow4";
+            this.slideshow4.Size = new System.Drawing.Size(899, 450);
+            this.slideshow4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.slideshow4.TabIndex = 27;
+            this.slideshow4.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -101,28 +123,6 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 25;
             this.pictureBox2.TabStop = false;
-            // 
-            // slideshow1
-            // 
-            this.slideshow1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.slideshow1.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshow1.InitialImage")));
-            this.slideshow1.Location = new System.Drawing.Point(0, 0);
-            this.slideshow1.Name = "slideshow1";
-            this.slideshow1.Size = new System.Drawing.Size(899, 406);
-            this.slideshow1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.slideshow1.TabIndex = 26;
-            this.slideshow1.TabStop = false;
-            // 
-            // slideshow4
-            // 
-            this.slideshow4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.slideshow4.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshow4.InitialImage")));
-            this.slideshow4.Location = new System.Drawing.Point(0, 0);
-            this.slideshow4.Name = "slideshow4";
-            this.slideshow4.Size = new System.Drawing.Size(899, 406);
-            this.slideshow4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.slideshow4.TabIndex = 27;
-            this.slideshow4.TabStop = false;
             // 
             // slidetimer
             // 
@@ -140,11 +140,11 @@
             this.Load += new System.EventHandler(this.FrmPromo_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.slideshow3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.slideshow2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slideshow1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.slideshow4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }

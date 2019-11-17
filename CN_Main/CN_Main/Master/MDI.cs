@@ -7,16 +7,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CN_Business;
 
 namespace CN_Main
 {
     public partial class FrmMDI : Form
     {
+        string result;
         public FrmMDI()
         {
             InitializeComponent();
+            checkEmployee();
         }
-
+        public void checkEmployee()
+        {
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["FrmLogin"];
+            string username = ((FrmLogin)f).txt_UserName.Text;
+            LoginService login = new LoginService();
+            result=login.get_isemployee(result, username);
+            if(result == "True")
+            {
+                btn_Employee.Visible = true;
+            }
+            else
+            {
+                btn_Employee.Visible = false;
+            }
+        }
         public void OpenFormInPanel(object FormChild)
         {
             if (this.Panel_Container.Controls.Count > 0)
@@ -66,14 +83,6 @@ namespace CN_Main
         }
         private void btn_Close_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void btn_logout_Click(object sender, EventArgs e)
-        {
-            FrmLogin frmLogin = new FrmLogin();
-            this.Hide();
-            frmLogin.ShowDialog();
             this.Close();
         }
     }

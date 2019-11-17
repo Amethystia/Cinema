@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmCinemas));
             this.panel1 = new System.Windows.Forms.Panel();
             this.cb_class = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -102,7 +103,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(35, 283);
+            this.label6.Location = new System.Drawing.Point(39, 292);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(71, 13);
             this.label6.TabIndex = 86;
@@ -110,7 +111,7 @@
             // 
             // txt_Price
             // 
-            this.txt_Price.Location = new System.Drawing.Point(558, 257);
+            this.txt_Price.Location = new System.Drawing.Point(540, 284);
             this.txt_Price.Name = "txt_Price";
             this.txt_Price.Size = new System.Drawing.Size(100, 20);
             this.txt_Price.TabIndex = 85;
@@ -120,7 +121,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label5.Location = new System.Drawing.Point(507, 260);
+            this.label5.Location = new System.Drawing.Point(481, 287);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 13);
             this.label5.TabIndex = 84;
@@ -151,7 +152,7 @@
             this.cb_Duration.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.cb_Duration.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.cb_Duration.FormattingEnabled = true;
-            this.cb_Duration.Location = new System.Drawing.Point(558, 226);
+            this.cb_Duration.Location = new System.Drawing.Point(540, 231);
             this.cb_Duration.Name = "cb_Duration";
             this.cb_Duration.Size = new System.Drawing.Size(99, 21);
             this.cb_Duration.TabIndex = 81;
@@ -161,7 +162,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label4.Location = new System.Drawing.Point(499, 232);
+            this.label4.Location = new System.Drawing.Point(481, 237);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
             this.label4.TabIndex = 80;
@@ -173,7 +174,7 @@
             this.btn_Request.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Request.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Bold);
             this.btn_Request.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.btn_Request.Location = new System.Drawing.Point(502, 302);
+            this.btn_Request.Location = new System.Drawing.Point(484, 318);
             this.btn_Request.Name = "btn_Request";
             this.btn_Request.Size = new System.Drawing.Size(112, 57);
             this.btn_Request.TabIndex = 79;
@@ -196,7 +197,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label1.Location = new System.Drawing.Point(32, 229);
+            this.label1.Location = new System.Drawing.Point(39, 229);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 13);
             this.label1.TabIndex = 75;
@@ -207,7 +208,7 @@
             this.label14.AutoSize = true;
             this.label14.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label14.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label14.Location = new System.Drawing.Point(36, 260);
+            this.label14.Location = new System.Drawing.Point(39, 260);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(75, 13);
             this.label14.TabIndex = 72;
@@ -229,7 +230,7 @@
             this.datelbl.AutoSize = true;
             this.datelbl.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.datelbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.datelbl.Location = new System.Drawing.Point(39, 311);
+            this.datelbl.Location = new System.Drawing.Point(39, 318);
             this.datelbl.Name = "datelbl";
             this.datelbl.Size = new System.Drawing.Size(69, 13);
             this.datelbl.TabIndex = 69;
@@ -237,41 +238,51 @@
             // 
             // pictureBox5
             // 
-            this.pictureBox5.Location = new System.Drawing.Point(611, 83);
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(616, 83);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(89, 107);
+            this.pictureBox5.Size = new System.Drawing.Size(116, 107);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 66;
             this.pictureBox5.TabStop = false;
             // 
             // pictureBox4
             // 
-            this.pictureBox4.Location = new System.Drawing.Point(486, 83);
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(484, 83);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(89, 107);
+            this.pictureBox4.Size = new System.Drawing.Size(111, 107);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 65;
             this.pictureBox4.TabStop = false;
             // 
             // pictureBox3
             // 
-            this.pictureBox3.Location = new System.Drawing.Point(355, 83);
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(346, 83);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(89, 107);
+            this.pictureBox3.Size = new System.Drawing.Size(112, 107);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 64;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(222, 83);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(195, 83);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(89, 107);
+            this.pictureBox2.Size = new System.Drawing.Size(114, 107);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 63;
             this.pictureBox2.TabStop = false;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(85, 83);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(42, 83);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(89, 107);
+            this.pictureBox1.Size = new System.Drawing.Size(111, 107);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
             // 

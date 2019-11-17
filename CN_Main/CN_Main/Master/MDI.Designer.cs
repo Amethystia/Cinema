@@ -46,7 +46,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_Close = new System.Windows.Forms.Button();
-            this.btn_logout = new System.Windows.Forms.Button();
             this.Panel_Side.SuspendLayout();
             this.Panel_Logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -55,7 +54,6 @@
             // Panel_Side
             // 
             this.Panel_Side.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.Panel_Side.Controls.Add(this.btn_logout);
             this.Panel_Side.Controls.Add(this.btn_Employee);
             this.Panel_Side.Controls.Add(this.Panel_SideBar);
             this.Panel_Side.Controls.Add(this.button14);
@@ -280,20 +278,6 @@
             this.btn_Close.UseVisualStyleBackColor = true;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
-            // btn_logout
-            // 
-            this.btn_logout.BackColor = System.Drawing.Color.Red;
-            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_logout.Font = new System.Drawing.Font("Tw Cen MT", 15F);
-            this.btn_logout.ForeColor = System.Drawing.SystemColors.Control;
-            this.btn_logout.Location = new System.Drawing.Point(109, 514);
-            this.btn_logout.Name = "btn_logout";
-            this.btn_logout.Size = new System.Drawing.Size(101, 43);
-            this.btn_logout.TabIndex = 0;
-            this.btn_logout.Text = "LOG OUT";
-            this.btn_logout.UseVisualStyleBackColor = false;
-            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
-            // 
             // FrmMDI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -339,6 +323,5 @@
         private System.Windows.Forms.Panel Panel_Container;
         private System.Windows.Forms.Button btn_GroupBooking;
         private System.Windows.Forms.Button btn_Employee;
-        private System.Windows.Forms.Button btn_logout;
     }
 }

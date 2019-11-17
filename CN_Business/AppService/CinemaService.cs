@@ -199,7 +199,7 @@ namespace CN_Business
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
-                query = string.Format(@"select DISTINCT movie_image,movie_name from movies");
+                query = string.Format(@"select DISTINCT slide_image,movie_name from movies where isreleased=0 and slide_image is not null");
                 adapter = new MySqlDataAdapter(query, conn);
                 dataset.Clear();
                 adapter.Fill(dataset);
@@ -230,7 +230,7 @@ namespace CN_Business
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
-                query = string.Format(@"select movie_name,movie_image from movies where movie_release <= '" + DateTime.Today.ToString("yyyy-MM-dd") + "' order by(movie_release) desc");
+                query = string.Format(@"select movie_name,movie_image from movies where  isreleased=0 and movie_release <= '" + DateTime.Today.ToString("yyyy-MM-dd") + "' order by(movie_release) desc");
                 adapter = new MySqlDataAdapter(query, conn);
                 dataset.Clear();
                 adapter.Fill(dataset);

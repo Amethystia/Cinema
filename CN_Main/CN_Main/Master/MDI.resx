@@ -146,13 +146,15 @@
   </metadata>
   <data name="btn_Transaction.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAUlJREFUSEvd
-        kbFKA0EURVdREKsUqRRUrKwsRFuxEsvUsRK0VyxESCFBLBSDvYIpTKGCfoFgp3/hJ/gJ65nhMswuk6yz
-        Y6EeOOzc997MCyT7VeR53sW+Z1etn0MPj+OOvn216sEDe/iID57vOIUDfd/Q75v5XT1RDcMDHR3UCr+8
-        nA3U7nSshuFbHS3kA/zED0+T9zViIRfujSRq2ONvLKFm/uwe3uOlyWo5qCUv6eC6zht4bBseoXtDCQ1T
-        u8EJnSfx2jY8QveGEhqmtoXnuIYXuKmWg1rykm18wVd922o5qNVfQl7FnqLJY3iFKypZyElLznBG0UKe
-        xVNFS/neSKKGPZKWkJu4ELCpEQs5aUkLTwK2NGIhJy1po/mjC6rtoJa0ZBobZdV2UKu/5LvELnnGJVyM
-        cBmf9EQ1DM/jIR5FaObn9MS/JMu+ADXhF99ESG6xAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAGbSURBVEhL7dXPK8NxHMdxk/yIkcJISRPKkrhSSrn4A+S8m4OTcnBwULv4cXFx8Q9wlsvKAflR
+        SySFmoRwdhqpr+f7s/d39l1b7fPdcuFVj3zen30/73c+21pFdhzHqSyTgLb0hheqIfkqgytt6w0vyJCU
+        lr5Dj8gfHMK6BqtFWtBj1kOkni9SVI/ZDfGb/yFWsRrCOoB2tGkd1DqfFnOIsLYa0oAXXGsd0zqfI3OI
+        sP6V6+pDXEtvcoewluvqQqfWzVqLMCK636F1IUF5zoQi33U94ELrZa3FE5KQZ+7xqXU2eSaFLdNQQuHr
+        ujjTgzstM2FvCOdapsNG7n8iPz69CGvdqrVrAFMI4RX12MYOFjGKA9PMDRu5Q+TQLc60XtLaJVfyDhkS
+        xxqi2MU4TjBrmrlhw9d1STjXhENsoBY3iOnLP2GzlCEjeMY05FO5glM06iPpsCFDPjBooR/y3smACe1T
+        p3/ld2ZT1pmwUYVLS3voRlJ7zOEN8q0fRsI0LzU0msQjxiDfF8k+ZiDvTUgf9RcayCfwGInCnPVv7y73
+        fh2qu5UAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="btn_GroupBooking.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">

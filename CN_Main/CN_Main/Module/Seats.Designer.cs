@@ -82,7 +82,6 @@
             this.button36 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.Theather = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -91,7 +90,7 @@
             this.button42.BackColor = System.Drawing.Color.SeaGreen;
             this.button42.Enabled = false;
             this.button42.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold);
-            this.button42.Location = new System.Drawing.Point(396, 311);
+            this.button42.Location = new System.Drawing.Point(413, 311);
             this.button42.Name = "button42";
             this.button42.Size = new System.Drawing.Size(54, 49);
             this.button42.TabIndex = 146;
@@ -103,7 +102,7 @@
             this.button41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(111)))), ((int)(((byte)(111)))));
             this.button41.Enabled = false;
             this.button41.Font = new System.Drawing.Font("Century", 11.25F, System.Drawing.FontStyle.Bold);
-            this.button41.Location = new System.Drawing.Point(223, 311);
+            this.button41.Location = new System.Drawing.Point(209, 311);
             this.button41.Name = "button41";
             this.button41.Size = new System.Drawing.Size(54, 49);
             this.button41.TabIndex = 145;
@@ -131,59 +130,70 @@
             // 
             // btn_BuyTickets
             // 
-            this.btn_BuyTickets.Location = new System.Drawing.Point(101, 238);
+            this.btn_BuyTickets.BackColor = System.Drawing.Color.Black;
+            this.btn_BuyTickets.FlatAppearance.BorderSize = 0;
+            this.btn_BuyTickets.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_BuyTickets.Font = new System.Drawing.Font("Century Gothic", 17F);
+            this.btn_BuyTickets.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.btn_BuyTickets.Location = new System.Drawing.Point(61, 222);
             this.btn_BuyTickets.Name = "btn_BuyTickets";
-            this.btn_BuyTickets.Size = new System.Drawing.Size(75, 23);
+            this.btn_BuyTickets.Size = new System.Drawing.Size(153, 38);
             this.btn_BuyTickets.TabIndex = 102;
             this.btn_BuyTickets.Text = "Buy Tickets";
-            this.btn_BuyTickets.UseVisualStyleBackColor = true;
+            this.btn_BuyTickets.UseVisualStyleBackColor = false;
             this.btn_BuyTickets.Click += new System.EventHandler(this.btn_BuyTickets_Click);
             // 
             // txt_ticket
             // 
-            this.txt_ticket.Location = new System.Drawing.Point(81, 177);
+            this.txt_ticket.Location = new System.Drawing.Point(74, 177);
             this.txt_ticket.Name = "txt_ticket";
-            this.txt_ticket.Size = new System.Drawing.Size(100, 20);
+            this.txt_ticket.Size = new System.Drawing.Size(114, 20);
             this.txt_ticket.TabIndex = 101;
             // 
             // Txt_Seats
             // 
-            this.Txt_Seats.Location = new System.Drawing.Point(81, 129);
+            this.Txt_Seats.Location = new System.Drawing.Point(74, 129);
             this.Txt_Seats.Name = "Txt_Seats";
-            this.Txt_Seats.Size = new System.Drawing.Size(100, 20);
+            this.Txt_Seats.Size = new System.Drawing.Size(114, 20);
             this.Txt_Seats.TabIndex = 100;
             // 
             // txt_MovieName
             // 
-            this.txt_MovieName.Location = new System.Drawing.Point(81, 76);
+            this.txt_MovieName.Location = new System.Drawing.Point(74, 76);
             this.txt_MovieName.Name = "txt_MovieName";
-            this.txt_MovieName.Size = new System.Drawing.Size(100, 20);
+            this.txt_MovieName.Size = new System.Drawing.Size(114, 20);
             this.txt_MovieName.TabIndex = 99;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(89, 161);
+            this.label9.Font = new System.Drawing.Font("Tw Cen MT", 15F);
+            this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label9.Location = new System.Drawing.Point(107, 156);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(31, 13);
+            this.label9.Size = new System.Drawing.Size(49, 23);
             this.label9.TabIndex = 98;
             this.label9.Text = "Price";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(89, 113);
+            this.label8.Font = new System.Drawing.Font("Tw Cen MT", 15F);
+            this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label8.Location = new System.Drawing.Point(103, 105);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(34, 13);
+            this.label8.Size = new System.Drawing.Size(53, 23);
             this.label8.TabIndex = 97;
             this.label8.Text = "Seats";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(98, 60);
+            this.label7.Font = new System.Drawing.Font("Tw Cen MT", 15F);
+            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label7.Location = new System.Drawing.Point(77, 50);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(67, 13);
+            this.label7.Size = new System.Drawing.Size(111, 23);
             this.label7.TabIndex = 96;
             this.label7.Text = "Movie Name";
             // 
@@ -765,36 +775,28 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(284, 321);
+            this.label5.Font = new System.Drawing.Font("Tw Cen MT", 12F);
+            this.label5.Location = new System.Drawing.Point(270, 321);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 13);
+            this.label5.Size = new System.Drawing.Size(103, 19);
             this.label5.TabIndex = 148;
             this.label5.Text = "BOOKED SEAT";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(456, 321);
+            this.label6.Font = new System.Drawing.Font("Tw Cen MT", 12F);
+            this.label6.Location = new System.Drawing.Point(473, 321);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 13);
+            this.label6.Size = new System.Drawing.Size(116, 19);
             this.label6.TabIndex = 149;
             this.label6.Text = "AVAILABLE SEAT";
-            // 
-            // Theather
-            // 
-            this.Theather.AutoSize = true;
-            this.Theather.Location = new System.Drawing.Point(284, 18);
-            this.Theather.Name = "Theather";
-            this.Theather.Size = new System.Drawing.Size(50, 13);
-            this.Theather.TabIndex = 103;
-            this.Theather.Text = "Theather";
             // 
             // FrmSeats
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(954, 372);
-            this.Controls.Add(this.Theather);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button36);
@@ -841,6 +843,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "FrmSeats";
+            this.Text = "Form Book Seat";
             this.Load += new System.EventHandler(this.Cinema_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -905,6 +908,5 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label Theather;
     }
 }
