@@ -44,7 +44,7 @@ namespace CN_Main
                 pictureBox6,pictureBox7,pictureBox8};
 
             DBConnection cla = new DBConnection();
-            DataTable tab = cla.table_get_data("select * from Movies");
+            DataTable tab = cla.table_get_data("select * from Movies where isreleased=1");
 
             for (int i = 0; i < tab.Rows.Count; i++)
             {

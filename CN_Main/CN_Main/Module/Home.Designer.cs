@@ -93,9 +93,9 @@
             // 
             this.mtitle4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.mtitle4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mtitle4.Location = new System.Drawing.Point(599, 397);
+            this.mtitle4.Location = new System.Drawing.Point(599, 376);
             this.mtitle4.Name = "mtitle4";
-            this.mtitle4.Size = new System.Drawing.Size(130, 14);
+            this.mtitle4.Size = new System.Drawing.Size(130, 20);
             this.mtitle4.TabIndex = 23;
             this.mtitle4.Text = "                                           ";
             // 
@@ -103,9 +103,9 @@
             // 
             this.mtitle3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.mtitle3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mtitle3.Location = new System.Drawing.Point(411, 397);
+            this.mtitle3.Location = new System.Drawing.Point(430, 376);
             this.mtitle3.Name = "mtitle3";
-            this.mtitle3.Size = new System.Drawing.Size(130, 14);
+            this.mtitle3.Size = new System.Drawing.Size(130, 20);
             this.mtitle3.TabIndex = 18;
             this.mtitle3.Text = "                                           ";
             // 
@@ -113,9 +113,9 @@
             // 
             this.mtitle2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.mtitle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mtitle2.Location = new System.Drawing.Point(233, 397);
+            this.mtitle2.Location = new System.Drawing.Point(242, 376);
             this.mtitle2.Name = "mtitle2";
-            this.mtitle2.Size = new System.Drawing.Size(130, 14);
+            this.mtitle2.Size = new System.Drawing.Size(130, 20);
             this.mtitle2.TabIndex = 17;
             this.mtitle2.Text = "                                           ";
             // 
@@ -123,9 +123,9 @@
             // 
             this.mtitle1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.mtitle1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mtitle1.Location = new System.Drawing.Point(56, 397);
+            this.mtitle1.Location = new System.Drawing.Point(56, 376);
             this.mtitle1.Name = "mtitle1";
-            this.mtitle1.Size = new System.Drawing.Size(130, 14);
+            this.mtitle1.Size = new System.Drawing.Size(130, 20);
             this.mtitle1.TabIndex = 16;
             this.mtitle1.Text = "                                           ";
             // 
@@ -133,7 +133,7 @@
             // 
             this.subpic4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.subpic4.InitialImage = ((System.Drawing.Image)(resources.GetObject("subpic4.InitialImage")));
-            this.subpic4.Location = new System.Drawing.Point(599, 254);
+            this.subpic4.Location = new System.Drawing.Point(599, 233);
             this.subpic4.Name = "subpic4";
             this.subpic4.Size = new System.Drawing.Size(130, 140);
             this.subpic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -144,7 +144,7 @@
             // 
             this.subpic3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.subpic3.InitialImage = ((System.Drawing.Image)(resources.GetObject("subpic3.InitialImage")));
-            this.subpic3.Location = new System.Drawing.Point(412, 254);
+            this.subpic3.Location = new System.Drawing.Point(431, 233);
             this.subpic3.Name = "subpic3";
             this.subpic3.Size = new System.Drawing.Size(130, 140);
             this.subpic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -155,7 +155,7 @@
             // 
             this.subpic2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.subpic2.InitialImage = ((System.Drawing.Image)(resources.GetObject("subpic2.InitialImage")));
-            this.subpic2.Location = new System.Drawing.Point(234, 254);
+            this.subpic2.Location = new System.Drawing.Point(243, 233);
             this.subpic2.Name = "subpic2";
             this.subpic2.Size = new System.Drawing.Size(130, 140);
             this.subpic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -166,7 +166,7 @@
             // 
             this.subpic1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.subpic1.InitialImage = ((System.Drawing.Image)(resources.GetObject("subpic1.InitialImage")));
-            this.subpic1.Location = new System.Drawing.Point(57, 254);
+            this.subpic1.Location = new System.Drawing.Point(57, 233);
             this.subpic1.Name = "subpic1";
             this.subpic1.Size = new System.Drawing.Size(130, 140);
             this.subpic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -178,7 +178,7 @@
             this.slidepic3.InitialImage = ((System.Drawing.Image)(resources.GetObject("slidepic3.InitialImage")));
             this.slidepic3.Location = new System.Drawing.Point(57, 48);
             this.slidepic3.Name = "slidepic3";
-            this.slidepic3.Size = new System.Drawing.Size(672, 200);
+            this.slidepic3.Size = new System.Drawing.Size(672, 179);
             this.slidepic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slidepic3.TabIndex = 21;
             this.slidepic3.TabStop = false;
@@ -188,7 +188,7 @@
             this.slidepic2.InitialImage = ((System.Drawing.Image)(resources.GetObject("slidepic2.InitialImage")));
             this.slidepic2.Location = new System.Drawing.Point(57, 48);
             this.slidepic2.Name = "slidepic2";
-            this.slidepic2.Size = new System.Drawing.Size(672, 200);
+            this.slidepic2.Size = new System.Drawing.Size(672, 179);
             this.slidepic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slidepic2.TabIndex = 20;
             this.slidepic2.TabStop = false;
@@ -198,7 +198,7 @@
             this.slideshowpic1.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshowpic1.InitialImage")));
             this.slideshowpic1.Location = new System.Drawing.Point(57, 48);
             this.slideshowpic1.Name = "slideshowpic1";
-            this.slideshowpic1.Size = new System.Drawing.Size(672, 200);
+            this.slideshowpic1.Size = new System.Drawing.Size(672, 179);
             this.slideshowpic1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slideshowpic1.TabIndex = 10;
             this.slideshowpic1.TabStop = false;
@@ -208,7 +208,7 @@
             this.slidepic4.InitialImage = ((System.Drawing.Image)(resources.GetObject("slidepic4.InitialImage")));
             this.slidepic4.Location = new System.Drawing.Point(57, 48);
             this.slidepic4.Name = "slidepic4";
-            this.slidepic4.Size = new System.Drawing.Size(672, 200);
+            this.slidepic4.Size = new System.Drawing.Size(672, 179);
             this.slidepic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.slidepic4.TabIndex = 22;
             this.slidepic4.TabStop = false;

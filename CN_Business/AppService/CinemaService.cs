@@ -230,7 +230,7 @@ namespace CN_Business
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
-                query = string.Format(@"select movie_name,movie_image from movies where  isreleased=0 and movie_release <= '" + DateTime.Today.ToString("yyyy-MM-dd") + "' order by(movie_release) desc");
+                query = string.Format(@"select movie_name,movie_image from movies where  isreleased=0 and movie_release <= '" + DateTime.Today.ToString("yyyy-MM-dd") + "' order by(movie_release)");
                 adapter = new MySqlDataAdapter(query, conn);
                 dataset.Clear();
                 adapter.Fill(dataset);
