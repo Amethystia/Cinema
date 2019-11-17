@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppService\BookingService.cs" />
     <Compile Include="AppService\CinemaService.cs" />
     <Compile Include="CRUD\User_CRUD.cs" />
     <Compile Include="AppService\LogInService.cs" />

@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMDI));
             this.Panel_Side = new System.Windows.Forms.Panel();
+            this.btn_Employee = new System.Windows.Forms.Button();
             this.Panel_SideBar = new System.Windows.Forms.Panel();
             this.button14 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.btn_Transaction = new System.Windows.Forms.Button();
+            this.btn_GroupBooking = new System.Windows.Forms.Button();
             this.btn_Promotion = new System.Windows.Forms.Button();
-            this.btn_Cinemas = new System.Windows.Forms.Button();
             this.btn_Movies = new System.Windows.Forms.Button();
             this.btn_Home = new System.Windows.Forms.Button();
             this.Panel_Container = new System.Windows.Forms.Panel();
@@ -46,10 +46,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btn_Close = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.btn_logout = new System.Windows.Forms.Button();
             this.Panel_Side.SuspendLayout();
             this.Panel_Logo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -58,12 +55,13 @@
             // Panel_Side
             // 
             this.Panel_Side.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.Panel_Side.Controls.Add(this.btn_logout);
+            this.Panel_Side.Controls.Add(this.btn_Employee);
             this.Panel_Side.Controls.Add(this.Panel_SideBar);
             this.Panel_Side.Controls.Add(this.button14);
-            this.Panel_Side.Controls.Add(this.button7);
-            this.Panel_Side.Controls.Add(this.button6);
+            this.Panel_Side.Controls.Add(this.btn_Transaction);
+            this.Panel_Side.Controls.Add(this.btn_GroupBooking);
             this.Panel_Side.Controls.Add(this.btn_Promotion);
-            this.Panel_Side.Controls.Add(this.btn_Cinemas);
             this.Panel_Side.Controls.Add(this.btn_Movies);
             this.Panel_Side.Controls.Add(this.btn_Home);
             this.Panel_Side.Dock = System.Windows.Forms.DockStyle.Left;
@@ -72,10 +70,27 @@
             this.Panel_Side.Size = new System.Drawing.Size(210, 557);
             this.Panel_Side.TabIndex = 0;
             // 
+            // btn_Employee
+            // 
+            this.btn_Employee.FlatAppearance.BorderSize = 0;
+            this.btn_Employee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Employee.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Employee.ForeColor = System.Drawing.Color.White;
+            this.btn_Employee.Image = ((System.Drawing.Image)(resources.GetObject("btn_Employee.Image")));
+            this.btn_Employee.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Employee.Location = new System.Drawing.Point(10, 325);
+            this.btn_Employee.Name = "btn_Employee";
+            this.btn_Employee.Size = new System.Drawing.Size(197, 54);
+            this.btn_Employee.TabIndex = 14;
+            this.btn_Employee.Text = "       Employee";
+            this.btn_Employee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Employee.UseVisualStyleBackColor = true;
+            this.btn_Employee.Click += new System.EventHandler(this.btn_Employee_Click);
+            // 
             // Panel_SideBar
             // 
             this.Panel_SideBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(18)))), ((int)(((byte)(36)))));
-            this.Panel_SideBar.Location = new System.Drawing.Point(0, 72);
+            this.Panel_SideBar.Location = new System.Drawing.Point(0, 75);
             this.Panel_SideBar.Name = "Panel_SideBar";
             this.Panel_SideBar.Size = new System.Drawing.Size(10, 54);
             this.Panel_SideBar.TabIndex = 13;
@@ -91,41 +106,42 @@
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(36, 34);
             this.button14.TabIndex = 12;
-            this.button14.Text = "?";
             this.button14.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button14.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // btn_Transaction
             // 
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(8, 350);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(197, 54);
-            this.button7.TabIndex = 5;
-            this.button7.Text = "       Employee";
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btn_Transaction.FlatAppearance.BorderSize = 0;
+            this.btn_Transaction.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Transaction.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Transaction.ForeColor = System.Drawing.Color.White;
+            this.btn_Transaction.Image = ((System.Drawing.Image)(resources.GetObject("btn_Transaction.Image")));
+            this.btn_Transaction.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_Transaction.Location = new System.Drawing.Point(10, 275);
+            this.btn_Transaction.Name = "btn_Transaction";
+            this.btn_Transaction.Size = new System.Drawing.Size(197, 54);
+            this.btn_Transaction.TabIndex = 5;
+            this.btn_Transaction.Text = "       My Transaction";
+            this.btn_Transaction.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_Transaction.UseVisualStyleBackColor = true;
+            this.btn_Transaction.Click += new System.EventHandler(this.btn_Transaction_Click);
             // 
-            // button6
+            // btn_GroupBooking
             // 
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(8, 290);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(197, 54);
-            this.button6.TabIndex = 6;
-            this.button6.Text = "       Group Booking";
-            this.button6.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btn_GroupBooking.FlatAppearance.BorderSize = 0;
+            this.btn_GroupBooking.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_GroupBooking.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_GroupBooking.ForeColor = System.Drawing.Color.White;
+            this.btn_GroupBooking.Image = ((System.Drawing.Image)(resources.GetObject("btn_GroupBooking.Image")));
+            this.btn_GroupBooking.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btn_GroupBooking.Location = new System.Drawing.Point(10, 175);
+            this.btn_GroupBooking.Name = "btn_GroupBooking";
+            this.btn_GroupBooking.Size = new System.Drawing.Size(197, 54);
+            this.btn_GroupBooking.TabIndex = 6;
+            this.btn_GroupBooking.Text = "       Group Booking";
+            this.btn_GroupBooking.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btn_GroupBooking.UseVisualStyleBackColor = true;
+            this.btn_GroupBooking.Click += new System.EventHandler(this.btn_GroupBooking_Click);
             // 
             // btn_Promotion
             // 
@@ -135,7 +151,7 @@
             this.btn_Promotion.ForeColor = System.Drawing.Color.White;
             this.btn_Promotion.Image = ((System.Drawing.Image)(resources.GetObject("btn_Promotion.Image")));
             this.btn_Promotion.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Promotion.Location = new System.Drawing.Point(10, 235);
+            this.btn_Promotion.Location = new System.Drawing.Point(10, 225);
             this.btn_Promotion.Name = "btn_Promotion";
             this.btn_Promotion.Size = new System.Drawing.Size(197, 54);
             this.btn_Promotion.TabIndex = 7;
@@ -143,23 +159,6 @@
             this.btn_Promotion.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_Promotion.UseVisualStyleBackColor = true;
             this.btn_Promotion.Click += new System.EventHandler(this.btn_Promotion_Click);
-            // 
-            // btn_Cinemas
-            // 
-            this.btn_Cinemas.FlatAppearance.BorderSize = 0;
-            this.btn_Cinemas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Cinemas.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Cinemas.ForeColor = System.Drawing.Color.White;
-            this.btn_Cinemas.Image = ((System.Drawing.Image)(resources.GetObject("btn_Cinemas.Image")));
-            this.btn_Cinemas.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Cinemas.Location = new System.Drawing.Point(10, 180);
-            this.btn_Cinemas.Name = "btn_Cinemas";
-            this.btn_Cinemas.Size = new System.Drawing.Size(197, 54);
-            this.btn_Cinemas.TabIndex = 9;
-            this.btn_Cinemas.Text = "       Cinemas";
-            this.btn_Cinemas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btn_Cinemas.UseVisualStyleBackColor = true;
-            this.btn_Cinemas.Click += new System.EventHandler(this.btn_Cinemas_Click);
             // 
             // btn_Movies
             // 
@@ -169,7 +168,7 @@
             this.btn_Movies.ForeColor = System.Drawing.Color.White;
             this.btn_Movies.Image = ((System.Drawing.Image)(resources.GetObject("btn_Movies.Image")));
             this.btn_Movies.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Movies.Location = new System.Drawing.Point(10, 126);
+            this.btn_Movies.Location = new System.Drawing.Point(10, 125);
             this.btn_Movies.Name = "btn_Movies";
             this.btn_Movies.Size = new System.Drawing.Size(197, 54);
             this.btn_Movies.TabIndex = 10;
@@ -186,7 +185,7 @@
             this.btn_Home.ForeColor = System.Drawing.Color.White;
             this.btn_Home.Image = ((System.Drawing.Image)(resources.GetObject("btn_Home.Image")));
             this.btn_Home.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_Home.Location = new System.Drawing.Point(10, 72);
+            this.btn_Home.Location = new System.Drawing.Point(10, 75);
             this.btn_Home.Name = "btn_Home";
             this.btn_Home.Size = new System.Drawing.Size(197, 54);
             this.btn_Home.TabIndex = 11;
@@ -281,65 +280,19 @@
             this.btn_Close.UseVisualStyleBackColor = true;
             this.btn_Close.Click += new System.EventHandler(this.btn_Close_Click);
             // 
-            // button12
+            // btn_logout
             // 
-            this.button12.FlatAppearance.BorderSize = 0;
-            this.button12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button12.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button12.ForeColor = System.Drawing.Color.White;
-            this.button12.Image = ((System.Drawing.Image)(resources.GetObject("button12.Image")));
-            this.button12.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button12.Location = new System.Drawing.Point(965, 12);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(32, 35);
-            this.button12.TabIndex = 7;
-            this.button12.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button12.UseVisualStyleBackColor = true;
-            // 
-            // button11
-            // 
-            this.button11.FlatAppearance.BorderSize = 0;
-            this.button11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button11.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button11.ForeColor = System.Drawing.Color.White;
-            this.button11.Image = ((System.Drawing.Image)(resources.GetObject("button11.Image")));
-            this.button11.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button11.Location = new System.Drawing.Point(936, 13);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(32, 35);
-            this.button11.TabIndex = 8;
-            this.button11.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button11.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.FlatAppearance.BorderSize = 0;
-            this.button10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button10.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ForeColor = System.Drawing.Color.White;
-            this.button10.Image = ((System.Drawing.Image)(resources.GetObject("button10.Image")));
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(825, 12);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(36, 34);
-            this.button10.TabIndex = 9;
-            this.button10.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button10.UseVisualStyleBackColor = true;
-            // 
-            // button8
-            // 
-            this.button8.FlatAppearance.BorderSize = 0;
-            this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button8.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button8.Location = new System.Drawing.Point(791, 12);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(36, 34);
-            this.button8.TabIndex = 11;
-            this.button8.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button8.UseVisualStyleBackColor = true;
+            this.btn_logout.BackColor = System.Drawing.Color.Red;
+            this.btn_logout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_logout.Font = new System.Drawing.Font("Tw Cen MT", 15F);
+            this.btn_logout.ForeColor = System.Drawing.SystemColors.Control;
+            this.btn_logout.Location = new System.Drawing.Point(109, 514);
+            this.btn_logout.Name = "btn_logout";
+            this.btn_logout.Size = new System.Drawing.Size(101, 43);
+            this.btn_logout.TabIndex = 0;
+            this.btn_logout.Text = "LOG OUT";
+            this.btn_logout.UseVisualStyleBackColor = false;
+            this.btn_logout.Click += new System.EventHandler(this.btn_logout_Click);
             // 
             // FrmMDI
             // 
@@ -349,14 +302,11 @@
             this.Controls.Add(this.Panel_Container);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.btn_Close);
-            this.Controls.Add(this.button12);
-            this.Controls.Add(this.button11);
-            this.Controls.Add(this.button10);
-            this.Controls.Add(this.button8);
             this.Controls.Add(this.Panel_Logo);
             this.Controls.Add(this.Panel_Top);
             this.Controls.Add(this.Panel_Side);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmMDI";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
@@ -379,19 +329,16 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button btn_Transaction;
         private System.Windows.Forms.Button btn_Promotion;
-        private System.Windows.Forms.Button btn_Cinemas;
         private System.Windows.Forms.Button btn_Movies;
         private System.Windows.Forms.Button btn_Home;
         private System.Windows.Forms.Panel Panel_SideBar;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button btn_Close;
-        private System.Windows.Forms.Button button12;
-        private System.Windows.Forms.Button button11;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Panel Panel_Container;
+        private System.Windows.Forms.Button btn_GroupBooking;
+        private System.Windows.Forms.Button btn_Employee;
+        private System.Windows.Forms.Button btn_logout;
     }
 }

@@ -139,7 +139,7 @@ namespace CN_Main
             movie_name = FrmMovies.list_movie_name[get_number].ToString();
             theather = datasettheather.Tables[0].Rows[CB_Theather.SelectedIndex][0].ToString();
 
-            FrmSeats frm = new FrmSeats();
+            FrmSeats frm = new FrmSeats(this);
             frm.Show();
         }
     }

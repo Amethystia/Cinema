@@ -31,10 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmHome));
             this.homegrpbx = new System.Windows.Forms.GroupBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.mtitle4 = new System.Windows.Forms.Label();
             this.mtitle3 = new System.Windows.Forms.Label();
             this.mtitle2 = new System.Windows.Forms.Label();
             this.mtitle1 = new System.Windows.Forms.Label();
-            this.swallbtn = new System.Windows.Forms.Button();
             this.subpic4 = new System.Windows.Forms.PictureBox();
             this.subpic3 = new System.Windows.Forms.PictureBox();
             this.subpic2 = new System.Windows.Forms.PictureBox();
@@ -44,8 +45,6 @@
             this.slideshowpic1 = new System.Windows.Forms.PictureBox();
             this.slidepic4 = new System.Windows.Forms.PictureBox();
             this.slidetimer = new System.Windows.Forms.Timer(this.components);
-            this.mtitle4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.homegrpbx.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.subpic4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.subpic3)).BeginInit();
@@ -65,7 +64,6 @@
             this.homegrpbx.Controls.Add(this.mtitle3);
             this.homegrpbx.Controls.Add(this.mtitle2);
             this.homegrpbx.Controls.Add(this.mtitle1);
-            this.homegrpbx.Controls.Add(this.swallbtn);
             this.homegrpbx.Controls.Add(this.subpic4);
             this.homegrpbx.Controls.Add(this.subpic3);
             this.homegrpbx.Controls.Add(this.subpic2);
@@ -81,11 +79,31 @@
             this.homegrpbx.TabIndex = 1;
             this.homegrpbx.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(53, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(181, 24);
+            this.label1.TabIndex = 24;
+            this.label1.Text = "COMING SOON!!";
+            // 
+            // mtitle4
+            // 
+            this.mtitle4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.mtitle4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.mtitle4.Location = new System.Drawing.Point(599, 397);
+            this.mtitle4.Name = "mtitle4";
+            this.mtitle4.Size = new System.Drawing.Size(130, 14);
+            this.mtitle4.TabIndex = 23;
+            this.mtitle4.Text = "                                           ";
+            // 
             // mtitle3
             // 
             this.mtitle3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.mtitle3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mtitle3.Location = new System.Drawing.Point(370, 397);
+            this.mtitle3.Location = new System.Drawing.Point(411, 397);
             this.mtitle3.Name = "mtitle3";
             this.mtitle3.Size = new System.Drawing.Size(130, 14);
             this.mtitle3.TabIndex = 18;
@@ -95,7 +113,7 @@
             // 
             this.mtitle2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.mtitle2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mtitle2.Location = new System.Drawing.Point(213, 397);
+            this.mtitle2.Location = new System.Drawing.Point(233, 397);
             this.mtitle2.Name = "mtitle2";
             this.mtitle2.Size = new System.Drawing.Size(130, 14);
             this.mtitle2.TabIndex = 17;
@@ -111,23 +129,11 @@
             this.mtitle1.TabIndex = 16;
             this.mtitle1.Text = "                                           ";
             // 
-            // swallbtn
-            // 
-            this.swallbtn.BackColor = System.Drawing.Color.Black;
-            this.swallbtn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.swallbtn.Location = new System.Drawing.Point(682, 254);
-            this.swallbtn.Name = "swallbtn";
-            this.swallbtn.Size = new System.Drawing.Size(47, 140);
-            this.swallbtn.TabIndex = 15;
-            this.swallbtn.Text = "Show More";
-            this.swallbtn.UseVisualStyleBackColor = false;
-            this.swallbtn.Click += new System.EventHandler(this.swallbtn_Click);
-            // 
             // subpic4
             // 
             this.subpic4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.subpic4.InitialImage = ((System.Drawing.Image)(resources.GetObject("subpic4.InitialImage")));
-            this.subpic4.Location = new System.Drawing.Point(528, 254);
+            this.subpic4.Location = new System.Drawing.Point(599, 254);
             this.subpic4.Name = "subpic4";
             this.subpic4.Size = new System.Drawing.Size(130, 140);
             this.subpic4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -138,7 +144,7 @@
             // 
             this.subpic3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.subpic3.InitialImage = ((System.Drawing.Image)(resources.GetObject("subpic3.InitialImage")));
-            this.subpic3.Location = new System.Drawing.Point(371, 254);
+            this.subpic3.Location = new System.Drawing.Point(412, 254);
             this.subpic3.Name = "subpic3";
             this.subpic3.Size = new System.Drawing.Size(130, 140);
             this.subpic3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -149,7 +155,7 @@
             // 
             this.subpic2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.subpic2.InitialImage = ((System.Drawing.Image)(resources.GetObject("subpic2.InitialImage")));
-            this.subpic2.Location = new System.Drawing.Point(214, 254);
+            this.subpic2.Location = new System.Drawing.Point(234, 254);
             this.subpic2.Name = "subpic2";
             this.subpic2.Size = new System.Drawing.Size(130, 140);
             this.subpic2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -211,26 +217,6 @@
             // 
             this.slidetimer.Tick += new System.EventHandler(this.slidetimer_Tick);
             // 
-            // mtitle4
-            // 
-            this.mtitle4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.mtitle4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mtitle4.Location = new System.Drawing.Point(528, 397);
-            this.mtitle4.Name = "mtitle4";
-            this.mtitle4.Size = new System.Drawing.Size(130, 14);
-            this.mtitle4.TabIndex = 23;
-            this.mtitle4.Text = "                                           ";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(53, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(181, 24);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "COMING SOON!!";
-            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -261,7 +247,6 @@
         private System.Windows.Forms.Label mtitle3;
         private System.Windows.Forms.Label mtitle2;
         private System.Windows.Forms.Label mtitle1;
-        private System.Windows.Forms.Button swallbtn;
         private System.Windows.Forms.PictureBox subpic4;
         private System.Windows.Forms.PictureBox subpic3;
         private System.Windows.Forms.PictureBox subpic2;

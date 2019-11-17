@@ -43,6 +43,41 @@ namespace CN_Business
             conn.Close();
             return null;
         }
+
+        public DataSet get_class_data(DataSet ds, string cinema_name)
+        {
+            DataSet datasetclass = new DataSet();
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+                query = string.Format(@"select DISTINCT class from cinemas where cinema_name= '" + cinema_name + "'");
+                adapter = new MySqlDataAdapter(query, conn);
+                adapter.Fill(datasetclass);
+                conn.Close();
+                return datasetclass;
+            }
+
+            conn.Close();
+            return null;
+        }
+
+        public string get_price_data(string result, string classes,string Daycode)
+        {
+            DataSet datasetprice = new DataSet();
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+                query = string.Format(@"select DISTINCT price from ticket where type= '" + classes + "'and DayCode='" + Daycode + "'");
+                adapter = new MySqlDataAdapter(query, conn);
+                adapter.Fill(datasetprice);
+                conn.Close();
+                result = datasetprice.Tables[0].Rows[0]["price"].ToString();
+                return result;
+            }
+
+            conn.Close();
+            return null;
+        }
         public DataSet get_moviedetail_data(DataSet ds, string movie_name)
         {
             DataSet DataSetMovie = new DataSet();
@@ -174,6 +209,22 @@ namespace CN_Business
             conn.Close();
             return null;
         }
+
+        public DataSet get_promo_slide_data(DataSet dataset)
+        {
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+                query = string.Format(@"select DISTINCT picture_url,name from promotion");
+                adapter = new MySqlDataAdapter(query, conn);
+                dataset.Clear();
+                adapter.Fill(dataset);
+                conn.Close();
+                return dataset;
+            }
+            conn.Close();
+            return null;
+        }
         public DataSet get_release_data(DataSet dataset)
         {
             if (conn.State == ConnectionState.Closed)
@@ -204,12 +255,42 @@ namespace CN_Business
             conn.Close();
             return null;
         }
-        public DataTable get_bookedtickets_data(DataTable dataTable, string cinema_id)
+        public DataTable get_booked_data(DataTable dataTable, string theather, string cinema_name, string movie_name, string time)
         {
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
-                query = string.Format(@"select seat_number from bookedtickets where cinema_id = '" + cinema_id + "'");
+                query = string.Format(@"select seat_number from bookedtickets where theather = '" + theather + "'and cinema_name='" + cinema_name + "'and movie_name='" + movie_name + "'and time='" + time + "'");
+                adapter = new MySqlDataAdapter(query, conn);
+                dataTable.Clear();
+                adapter.Fill(dataTable);
+                conn.Close();
+                return dataTable;
+            }
+            conn.Close();
+            return null;
+        }
+        public DataTable get_bookedtickets_data(DataTable dataTable,string username)
+        {
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+                query = string.Format(@"select `cinema_name`,`theather`,`movie_name`,`time`,`seat_number`,`price` from bookedtickets  where book_by = '"+username+"'");
+                adapter = new MySqlDataAdapter(query, conn);
+                dataTable.Clear();
+                adapter.Fill(dataTable);
+                conn.Close();
+                return dataTable;
+            }
+            conn.Close();
+            return null;
+        }
+        public DataTable get_bookingcinema_data(DataTable dataTable,string username)
+        {
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+                query = string.Format(@"select `isapprove`,`cinema`,`theather`,`movie_name`,`class`,`date`,`price` from bookingcinema where requestor = '" + username + "'order by `date`,`isapprove` desc");
                 adapter = new MySqlDataAdapter(query, conn);
                 dataTable.Clear();
                 adapter.Fill(dataTable);

@@ -28,7 +28,6 @@ namespace CN_Main
             txt_Sex.Text = usr._Sex;
             dtp_BirthDate.Value = usr._BirthDate;
             rtb_Address.Text = usr._Address;
-            cb_IsActive.Checked = usr._IsActive;
         }
 
         private void FRM2BL()
@@ -40,7 +39,6 @@ namespace CN_Main
             usr._Sex = txt_Sex.Text;
             usr._BirthDate = dtp_BirthDate.Value;
             usr._Address = rtb_Address.Text;
-            usr._IsActive = cb_IsActive.Checked;
         }
 
         private bool PerformValidation(GroupBox gb)

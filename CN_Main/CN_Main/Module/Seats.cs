@@ -12,10 +12,18 @@ namespace CN_Main
     {
         DataTable dataTable = new DataTable();
         DataTable salesTable = new DataTable();
-        public FrmSeats()
+        public FrmMovieDetails  md;
+        string result;
+
+
+        public FrmSeats(FrmMovieDetails InheritMDi)
         {
             InitializeComponent();
+            md = InheritMDi;
+            loadTicketData();
         }
+
+      
 
         private void lounges_click(object sender, EventArgs e)
         {
@@ -29,8 +37,8 @@ namespace CN_Main
                 if (sender is Button)
                 {
                     btn = sender as Button;
-                    Txt_Theather.Clear();
-                    Txt_Theather.SelectedText = btn.Text;
+                    Txt_Seats.Clear();
+                    Txt_Seats.SelectedText = btn.Text;
                 }
             }
             else
@@ -38,8 +46,8 @@ namespace CN_Main
                 if (sender is Button)
                 {
                     btn = sender as Button;
-                    Txt_Theather.Clear();
-                    Txt_Theather.SelectedText = btn.Text;
+                    Txt_Seats.Clear();
+                    Txt_Seats.SelectedText = btn.Text;
                 }
             }
         }
@@ -48,14 +56,13 @@ namespace CN_Main
         Label[] seat_number_label = new Label[4];
 
         int seat_number = 1;
-        static string student, normal;
 
         ArrayList seats = new ArrayList();
         int full_seat;
 
         private void Cinema_Load(object sender, EventArgs e)
         {
-            txt_CustomerName.Enabled = txt_MovieName.Enabled = Txt_Theather.Enabled = false;
+            txt_ticket.Enabled = txt_MovieName.Enabled = Txt_Seats.Enabled = false;
             seat = new Button[] { button1, button2, button3, button4, button5, button6, button7, button8, button9, button10,
             button11, button12, button13, button14, button15, button16, button17, button18, button19, button20,
             button21, button22, button23, button24, button25, button26, button27, button28, button29, button30,
@@ -65,7 +72,7 @@ namespace CN_Main
 
             txt_MovieName.Text = FrmMovieDetails.movie_name;
             string theather = FrmMovieDetails.theather;
-            Txt_Theather.Text = theather;
+            Txt_Seats.Text = theather;
 
             CinemaService cinemaService = new CinemaService();
             cinemaService.get_seats_data(dataTable, theather);
@@ -85,7 +92,7 @@ namespace CN_Main
             full_seat = 0;
             CinemaService cinemaService = new CinemaService();
             string cinemaid = FrmMovieDetails.cinemaid;
-            salesTable = cinemaService.get_seats_data(salesTable, cinemaid);
+            salesTable = cinemaService.get_booked_data(salesTable, md.CB_Theather.Text,md.CB_Cinemas.Text,txt_MovieName.Text,md.CB_Time.Text);
 
             if (salesTable.Rows.Count > 0)
             {
@@ -147,14 +154,37 @@ namespace CN_Main
                 seat_number_label[2].Visible = true;
             }
         }
-   private void btn_BuyTickets_Click(object sender, EventArgs e)
-        {
-            //bool turn = cla.query_commad("insert into MovieTicketPrice(movie_name,movie_seat_number,movie_customer_name,movie_ticket_price,movie_lounge,movie_customer_date) values('" + bunifuTextbox1.text + "','" + bunifuTextbox2.text + "','" + bunifuTextbox3.text + "','" + normal + "','" + bunifuCustomLabel4.Text + "','" + DateTime.Now.ToShortDateString() + "')");
 
-            //if (turn)
-            //{
-            //    MessageBox.Show("Ticket Sold Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //}
+        private void loadTicketData()
+        {
+            BookingService SS = new BookingService();
+            string wk = DateTime.Today.DayOfWeek.ToString();
+            string Daycode;
+            if (wk != "Saturday" && wk != "Sunday")
+            {
+                Daycode = "1";
+                result = SS.get_ticket_data(result, md.CB_Class.Text, Daycode);
+                txt_ticket.Text = result;
+            }
+            else
+            {
+                Daycode = "2";
+                result = SS.get_ticket_data(result, md.CB_Class.Text, Daycode);
+                txt_ticket.Text = result;
+            }
+
+        }
+        private void btn_BuyTickets_Click(object sender, EventArgs e)
+        {
+            BookingService ss = new BookingService();
+            System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["FrmLogin"];
+            string username = ((FrmLogin)f).txt_UserName.Text;
+            bool result = ss.buytickets(username, md.CB_Cinemas.Text, md.CB_Theather.Text, txt_MovieName.Text, md.CB_Time.Text, Txt_Seats.Text, txt_ticket.Text);
+            if (result)
+            {
+                MessageBox.Show("Ticket Sold Successfully.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            sales_seat();
         }
 
     }

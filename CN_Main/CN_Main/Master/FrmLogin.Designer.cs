@@ -236,7 +236,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.TextBox txt_UserName;
+        public System.Windows.Forms.TextBox txt_UserName;
         private System.Windows.Forms.TextBox txt_Password;
         private System.Windows.Forms.Button btn_Login;
         private System.Windows.Forms.Button btn_Cancel;

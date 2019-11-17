@@ -41,7 +41,6 @@ C:\Cinema\CN_Business\bin\Debug\MySql.Data.dll
 C:\Cinema\CN_Business\bin\Debug\DM_Modeling.pdb
 C:\Cinema\CN_Business\bin\Debug\DM_Modeling.exe.config
 C:\Cinema\CN_Business\obj\Debug\CN_Business.csprojAssemblyReference.cache
-C:\Cinema\CN_Business\obj\Debug\CN_Business.csproj.CoreCompileInputs.cache
 C:\Cinema\CN_Business\obj\Debug\CN_Business.csproj.CopyComplete
 C:\Cinema\CN_Business\obj\Debug\GMES.Business.exe
 C:\Cinema\CN_Business\obj\Debug\GMES.Business.pdb

@@ -280,20 +280,20 @@
         private System.Windows.Forms.Button btn_back;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox CB_Class;
-        private System.Windows.Forms.ComboBox CB_Time;
+        public System.Windows.Forms.ComboBox CB_Class;
+        public System.Windows.Forms.ComboBox CB_Time;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.ComboBox CB_Cinemas;
+        public System.Windows.Forms.ComboBox CB_Cinemas;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.ComboBox CB_Theather;
+        public System.Windows.Forms.ComboBox CB_Theather;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox CB_Date;
+        public System.Windows.Forms.ComboBox CB_Date;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Button btn_book;
     }
 }

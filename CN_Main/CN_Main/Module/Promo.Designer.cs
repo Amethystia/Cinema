@@ -28,152 +28,135 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmPromo));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.slideshow3 = new System.Windows.Forms.PictureBox();
+            this.slideshow2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.slideshow1 = new System.Windows.Forms.PictureBox();
+            this.slideshow4 = new System.Windows.Forms.PictureBox();
+            this.slidetimer = new System.Windows.Forms.Timer(this.components);
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow4)).BeginInit();
             this.SuspendLayout();
             // 
-            // pictureBox1
+            // panel1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(484, 84);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(298, 244);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.panel1.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.panel1.Controls.Add(this.panel2);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(899, 450);
+            this.panel1.TabIndex = 23;
             // 
-            // button1
+            // panel2
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(41, 340);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(278, 48);
-            this.button1.TabIndex = 16;
-            this.button1.Text = "BOOK NOW";
-            this.button1.UseVisualStyleBackColor = false;
+            this.panel2.Controls.Add(this.slideshow1);
+            this.panel2.Controls.Add(this.slideshow2);
+            this.panel2.Controls.Add(this.slideshow3);
+            this.panel2.Controls.Add(this.slideshow4);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel2.Location = new System.Drawing.Point(0, 44);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(899, 406);
+            this.panel2.TabIndex = 0;
             // 
-            // label7
+            // slideshow3
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(35, 305);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(387, 23);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "With Unique multiplexes  in the country.";
+            this.slideshow3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.slideshow3.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshow3.InitialImage")));
+            this.slideshow3.Location = new System.Drawing.Point(0, 0);
+            this.slideshow3.Name = "slideshow3";
+            this.slideshow3.Size = new System.Drawing.Size(899, 406);
+            this.slideshow3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.slideshow3.TabIndex = 23;
+            this.slideshow3.TabStop = false;
             // 
-            // label6
+            // slideshow2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(37, 277);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(425, 23);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "in Singapore, It is the largest cinema chain ";
+            this.slideshow2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.slideshow2.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshow2.InitialImage")));
+            this.slideshow2.Location = new System.Drawing.Point(0, 0);
+            this.slideshow2.Name = "slideshow2";
+            this.slideshow2.Size = new System.Drawing.Size(899, 406);
+            this.slideshow2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.slideshow2.TabIndex = 24;
+            this.slideshow2.TabStop = false;
             // 
-            // label5
+            // pictureBox2
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(36, 250);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(462, 23);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Scene It Cinema is a cinema operator based  ";
+            this.pictureBox2.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.InitialImage")));
+            this.pictureBox2.Location = new System.Drawing.Point(-65, 0);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(875, 332);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 25;
+            this.pictureBox2.TabStop = false;
             // 
-            // label4
+            // slideshow1
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 27F);
-            this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(29, 207);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(423, 43);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "From Monday to Friday";
+            this.slideshow1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.slideshow1.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshow1.InitialImage")));
+            this.slideshow1.Location = new System.Drawing.Point(0, 0);
+            this.slideshow1.Name = "slideshow1";
+            this.slideshow1.Size = new System.Drawing.Size(899, 406);
+            this.slideshow1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.slideshow1.TabIndex = 26;
+            this.slideshow1.TabStop = false;
             // 
-            // label3
+            // slideshow4
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 38F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(27, 147);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(380, 60);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Only 2$/Ticket";
+            this.slideshow4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.slideshow4.InitialImage = ((System.Drawing.Image)(resources.GetObject("slideshow4.InitialImage")));
+            this.slideshow4.Location = new System.Drawing.Point(0, 0);
+            this.slideshow4.Name = "slideshow4";
+            this.slideshow4.Size = new System.Drawing.Size(899, 406);
+            this.slideshow4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.slideshow4.TabIndex = 27;
+            this.slideshow4.TabStop = false;
             // 
-            // label2
+            // slidetimer
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Elephant", 71.99999F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.YellowGreen;
-            this.label2.Location = new System.Drawing.Point(11, 30);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(397, 123);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Jurong";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.DarkOrange;
-            this.label1.Location = new System.Drawing.Point(43, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 22);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "SOFT OPENING!!";
+            this.slidetimer.Tick += new System.EventHandler(this.slidetimer_Tick);
             // 
             // FrmPromo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(899, 450);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmPromo";
             this.Text = "FormHome";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.Load += new System.EventHandler(this.FrmPromo_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.slideshow4)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox slideshow1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox slideshow2;
+        private System.Windows.Forms.PictureBox slideshow3;
+        private System.Windows.Forms.PictureBox slideshow4;
+        private System.Windows.Forms.Timer slidetimer;
     }
 }

@@ -16,7 +16,7 @@ namespace CN_Main
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmMDI());
+            Application.Run(new FrmLogin());
         }
     }
 }

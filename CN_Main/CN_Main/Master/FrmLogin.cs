@@ -12,64 +12,13 @@ namespace CN_Main
         public FrmLogin()
         {
             InitializeComponent();
+            txt_UserName.Text = null;
         }
         private void FrmLogin_Load(object sender, EventArgs e)
         {
-
-
-            //untuk load place holder waktu masuk form
-            LoadPlaceHolder();
         }
 
         #region TextBox
-        // seperti place holder gitu
-        private void LoadPlaceHolder()
-        {
-            
-            txt_UserName.GotFocus += new EventHandler(this.UNGotFocus);
-            txt_UserName.LostFocus += new EventHandler(this.UNLostFocus);
-            txt_Password.GotFocus += new EventHandler(this.PWDGotFocus);
-            txt_Password.LostFocus += new EventHandler(this.PWDLostFocus);
-        }
-        
-        public void UNGotFocus(object sender, EventArgs e)
-        {
-            TextBox UN = (TextBox)sender;
-            if (UN.Text == "User Name")
-            {
-                UN.Text = "";
-                UN.ForeColor = Color.Black;
-            }
-        }
-        public void UNLostFocus(object sender, EventArgs e)
-        {
-            TextBox UN = (TextBox)sender;
-            if (UN.Text == "")
-            {
-                UN.Text = "User Name";
-                UN.ForeColor = Color.LightGray;
-            }
-        }
-        public void PWDGotFocus(object sender, EventArgs e)
-        {
-            TextBox PWD = (TextBox)sender;
-            if (PWD.Text == "Password")
-            {
-                PWD.Text = "";
-                PWD.ForeColor = Color.Black;
-                txt_Password.UseSystemPasswordChar = true;
-            }
-        }
-        public void PWDLostFocus(object sender, EventArgs e)
-        {
-            TextBox PWD = (TextBox)sender;
-            if (PWD.Text == "")
-            {
-                PWD.Text = "Password";
-                PWD.ForeColor = Color.LightGray;
-            }
-        }
-        // untuk back to default
         private void clearTxt()
         {
             txt_UserName.Text = "User Name";
@@ -79,7 +28,6 @@ namespace CN_Main
       
         #endregion
 
-        #region BusinessLogic
     
 
         //validasi ada isi atau nga
@@ -100,7 +48,6 @@ namespace CN_Main
                 result = true;
             }
         }
-        #endregion BusinessLogic
 
 
         public void btn_Login_Click(object sender, EventArgs e)

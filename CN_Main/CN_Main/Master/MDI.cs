@@ -36,28 +36,45 @@ namespace CN_Main
 
         private void btn_Home_Click(object sender, EventArgs e)
         {
+            Panel_SideBar.Location = new Point(0, 75);
             OpenFormInPanel(new FrmHome());
         }
 
         private void btn_Movies_Click(object sender, EventArgs e)
         {
+            Panel_SideBar.Location = new Point(0, 125);
             OpenFormInPanel(new FrmMovies());
         }
-        private void btn_Cinemas_Click(object sender, EventArgs e)
+        private void btn_GroupBooking_Click(object sender, EventArgs e)
         {
+            Panel_SideBar.Location = new Point(0, 175);
             OpenFormInPanel(new FrmCinemas());
         }
-
         private void btn_Promotion_Click(object sender, EventArgs e)
         {
+            Panel_SideBar.Location = new Point(0, 225);
             OpenFormInPanel(new FrmPromo());
         }
-
+        private void btn_Transaction_Click(object sender, EventArgs e)
+        {
+            Panel_SideBar.Location = new Point(0, 275);
+            OpenFormInPanel(new FrmTransactionHistoriees());
+        }
+        private void btn_Employee_Click(object sender, EventArgs e)
+        {
+            Panel_SideBar.Location = new Point(0, 325);
+        }
         private void btn_Close_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
-       
+        private void btn_logout_Click(object sender, EventArgs e)
+        {
+            FrmLogin frmLogin = new FrmLogin();
+            this.Hide();
+            frmLogin.ShowDialog();
+            this.Close();
+        }
     }
 }

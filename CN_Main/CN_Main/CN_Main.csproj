@@ -66,6 +66,12 @@
     <Compile Include="Module\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
+    <Compile Include="Module\TransactionHistories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module\TransactionHistories.Designer.cs">
+      <DependentUpon>TransactionHistories.cs</DependentUpon>
+    </Compile>
     <Compile Include="Module\Seats.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Module\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Module\TransactionHistories.resx">
+      <DependentUpon>TransactionHistories.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Module\Seats.resx">
       <DependentUpon>Seats.cs</DependentUpon>

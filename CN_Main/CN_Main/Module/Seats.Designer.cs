@@ -32,8 +32,8 @@
             this.button41 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btn_BuyTickets = new System.Windows.Forms.Button();
-            this.txt_CustomerName = new System.Windows.Forms.TextBox();
-            this.Txt_Theather = new System.Windows.Forms.TextBox();
+            this.txt_ticket = new System.Windows.Forms.TextBox();
+            this.Txt_Seats = new System.Windows.Forms.TextBox();
             this.txt_MovieName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -114,8 +114,8 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.panel2.Controls.Add(this.btn_BuyTickets);
-            this.panel2.Controls.Add(this.txt_CustomerName);
-            this.panel2.Controls.Add(this.Txt_Theather);
+            this.panel2.Controls.Add(this.txt_ticket);
+            this.panel2.Controls.Add(this.Txt_Seats);
             this.panel2.Controls.Add(this.txt_MovieName);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
@@ -139,19 +139,19 @@
             this.btn_BuyTickets.UseVisualStyleBackColor = true;
             this.btn_BuyTickets.Click += new System.EventHandler(this.btn_BuyTickets_Click);
             // 
-            // txt_CustomerName
+            // txt_ticket
             // 
-            this.txt_CustomerName.Location = new System.Drawing.Point(81, 177);
-            this.txt_CustomerName.Name = "txt_CustomerName";
-            this.txt_CustomerName.Size = new System.Drawing.Size(100, 20);
-            this.txt_CustomerName.TabIndex = 101;
+            this.txt_ticket.Location = new System.Drawing.Point(81, 177);
+            this.txt_ticket.Name = "txt_ticket";
+            this.txt_ticket.Size = new System.Drawing.Size(100, 20);
+            this.txt_ticket.TabIndex = 101;
             // 
-            // Txt_Theather
+            // Txt_Seats
             // 
-            this.Txt_Theather.Location = new System.Drawing.Point(81, 129);
-            this.Txt_Theather.Name = "Txt_Theather";
-            this.Txt_Theather.Size = new System.Drawing.Size(100, 20);
-            this.Txt_Theather.TabIndex = 100;
+            this.Txt_Seats.Location = new System.Drawing.Point(81, 129);
+            this.Txt_Seats.Name = "Txt_Seats";
+            this.Txt_Seats.Size = new System.Drawing.Size(100, 20);
+            this.Txt_Seats.TabIndex = 100;
             // 
             // txt_MovieName
             // 
@@ -899,8 +899,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btn_BuyTickets;
-        private System.Windows.Forms.TextBox txt_CustomerName;
-        private System.Windows.Forms.TextBox Txt_Theather;
+        private System.Windows.Forms.TextBox txt_ticket;
+        private System.Windows.Forms.TextBox Txt_Seats;
         private System.Windows.Forms.TextBox txt_MovieName;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
