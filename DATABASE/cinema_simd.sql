@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 17, 2019 at 06:03 PM
+-- Generation Time: Nov 18, 2019 at 05:59 PM
 -- Server version: 10.1.37-MariaDB
 -- PHP Version: 7.3.1
 
@@ -44,7 +44,9 @@ CREATE TABLE `bookedtickets` (
 --
 
 INSERT INTO `bookedtickets` (`bookedId`, `book_by`, `cinema_name`, `theather`, `movie_name`, `time`, `seat_number`, `price`) VALUES
-(4, 'ryo', 'Cathay', '1', 'Death Race', '14:00', '1', 50000);
+(4, 'ryo', 'Cathay', '1', 'Death Race', '14:00', '1', 50000),
+(5, 'ryo', 'Cathay', '1', 'Death Race', '14:00', '2', 35000),
+(6, 'ryo', 'Cathay', '1', 'Death Race', '14:00', '23', 35000);
 
 -- --------------------------------------------------------
 
@@ -63,6 +65,13 @@ CREATE TABLE `bookingcinema` (
   `Price` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `IsApprove` tinyint(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `bookingcinema`
+--
+
+INSERT INTO `bookingcinema` (`bookingId`, `Requestor`, `Cinema`, `Theather`, `Movie_Name`, `Class`, `Date`, `Price`, `IsApprove`) VALUES
+(1, 'ryo', 'Cathay', NULL, 'Death Race', 'Economy', '2019-11-18 18:44:28', '1050000', NULL);
 
 -- --------------------------------------------------------
 
@@ -160,7 +169,7 @@ CREATE TABLE `movies` (
 
 INSERT INTO `movies` (`id`, `movie_name`, `movie_imdb`, `movie_description`, `movie_image`, `slide_image`, `duration`, `movie_release`, `IsReleased`) VALUES
 (1, 'Death Race', '6.4', 'Framed for a murder he did not commit, three-time speedway champ Jensen Ames (Jason Statham) finds himself at Terminal Island, the countrys toughest prison, but he gets an unexpected chance at freedom when the warden offers a choice: Compete in the Death Race as a mythical driver called Frankenstein, or rot in a cell forever. Riding in a car equipped with flamethrowers and grenade launchers, Ames must survive a gauntlet of vicious criminals to win his freedom -- or die trying.', 'C:\\Cinema\\Assets\\Movies\\deat_race.jpg', NULL, '120', '2018-11-10', 1),
-(2, 'Death Race 2', '5.6', 'After being convicted of killing a cop, a prison inmate tries to win his freedom by competing in a brutal race where cars are deadly weapons.', 'C:\\Cinema\\Assets\\Movies\\deat_race_2.jpg', NULL, '100', '2018-11-10', 0),
+(2, 'Death Race 2', '5.6', 'After being convicted of killing a cop, a prison inmate tries to win his freedom by competing in a brutal race where cars are deadly weapons.', 'C:\\Cinema\\Assets\\Movies\\deat_race_2.jpg', NULL, '100', '2018-11-10', 1),
 (3, 'Death Race 3', '5.5', 'Only one victory away from winning his freedom, legendary driver Carl Lucas (Luke Goss) enters the first Death Race to take place in the brutal Kalahari Desert.', 'C:\\Cinema\\Assets\\Movies\\deat_race_3.jpg', NULL, '125', '2018-11-10', 1),
 (4, 'Death Race 4', '5.3', 'Death Race: Beyond Anarchy is a 2018 American action film. It is a sequel to the 2008 film Death Race and was directed by Don Michael Paul. The film was released on October 2, 2018 and the fourth film in the Death Race remake series.', 'C:\\Cinema\\Assets\\Movies\\deat_race_4.jpg', NULL, '115', '2018-11-10', 1),
 (5, 'Maze Runner: The Scorch Trials', '4.3', 'Transported to a remote fortified outpost, Thomas and his fellow teenage Gladers find themselves in trouble after uncovering a diabolical plot from the mysterious and powerful organization WCKD. With help from a new ally, the Gladers stage a daring escape into the Scorch, a desolate landscape filled with dangerous obstacles and crawling with the virus-infected Cranks. The Gladers only hope may be to find the Right Hand, a group of resistance fighters who can help them battle WCKD.', 'C:\\Cinema\\Assets\\Movies\\labirent_2.jpg', NULL, '100', '2018-11-10', 1),
@@ -172,10 +181,10 @@ INSERT INTO `movies` (`id`, `movie_name`, `movie_imdb`, `movie_description`, `mo
 (11, 'Resident Evil 2', '9.0', 'Resident Evil 2, known in Japan as Biohazard 2, is a survival horror game developed and published by Capcom and released for the PlayStation in 1998.', 'C:\\Cinema\\Assets\\Movies\\resident_evil_2.jpg', NULL, '90', '2018-11-10', 1),
 (12, 'Resident Evil: Extinction', '6.3', 'Captured by the Umbrella Corp., Alice (Milla Jovovich) receives genetic alterations that leave her with superhuman abilities. Hiding out in the Nevada desert, she joins forces with former cohorts Carlos (Oded Fehr) and L.J. (Mike Epps) as well as new survivors Claire (Ali Larter), K-Mart (Spencer Locke) and Nurse Betty (Ashanti) to eradicate the virus that threatens to turn every human on Earth into a zombie.', 'C:\\Cinema\\Assets\\Movies\\resident_evil_3.jpg', NULL, '100', '2018-11-10', 1),
 (13, 'Resident Evil: Afterlife', '5.9', 'In a world overrun with the walking dead, Alice (Milla Jovovich) continues her battle against Umbrella Corp., rounding up survivors along the way. Joined by an old friend, Alice and her group set out for a rumored safe haven in Los Angeles. Instead of sanctuary, they find the city overrun with zombies, and a trap about to spring.', 'C:\\Cinema\\Assets\\Movies\\resident_evil_4.jpg', NULL, '93', '2018-11-10', 1),
-(14, 'Resident Evil: Retribution', '5.4', 'As Umbrella Corps deadly T-virus continues to turn the worlds population into legions of flesh-eating zombies, Alice (Milla Jovovich), the human races last hope, awakes deep within Umbrellas secret operations facility. The further she delves into the complex, the more of her mysterious past is unveiled. Her global hunt for those responsible for the outbreak leads to a mind-blowing revelation; Aided by friends old and new, Alice fights to escape from a world on the edge of oblivion', 'C:\\Cinema\\Assets\\Movies\\resident_evil_5.jpg', NULL, '92', '2018-11-10', 1),
-(15, 'Scream', '7.2', 'Wes Craven re-invented and revitalised the slasher-horror genre with this modern horror classic, which manages to be funny, clever and scary, as a fright-masked knife maniac stalks high-school students in middle-class suburbia. Craven is happy to provide both tension and self-parody as the body count mounts - but the victims arent always the ones youd expect.', 'C:\\Cinema\\Assets\\Movies\\scream_!.jpg', NULL, '91', '2018-11-10', 1),
+(14, 'Resident Evil: Retribution', '5.4', 'As Umbrella Corps deadly T-virus continues to turn the worlds population into legions of flesh-eating zombies, Alice (Milla Jovovich), the human races last hope, awakes deep within Umbrellas secret operations facility. The further she delves into the complex, the more of her mysterious past is unveiled. Her global hunt for those responsible for the outbreak leads to a mind-blowing revelation; Aided by friends old and new, Alice fights to escape from a world on the edge of oblivion', 'C:\\Cinema\\Assets\\Movies\\resident_evil_5.jpg', NULL, '92', '2018-11-10', 0),
+(15, 'Scream', '7.2', 'Wes Craven re-invented and revitalised the slasher-horror genre with this modern horror classic, which manages to be funny, clever and scary, as a fright-masked knife maniac stalks high-school students in middle-class suburbia. Craven is happy to provide both tension and self-parody as the body count mounts - but the victims arent always the ones youd expect.', 'C:\\Cinema\\Assets\\Movies\\scream_!.jpg', NULL, '91', '2018-11-10', 3),
 (16, 'Spider Man 2', '7.2', 'When a failed nuclear fusion experiment results in an explosion that kills his wife, Dr. Otto Octavius (Alfred Molina) is transformed into Dr. Octopus, a cyborg with deadly metal tentacles. Doc Ock blames Spider-Man (Tobey Maguire) for the accident and seeks revenge. Meanwhile, Spideys alter ego, Peter Parker, faces fading powers and self-doubt. Complicating matters are his best friends (James Franco) hatred for Spider-Man and his true loves (Kirsten Dunst) sudden engagement to another man.', 'C:\\Cinema\\Assets\\Movies\\spider_man_2.jpg', NULL, '100', '2018-11-10', 1),
-(17, 'Spider Man 3', '6.2', 'Peter Parker (Tobey Maguire) and M.J. (Kirsten Dunst) seem to finally be on the right track in their complicated relationship, but trouble looms for the superhero and his lover. Peters Spider-Man suit turns black and takes control of him, not only giving Peter enhanced power but also bringing out the dark side of his personality. Peter must overcome the suits influence as two supervillains, Sandman and Venom, rise up to destroy him and all those he holds dear.', 'C:\\Cinema\\Assets\\Movies\\spider_man_3.jpg', NULL, '102', '2018-11-10', 1),
+(17, 'Spider Man 3', '6.2', 'Peter Parker (Tobey Maguire) and M.J. (Kirsten Dunst) seem to finally be on the right track in their complicated relationship, but trouble looms for the superhero and his lover. Peters Spider-Man suit turns black and takes control of him, not only giving Peter enhanced power but also bringing out the dark side of his personality. Peter must overcome the suits influence as two supervillains, Sandman and Venom, rise up to destroy him and all those he holds dear.', 'C:\\Cinema\\Assets\\Movies\\spider_man_3.jpg', NULL, '102', '2018-11-10', 0),
 (18, 'The Fast and the Furious', '6.8', 'Dominic Toretto (Vin Diesel) enjoys the adrenaline of street car racing and his fans treat him like a rock star. After a blazing encounter with the ruthless Johnny Tran, Dom decides to take Brian (Paul Walker), a newcomer to street racing, under his wing. Doms sister Mia sees something she likes in Brian, too. Trouble is, neither of them realize hes an undercover cop, and Dominic and his rival Johnny Tran are both the prime suspects in a case involving dirty money and big-rig hijacking.', 'C:\\Cinema\\Assets\\Movies\\the_fast_furious.jpg', 'C:\\Cinema\\Assets\\HomeSlide\\FastAndFurious.jpg', '104', '2018-11-10', 0),
 (19, 'DeadPool', '8.0', 'Wade Wilson (Ryan Reynolds) is a former Special Forces operative who now works as a mercenary. His world comes crashing down when evil scientist Ajax (Ed Skrein) tortures, disfigures and transforms him into Deadpool. The rogue experiment leaves Deadpool with accelerated healing powers and a twisted sense of humor. With help from mutant allies Colossus and Negasonic Teenage Warhead (Brianna Hildebrand), Deadpool uses his new skills to hunt down the man who nearly destroyed his life.', 'C:\\Cinema\\Assets\\Movies\\deadpool.jpg', NULL, '107', '2018-11-10', 1),
 (20, 'Resident Evil: The Final Chapter', '5.6', 'The T-virus unleashed by the evil Umbrella Corp. has spread to every corner of the globe, infesting the planet with zombies, demons and monsters. Alice (Milla Jovovich), a former Umbrella employee turned rogue warrior, joins her friends on a last-chance mission to storm the companys headquarters located deep underneath what used to be Raccoon City. But the Red Queen (Ever Anderson) knows that Alice is coming, and the final battle will determine if the rest of mankind lives or dies.', 'C:\\Cinema\\Assets\\Movies\\resident_evil_6.jpg', NULL, '115', '2018-11-10', 1),
@@ -333,13 +342,13 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for table `bookedtickets`
 --
 ALTER TABLE `bookedtickets`
-  MODIFY `bookedId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `bookedId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `bookingcinema`
 --
 ALTER TABLE `bookingcinema`
-  MODIFY `bookingId` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `bookingId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `cinemas`

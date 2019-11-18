@@ -48,12 +48,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Employee Module\Master\MDI_CRUD.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Employee Module\Master\MDI_CRUD.Designer.cs">
-      <DependentUpon>MDI_CRUD.cs</DependentUpon>
-    </Compile>
     <Compile Include="Client Module\Master\FrmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +108,12 @@
     <Compile Include="Client Module\Master\User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee Module\Master\MDI_Employee.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Master\MDI_Employee.Designer.cs">
+      <DependentUpon>MDI_Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee Module\Module\CinemaApproval.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -128,9 +128,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Employee Module\Master\MDI_CRUD.resx">
-      <DependentUpon>MDI_CRUD.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Client Module\Master\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
@@ -160,6 +157,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Client Module\Master\User.resx">
       <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Master\MDI_Employee.resx">
+      <DependentUpon>MDI_Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Module\Module\CinemaApproval.resx">
       <DependentUpon>CinemaApproval.cs</DependentUpon>
