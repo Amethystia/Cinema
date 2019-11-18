@@ -32,7 +32,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevComponents.DotNetBar2, Version=14.1.0.35, Culture=neutral, PublicKeyToken=7eb7c3a35b91de04, processorArchitecture=MSIL" />
     <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.6.8.8\lib\net45\MySql.Data.dll</HintPath>
     </Reference>
@@ -49,97 +48,124 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Master\FrmLogin.cs">
+    <Compile Include="Employee Module\Master\MDI_CRUD.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\FrmLogin.designer.cs">
+    <Compile Include="Employee Module\Master\MDI_CRUD.Designer.cs">
+      <DependentUpon>MDI_CRUD.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Client Module\Master\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Client Module\Master\FrmLogin.designer.cs">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master\MDI.cs">
+    <Compile Include="Client Module\Master\MDI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\MDI.Designer.cs">
+    <Compile Include="Client Module\Master\MDI.Designer.cs">
       <DependentUpon>MDI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module\Home.cs">
+    <Compile Include="Client Module\Module\Home.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module\Home.Designer.cs">
+    <Compile Include="Client Module\Module\Home.Designer.cs">
       <DependentUpon>Home.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module\TransactionHistories.cs">
+    <Compile Include="Client Module\Module\TransactionHistories.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module\TransactionHistories.Designer.cs">
+    <Compile Include="Client Module\Module\TransactionHistories.Designer.cs">
       <DependentUpon>TransactionHistories.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module\Seats.cs">
+    <Compile Include="Client Module\Module\Seats.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module\Seats.Designer.cs">
+    <Compile Include="Client Module\Module\Seats.Designer.cs">
       <DependentUpon>Seats.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module\Promo.cs">
+    <Compile Include="Client Module\Module\Promo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module\Promo.Designer.cs">
+    <Compile Include="Client Module\Module\Promo.Designer.cs">
       <DependentUpon>Promo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module\Cinemas.cs">
+    <Compile Include="Client Module\Module\Cinemas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module\Cinemas.Designer.cs">
+    <Compile Include="Client Module\Module\Cinemas.Designer.cs">
       <DependentUpon>Cinemas.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module\MoviesDetails.cs">
+    <Compile Include="Client Module\Module\MoviesDetails.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module\MoviesDetails.Designer.cs">
+    <Compile Include="Client Module\Module\MoviesDetails.Designer.cs">
       <DependentUpon>MoviesDetails.cs</DependentUpon>
     </Compile>
-    <Compile Include="Module\Movies.cs">
+    <Compile Include="Client Module\Module\Movies.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Module\Movies.Designer.cs">
+    <Compile Include="Client Module\Module\Movies.Designer.cs">
       <DependentUpon>Movies.cs</DependentUpon>
     </Compile>
-    <Compile Include="Master\User.cs">
+    <Compile Include="Client Module\Master\User.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Master\User.Designer.cs">
+    <Compile Include="Client Module\Master\User.Designer.cs">
       <DependentUpon>User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Module\Module\CinemaApproval.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\CinemaApproval.Designer.cs">
+      <DependentUpon>CinemaApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditMovie.Designer.cs">
+      <DependentUpon>EditMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Master\FrmLogin.resx">
+    <EmbeddedResource Include="Employee Module\Master\MDI_CRUD.resx">
+      <DependentUpon>MDI_CRUD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Client Module\Master\FrmLogin.resx">
       <DependentUpon>FrmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master\MDI.resx">
+    <EmbeddedResource Include="Client Module\Master\MDI.resx">
       <DependentUpon>MDI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Module\Home.resx">
+    <EmbeddedResource Include="Client Module\Module\Home.resx">
       <DependentUpon>Home.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Module\TransactionHistories.resx">
+    <EmbeddedResource Include="Client Module\Module\TransactionHistories.resx">
       <DependentUpon>TransactionHistories.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Module\Seats.resx">
+    <EmbeddedResource Include="Client Module\Module\Seats.resx">
       <DependentUpon>Seats.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Module\Promo.resx">
+    <EmbeddedResource Include="Client Module\Module\Promo.resx">
       <DependentUpon>Promo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Module\Cinemas.resx">
+    <EmbeddedResource Include="Client Module\Module\Cinemas.resx">
       <DependentUpon>Cinemas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Module\MoviesDetails.resx">
+    <EmbeddedResource Include="Client Module\Module\MoviesDetails.resx">
       <DependentUpon>MoviesDetails.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Module\Movies.resx">
+    <EmbeddedResource Include="Client Module\Module\Movies.resx">
       <DependentUpon>Movies.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Master\User.resx">
+    <EmbeddedResource Include="Client Module\Master\User.resx">
       <DependentUpon>User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\CinemaApproval.resx">
+      <DependentUpon>CinemaApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\EditMovie.resx">
+      <DependentUpon>EditMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -176,16 +202,16 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pass1.bmp" />
+    <None Include="Client Module\Resources\pass1.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user1.bmp" />
+    <None Include="Client Module\Resources\user1.bmp" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\pass2.png" />
+    <None Include="Client Module\Resources\pass2.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\user2.png" />
+    <None Include="Client Module\Resources\user2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
