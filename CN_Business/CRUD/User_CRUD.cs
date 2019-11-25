@@ -8,10 +8,10 @@ namespace CN_Business
 {
     public class User_CRUD
     {
-        //MySqlDataAdapter adapter;
+        MySqlDataAdapter adapter;
         MySqlCommand cmd;
         DBConnection DBCon;
-        //DataTable dt;
+        DataTable dt;
 
         string sql;
 
@@ -68,42 +68,62 @@ namespace CN_Business
             catch (Exception ex) { Console.WriteLine(ex); }
             return result;
         }
-        //public bool Update(Users_Model usr)
-        //{
-        //    bool result = false;
-        //    try
-        //    {
-        //        DBCon = new DBConnection();
-        //        sql = string.Format(@"UPDATE `TOKO_BUKU`.`user`
-        //                                SET 
-        //                                    `Id` = '{0}',
-        //                                    `password` = '{1}',
-        //                                    `status` = '{2}',
-        //                                    `adress` = '{3}',
-        //                                    `sex` = '{4}',
-        //                                    `birthDate` = '{5}',
-        //                                    `Name` = '{6}'
-        //                                WHERE `Id` = '{0}';",
-        //                                            usr._UserId,
-        //                                            usr._Password,
-        //                                            usr._Status,
-        //                                            usr._Adress,
-        //                                            usr._Sex,
-        //                                            usr._BirthDate.ToString("yyyy-MM-dd"),
-        //                                            usr._Name,
-        //                                            usr._UserId);
+        public DataTable getAllData()
+        {
 
-        //        DBCon.ConnectionOpen();
-        //        cmd = new MySqlCommand(sql, DBCon.Connection);
-        //        result = cmd.ExecuteNonQuery() == 1;
-        //        DBCon.ConnectionClose();
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine(ex);
-        //    }
-        //    return result;
-        //}
+            DBCon = new DBConnection();
+            sql = string.Format(@"SELECT*FROM `user`");
+            dt = new DataTable();
+            try
+            {
+                DBCon.ConnectionOpen();
+                cmd = new MySqlCommand(sql, DBCon.Connection);
+                adapter = new MySqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+            DBCon.ConnectionClose();
+            return dt;
+        }
+        public bool Update(Users_Model usr)
+        {
+            bool result = false;
+            try
+            {
+                DBCon = new DBConnection();
+                sql = string.Format(@"UPDATE `user`
+                                        SET 
+                                            `name`='{0}',
+                                            `password` = '{1}',
+                                            `status` = '{2}',
+                                            `sex` = '{3}',
+                                            `birthDate` = '{4}',
+                                            `Address` = '{5}'
+                                            `IsEmployee` = '{6}'
+                                        WHERE `Id` = '{0}';",
+                                                    usr._Name,
+                                                    usr._Password,
+                                                    usr._Status,
+                                                    usr._Sex,
+                                                    usr._BirthDate.ToString("yyyy-MM-dd"),
+                                                    usr.Address,
+                                                    usr.IsActive,
+                                                    usr._UserId);;
+
+                DBCon.ConnectionOpen();
+                cmd = new MySqlCommand(sql, DBCon.Connection);
+                result = cmd.ExecuteNonQuery() == 1;
+                DBCon.ConnectionClose();
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+            return result;
+        }
         //public bool Update2(Users_Model usr)
         //{
         //    bool result = false;
@@ -129,64 +149,36 @@ namespace CN_Business
         //        Console.WriteLine(ex);
         //    }
         //    return result;
-        //}
-        //public DataTable getAllData()
-        //{
-
-        //    DBCon = new DBConnection();
-        //    sql = string.Format(@"SELECT
-        //                              `ID`,
-        //                              `NAME`,
-        //                              `Status`,
-        //                              `adress`,
-        //                              `SEX`,
-        //                              `Birthdate`
-        //                               FROM `TOKO_BUKU`.`user`");
-        //    dt = new DataTable();
-        //    try
-        //    {
-        //        DBCon.ConnectionOpen();
-        //        cmd = new MySqlCommand(sql, DBCon.Connection);
-        //        adapter = new MySqlDataAdapter(cmd);
-        //        adapter.Fill(dt);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine(ex);
-        //    }
-        //    DBCon.ConnectionClose();
-        //    return dt;
-        //}
-        //public DataTable Search(Users_Model usr)
-        //{
-
-        //    DBCon = new DBConnection();
-        //    sql = string.Format(@"SELECT
-        //                              `ID`,
-        //                              `NAME`,
-        //                              `Status`,
-        //                              `adress`,
-        //                              `SEX`,
-        //                              `Birthdate`
-        //                               FROM `TOKO_BUKU`.`user`  
-        //                               WHERE `Id` like '%{0}%';",
-        //                                            usr._UserId);
-        //    dt = new DataTable();
-        //    try
-        //    {
-        //        DBCon.ConnectionOpen();
-        //        cmd = new MySqlCommand(sql, DBCon.Connection);
-        //        adapter = new MySqlDataAdapter(cmd);
-        //        adapter.Fill(dt);
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Console.WriteLine(ex);
-        //    }
-        //    DBCon.ConnectionClose();
-        //    return dt;
-        //}
-
     }
-}
+  
+    //public DataTable Search(Users_Model usr)
+    //{
 
+    //    DBCon = new DBConnection();
+    //    sql = string.Format(@"SELECT
+    //                              `ID`,
+    //                              `NAME`,
+    //                              `Status`,
+    //                              `adress`,
+    //                              `SEX`,
+    //                              `Birthdate`
+    //                               FROM `TOKO_BUKU`.`user`  
+    //                               WHERE `Id` like '%{0}%';",
+    //                                            usr._UserId);
+    //    dt = new DataTable();
+    //    try
+    //    {
+    //        DBCon.ConnectionOpen();
+    //        cmd = new MySqlCommand(sql, DBCon.Connection);
+    //        adapter = new MySqlDataAdapter(cmd);
+    //        adapter.Fill(dt);
+    //    }
+    //    catch (Exception ex)
+    //    {
+    //        Console.WriteLine(ex);
+    //    }
+    //    DBCon.ConnectionClose();
+    //    return dt;
+    //}
+
+}

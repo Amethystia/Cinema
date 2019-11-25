@@ -93,3 +93,5 @@ C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.exe
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.pdb
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmCinemaApproval.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMDI_Employee.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmEditSeats.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.frm_user_employee.resources

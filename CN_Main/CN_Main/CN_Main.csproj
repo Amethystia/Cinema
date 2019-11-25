@@ -120,11 +120,29 @@
     <Compile Include="Employee Module\Module\CinemaApproval.Designer.cs">
       <DependentUpon>CinemaApproval.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee Module\Module\EditSeats.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditSeats.Designer.cs">
+      <DependentUpon>EditSeats.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee Module\Module\EditMovie.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Employee Module\Module\EditMovie.Designer.cs">
       <DependentUpon>EditMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditUser_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditUser_2.Designer.cs">
+      <DependentUpon>EditUser_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -164,8 +182,17 @@
     <EmbeddedResource Include="Employee Module\Module\CinemaApproval.resx">
       <DependentUpon>CinemaApproval.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\EditSeats.resx">
+      <DependentUpon>EditSeats.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee Module\Module\EditMovie.resx">
       <DependentUpon>EditMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\EditUser_2.resx">
+      <DependentUpon>EditUser_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
