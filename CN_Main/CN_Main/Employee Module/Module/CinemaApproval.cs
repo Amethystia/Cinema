@@ -39,5 +39,17 @@ namespace CN_Main
                 MessageBox.Show("ERROR!!! : " + ex.Message.ToString());
             }
         }
+
+        private void btn_approve_Click(object sender, EventArgs e)
+        {
+            CinemaApprovalService cinemaApprovalService = new CinemaApprovalService();
+            cinemaApprovalService.approvedata(txt_requestor.Text,txt_cinema.Text,txt_moviename.Text,txt_class.Text,dtp_date.Value);
+        }
+
+        private void btn_reject_Click(object sender, EventArgs e)
+        {
+            CinemaApprovalService cinemaApprovalService = new CinemaApprovalService();
+            cinemaApprovalService.rejectdata(txt_requestor.Text, txt_cinema.Text, txt_moviename.Text, txt_class.Text, dtp_date.Value);
+        }
     }
 }

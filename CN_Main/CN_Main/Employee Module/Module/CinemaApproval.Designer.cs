@@ -29,6 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_price = new System.Windows.Forms.TextBox();
+            this.dtp_date = new System.Windows.Forms.DateTimePicker();
+            this.txt_class = new System.Windows.Forms.TextBox();
+            this.txt_moviename = new System.Windows.Forms.TextBox();
+            this.txt_cinema = new System.Windows.Forms.TextBox();
+            this.txt_requestor = new System.Windows.Forms.TextBox();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.gb_datagrid = new System.Windows.Forms.GroupBox();
             this.btn_reject = new System.Windows.Forms.Button();
@@ -50,12 +56,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.txt_requestor = new System.Windows.Forms.TextBox();
-            this.txt_cinema = new System.Windows.Forms.TextBox();
-            this.txt_moviename = new System.Windows.Forms.TextBox();
-            this.txt_class = new System.Windows.Forms.TextBox();
-            this.dtp_date = new System.Windows.Forms.DateTimePicker();
-            this.txt_price = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.gb_datagrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CinemaApproval)).BeginInit();
@@ -94,6 +94,55 @@
             this.panel1.Size = new System.Drawing.Size(833, 450);
             this.panel1.TabIndex = 23;
             // 
+            // txt_price
+            // 
+            this.txt_price.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
+            this.txt_price.Location = new System.Drawing.Point(196, 336);
+            this.txt_price.Name = "txt_price";
+            this.txt_price.Size = new System.Drawing.Size(172, 29);
+            this.txt_price.TabIndex = 55;
+            // 
+            // dtp_date
+            // 
+            this.dtp_date.Font = new System.Drawing.Font("Century Gothic", 13F);
+            this.dtp_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtp_date.Location = new System.Drawing.Point(196, 295);
+            this.dtp_date.Name = "dtp_date";
+            this.dtp_date.Size = new System.Drawing.Size(172, 29);
+            this.dtp_date.TabIndex = 54;
+            // 
+            // txt_class
+            // 
+            this.txt_class.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
+            this.txt_class.Location = new System.Drawing.Point(196, 234);
+            this.txt_class.Name = "txt_class";
+            this.txt_class.Size = new System.Drawing.Size(172, 29);
+            this.txt_class.TabIndex = 53;
+            // 
+            // txt_moviename
+            // 
+            this.txt_moviename.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
+            this.txt_moviename.Location = new System.Drawing.Point(196, 187);
+            this.txt_moviename.Name = "txt_moviename";
+            this.txt_moviename.Size = new System.Drawing.Size(172, 29);
+            this.txt_moviename.TabIndex = 52;
+            // 
+            // txt_cinema
+            // 
+            this.txt_cinema.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
+            this.txt_cinema.Location = new System.Drawing.Point(196, 134);
+            this.txt_cinema.Name = "txt_cinema";
+            this.txt_cinema.Size = new System.Drawing.Size(172, 29);
+            this.txt_cinema.TabIndex = 51;
+            // 
+            // txt_requestor
+            // 
+            this.txt_requestor.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
+            this.txt_requestor.Location = new System.Drawing.Point(196, 92);
+            this.txt_requestor.Name = "txt_requestor";
+            this.txt_requestor.Size = new System.Drawing.Size(172, 29);
+            this.txt_requestor.TabIndex = 50;
+            // 
             // comboBox1
             // 
             this.comboBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
@@ -126,6 +175,7 @@
             this.btn_reject.TabIndex = 2;
             this.btn_reject.Text = "Reject";
             this.btn_reject.UseVisualStyleBackColor = false;
+            this.btn_reject.Click += new System.EventHandler(this.btn_reject_Click);
             // 
             // btn_approve
             // 
@@ -138,6 +188,7 @@
             this.btn_approve.TabIndex = 1;
             this.btn_approve.Text = "Approve";
             this.btn_approve.UseVisualStyleBackColor = false;
+            this.btn_approve.Click += new System.EventHandler(this.btn_approve_Click);
             // 
             // dgv_CinemaApproval
             // 
@@ -321,55 +372,6 @@
             this.label9.TabIndex = 37;
             this.label9.Text = ":";
             this.label9.UseWaitCursor = true;
-            // 
-            // txt_requestor
-            // 
-            this.txt_requestor.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
-            this.txt_requestor.Location = new System.Drawing.Point(196, 92);
-            this.txt_requestor.Name = "txt_requestor";
-            this.txt_requestor.Size = new System.Drawing.Size(172, 29);
-            this.txt_requestor.TabIndex = 50;
-            // 
-            // txt_cinema
-            // 
-            this.txt_cinema.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
-            this.txt_cinema.Location = new System.Drawing.Point(196, 134);
-            this.txt_cinema.Name = "txt_cinema";
-            this.txt_cinema.Size = new System.Drawing.Size(172, 29);
-            this.txt_cinema.TabIndex = 51;
-            // 
-            // txt_moviename
-            // 
-            this.txt_moviename.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
-            this.txt_moviename.Location = new System.Drawing.Point(196, 187);
-            this.txt_moviename.Name = "txt_moviename";
-            this.txt_moviename.Size = new System.Drawing.Size(172, 29);
-            this.txt_moviename.TabIndex = 52;
-            // 
-            // txt_class
-            // 
-            this.txt_class.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
-            this.txt_class.Location = new System.Drawing.Point(196, 234);
-            this.txt_class.Name = "txt_class";
-            this.txt_class.Size = new System.Drawing.Size(172, 29);
-            this.txt_class.TabIndex = 53;
-            // 
-            // dtp_date
-            // 
-            this.dtp_date.Font = new System.Drawing.Font("Century Gothic", 13F);
-            this.dtp_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtp_date.Location = new System.Drawing.Point(196, 295);
-            this.dtp_date.Name = "dtp_date";
-            this.dtp_date.Size = new System.Drawing.Size(172, 29);
-            this.dtp_date.TabIndex = 54;
-            // 
-            // txt_price
-            // 
-            this.txt_price.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
-            this.txt_price.Location = new System.Drawing.Point(196, 336);
-            this.txt_price.Name = "txt_price";
-            this.txt_price.Size = new System.Drawing.Size(172, 29);
-            this.txt_price.TabIndex = 55;
             // 
             // FrmCinemaApproval
             // 

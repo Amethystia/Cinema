@@ -16,3 +16,9 @@ C:\Cinema\CN_Modeling\bin\Debug\DM_Modeling.pdb
 C:\Cinema\CN_Modeling\obj\Debug\DM_Modeling.exe
 C:\Cinema\CN_Modeling\obj\Debug\DM_Modeling.pdb
 C:\Cinema\CN_Modeling\obj\Debug\CN_Modeling.csprojAssemblyReference.cache
+C:\Users\a212\Documents\GitHub\Cinema\CN_Modeling\bin\Debug\DM_Modeling.exe.config
+C:\Users\a212\Documents\GitHub\Cinema\CN_Modeling\bin\Debug\DM_Modeling.exe
+C:\Users\a212\Documents\GitHub\Cinema\CN_Modeling\bin\Debug\DM_Modeling.pdb
+C:\Users\a212\Documents\GitHub\Cinema\CN_Modeling\obj\Debug\CN_Modeling.csprojResolveAssemblyReference.cache
+C:\Users\a212\Documents\GitHub\Cinema\CN_Modeling\obj\Debug\DM_Modeling.exe
+C:\Users\a212\Documents\GitHub\Cinema\CN_Modeling\obj\Debug\DM_Modeling.pdb
