@@ -11,14 +11,16 @@ namespace CN_Business
         DBConnection DBCon;
         DataTable dt;
         string sql;
+        public MySqlConnection Connection;
+        MySqlConnection conn = new MySqlConnection("server=localhost; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True");
+        string query;
         public DataTable getrequestdata()
         {
-
-            DBCon = new DBConnection();
-            sql = string.Format(@"SELECT requestor,cinema,movie_name,class,date,price FROM `bookingcinema` where isapprove is null");
-            dt = new DataTable();
             try
             {
+                DBCon = new DBConnection();
+                sql = string.Format(@"SELECT Cinema_bookId,book_by,cinema_name,movie_name,class,date,price,RequestStatus FROM `bookingcinema` where requeststatus = 'waiting'");
+                dt = new DataTable();
                 DBCon.ConnectionOpen();
                 cmd = new MySqlCommand(sql, DBCon.Connection);
                 adapter = new MySqlDataAdapter(cmd);
@@ -32,14 +34,50 @@ namespace CN_Business
             return dt;
         }
 
-        public void approvedata(string requestor,string cinema,string movie_name,string kelas,DateTime date)
+        public DataSet gettheatherdata(DataSet ds,string cinema_name,string kelas,string movie_name)
         {
+            DataSet datasettheather = new DataSet();
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+                query = string.Format(@"select DISTINCT theather from cinemas where cinema_name= '" + cinema_name + "'and class='" + kelas+ "'and movie_name='" + movie_name + "'");
+                adapter = new MySqlDataAdapter(query, conn);
+                adapter.Fill(datasettheather);
+                conn.Close();
+                return datasettheather;
+            }
 
-            DBCon = new DBConnection();
-            sql = string.Format(@"UPDATE `bookingcinema` SET ISAPPROVE=1 where requestor='" + requestor + "'and cinema='" + cinema + "'and movie_name='" + movie_name+ "'and Class='" + kelas+ "'and Date='" + date+ "'");
-            dt = new DataTable();
+            conn.Close();
+            return null;
+        }
+
+        public DataTable gettheatherdata()
+        {
             try
             {
+                DBCon = new DBConnection();
+                sql = string.Format(@"SELECT bookingid,requestor,cinema,movie_name,class,date,price,RequestStatus FROM `bookingcinema` where requeststatus is null");
+                dt = new DataTable();
+                DBCon.ConnectionOpen();
+                cmd = new MySqlCommand(sql, DBCon.Connection);
+                adapter = new MySqlDataAdapter(cmd);
+                adapter.Fill(dt);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex);
+            }
+            DBCon.ConnectionClose();
+            return dt;
+        }
+
+        public void approvedata(string bookingid)
+        {
+            try
+            {
+                DBCon = new DBConnection();
+                sql = string.Format(@"UPDATE `bookingcinema` SET requeststatus= 'APPROVED' where cinema_bookid='" + bookingid + "'");
+                dt = new DataTable();
                 DBCon.ConnectionOpen();
                 cmd = new MySqlCommand(sql, DBCon.Connection);
                 adapter = new MySqlDataAdapter(cmd);
@@ -51,14 +89,13 @@ namespace CN_Business
             }
             DBCon.ConnectionClose();
         }
-        public void rejectdata(string requestor, string cinema, string movie_name, string kelas, DateTime date)
+        public void rejectdata(string bookingid)
         {
-
-            DBCon = new DBConnection();
-            sql = string.Format(@"UPDATE `bookingcinema` SET ISAPPROVE=1 where requestor='" + requestor + "'and cinema='" + cinema + "'and movie_name='" + movie_name + "'and Class='" + kelas + "'and Date='" + date + "'");
-            dt = new DataTable();
             try
             {
+                DBCon = new DBConnection();
+                sql = string.Format(@"UPDATE `bookingcinema` SET RequestStatus= 'REJECTED' where cinema_bookid='" + bookingid + "'");
+                dt = new DataTable();
                 DBCon.ConnectionOpen();
                 cmd = new MySqlCommand(sql, DBCon.Connection);
                 adapter = new MySqlDataAdapter(cmd);

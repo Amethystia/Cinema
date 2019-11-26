@@ -59,34 +59,16 @@ namespace CN_Main
 
         private void cb_Cinemas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            LoadCB_Date();
-        }
-
-        public void LoadCB_Date()
-        {
-            string movieName = FrmMovies.list_movie_name[get_number].ToString();
-            string Cinema_Name = datasetcinema.Tables[0].Rows[CB_Cinemas.SelectedIndex][0].ToString();
-
-            cinemaService = new CinemaService();
-            datasetdate = cinemaService.get_dates_data(dsmovie, Cinema_Name, movieName);
-            CB_Date.DataSource = datasetdate.Tables[0];
-            CB_Date.DisplayMember = "date";
-        }
-
-        private void CB_Date_SelectedIndexChanged(object sender, EventArgs e)
-        {
             LoadCB_Time();
+
         }
 
         public void LoadCB_Time()
         {
             string movieName = FrmMovies.list_movie_name[get_number].ToString();
             string Cinema_Name = datasetcinema.Tables[0].Rows[CB_Cinemas.SelectedIndex][0].ToString();
-            string Date;
-            Date = datasetdate.Tables[0].Rows[CB_Date.SelectedIndex][0].ToString();
-
             cinemaService = new CinemaService();
-            datasettime = cinemaService.get_times_data(dsmovie, Cinema_Name, movieName, Date);
+            datasettime = cinemaService.get_times_data(dsmovie, Cinema_Name, movieName);
             CB_Time.DataSource = datasettime.Tables[0];
             CB_Time.DisplayMember = "time";
         }
@@ -99,13 +81,11 @@ namespace CN_Main
         {
             string movieName = FrmMovies.list_movie_name[get_number].ToString();
             string Cinema_Name = datasetcinema.Tables[0].Rows[CB_Cinemas.SelectedIndex][0].ToString();
-            string Date;
-            Date = datasetdate.Tables[0].Rows[CB_Date.SelectedIndex][0].ToString();
             string Time;
             Time = datasettime.Tables[0].Rows[CB_Time.SelectedIndex][0].ToString();
 
             cinemaService = new CinemaService();
-            datasettheather = cinemaService.get_theater_data(dsmovie, Cinema_Name, movieName, Date, Time);
+            datasettheather = cinemaService.get_theater_data(dsmovie, Cinema_Name, movieName, Time);
             CB_Theather.DataSource = datasettheather.Tables[0];
             CB_Theather.DisplayMember = "theather";
         }
@@ -119,16 +99,14 @@ namespace CN_Main
         {
             string movieName = FrmMovies.list_movie_name[get_number].ToString();
             string Cinema_Name = datasetcinema.Tables[0].Rows[CB_Cinemas.SelectedIndex][0].ToString();
-            string Date;
-            Date = datasetdate.Tables[0].Rows[CB_Date.SelectedIndex][0].ToString();
             string Time;
             Time = datasettime.Tables[0].Rows[CB_Time.SelectedIndex][0].ToString();
             string Theather;
             Theather = datasettheather.Tables[0].Rows[CB_Theather.SelectedIndex][0].ToString();
 
             cinemaService = new CinemaService();
-            datasetclass = cinemaService.get_class_data(dsmovie, Cinema_Name, movieName, Date, Time, Theather);
-            datasetcinemaid = cinemaService.get_cinemaid_data(dsmovie, Cinema_Name, movieName, Date, Time, Theather);
+            datasetclass = cinemaService.get_class_data(dsmovie, Cinema_Name, movieName, Time, Theather);
+            datasetcinemaid = cinemaService.get_cinemaid_data(dsmovie, Cinema_Name, movieName,Time, Theather);
             cinemaid = datasetcinemaid.ToString();
             CB_Class.DataSource = datasetclass.Tables[0];
             CB_Class.DisplayMember = "class";

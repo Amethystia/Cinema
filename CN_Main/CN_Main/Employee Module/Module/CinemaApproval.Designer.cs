@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.Request = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txt_price = new System.Windows.Forms.TextBox();
             this.dtp_date = new System.Windows.Forms.DateTimePicker();
@@ -35,12 +37,11 @@
             this.txt_moviename = new System.Windows.Forms.TextBox();
             this.txt_cinema = new System.Windows.Forms.TextBox();
             this.txt_requestor = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cb_theather = new System.Windows.Forms.ComboBox();
             this.gb_datagrid = new System.Windows.Forms.GroupBox();
             this.btn_reject = new System.Windows.Forms.Button();
             this.btn_approve = new System.Windows.Forms.Button();
             this.dgv_CinemaApproval = new System.Windows.Forms.DataGridView();
-            this.cb_isApprove = new System.Windows.Forms.CheckBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -56,10 +57,37 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.Request.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gb_datagrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CinemaApproval)).BeginInit();
             this.SuspendLayout();
+            // 
+            // Request
+            // 
+            this.Request.Controls.Add(this.tabPage1);
+            this.Request.Controls.Add(this.tabPage2);
+            this.Request.Controls.Add(this.tabPage3);
+            this.Request.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Request.Location = new System.Drawing.Point(0, 0);
+            this.Request.Name = "Request";
+            this.Request.SelectedIndex = 0;
+            this.Request.Size = new System.Drawing.Size(833, 450);
+            this.Request.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.panel1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(825, 424);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Request";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -70,9 +98,8 @@
             this.panel1.Controls.Add(this.txt_moviename);
             this.panel1.Controls.Add(this.txt_cinema);
             this.panel1.Controls.Add(this.txt_requestor);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.cb_theather);
             this.panel1.Controls.Add(this.gb_datagrid);
-            this.panel1.Controls.Add(this.cb_isApprove);
             this.panel1.Controls.Add(this.label7);
             this.panel1.Controls.Add(this.label13);
             this.panel1.Controls.Add(this.label1);
@@ -89,10 +116,10 @@
             this.panel1.Controls.Add(this.label10);
             this.panel1.Controls.Add(this.label9);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(833, 450);
-            this.panel1.TabIndex = 23;
+            this.panel1.Size = new System.Drawing.Size(819, 418);
+            this.panel1.TabIndex = 24;
             // 
             // txt_price
             // 
@@ -143,15 +170,15 @@
             this.txt_requestor.Size = new System.Drawing.Size(172, 29);
             this.txt_requestor.TabIndex = 50;
             // 
-            // comboBox1
+            // cb_theather
             // 
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
-            this.comboBox1.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(197, 34);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(171, 27);
-            this.comboBox1.TabIndex = 49;
+            this.cb_theather.Cursor = System.Windows.Forms.Cursors.WaitCursor;
+            this.cb_theather.Font = new System.Drawing.Font("Century Gothic", 13F, System.Drawing.FontStyle.Bold);
+            this.cb_theather.FormattingEnabled = true;
+            this.cb_theather.Location = new System.Drawing.Point(197, 34);
+            this.cb_theather.Name = "cb_theather";
+            this.cb_theather.Size = new System.Drawing.Size(171, 27);
+            this.cb_theather.TabIndex = 49;
             // 
             // gb_datagrid
             // 
@@ -195,20 +222,10 @@
             this.dgv_CinemaApproval.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_CinemaApproval.Location = new System.Drawing.Point(6, 74);
             this.dgv_CinemaApproval.Name = "dgv_CinemaApproval";
+            this.dgv_CinemaApproval.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv_CinemaApproval.Size = new System.Drawing.Size(391, 337);
             this.dgv_CinemaApproval.TabIndex = 0;
-            // 
-            // cb_isApprove
-            // 
-            this.cb_isApprove.AutoSize = true;
-            this.cb_isApprove.Font = new System.Drawing.Font("Century Gothic", 17F);
-            this.cb_isApprove.Location = new System.Drawing.Point(196, 383);
-            this.cb_isApprove.Name = "cb_isApprove";
-            this.cb_isApprove.Size = new System.Drawing.Size(155, 31);
-            this.cb_isApprove.TabIndex = 48;
-            this.cb_isApprove.Text = "IS Approve";
-            this.cb_isApprove.UseVisualStyleBackColor = true;
-            this.cb_isApprove.UseWaitCursor = true;
+            this.dgv_CinemaApproval.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CinemaApproval_CellClick);
             // 
             // label7
             // 
@@ -373,15 +390,37 @@
             this.label9.Text = ":";
             this.label9.UseWaitCursor = true;
             // 
+            // tabPage2
+            // 
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(825, 424);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Aprroved Request";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(825, 424);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Rejected Request";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // FrmCinemaApproval
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(833, 450);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.Request);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FrmCinemaApproval";
             this.Text = "FormHome";
+            this.Request.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.gb_datagrid.ResumeLayout(false);
@@ -391,13 +430,21 @@
         }
 
         #endregion
+
+        private System.Windows.Forms.TabControl Request;
+        private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.TextBox txt_price;
+        private System.Windows.Forms.DateTimePicker dtp_date;
+        private System.Windows.Forms.TextBox txt_class;
+        private System.Windows.Forms.TextBox txt_moviename;
+        private System.Windows.Forms.TextBox txt_cinema;
+        private System.Windows.Forms.TextBox txt_requestor;
+        private System.Windows.Forms.ComboBox cb_theather;
         private System.Windows.Forms.GroupBox gb_datagrid;
+        private System.Windows.Forms.Button btn_reject;
         private System.Windows.Forms.Button btn_approve;
         private System.Windows.Forms.DataGridView dgv_CinemaApproval;
-        private System.Windows.Forms.Button btn_reject;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.CheckBox cb_isApprove;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label1;
@@ -413,11 +460,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox txt_price;
-        private System.Windows.Forms.DateTimePicker dtp_date;
-        private System.Windows.Forms.TextBox txt_class;
-        private System.Windows.Forms.TextBox txt_moviename;
-        private System.Windows.Forms.TextBox txt_cinema;
-        private System.Windows.Forms.TextBox txt_requestor;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
     }
 }

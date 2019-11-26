@@ -54,7 +54,7 @@ namespace CN_Business
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
-                query = string.Format(@"insert into bookingcinema(requestor,cinema,movie_name,class,date,price) values('" + username + "','" + cinema_name + "','"  + movie_name + "','" + classes + "','" + date + "','" + price + "')");
+                query = string.Format(@"insert into bookingcinema(book_by,cinema_name,movie_name,class,date,requeststatus,price) values('" + username + "','" + cinema_name + "','"+ movie_name + "','" + classes + "','" + date + "','" + "waiting" + "','" + price + "')");
                 adapter = new MySqlDataAdapter(query, conn);
                 dataTable.Clear();
                 adapter.Fill(dataTable);
