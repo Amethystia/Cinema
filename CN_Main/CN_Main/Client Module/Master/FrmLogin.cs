@@ -169,7 +169,6 @@ namespace CN_Main
                         //-- Show form kedua -- 
                         FrmMDI FormMdi = new FrmMDI();
                         this.Hide();
-                        this.Dispose();
                         FormMdi.ShowDialog();
                         this.Close();
                     }
