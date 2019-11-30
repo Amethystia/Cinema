@@ -1,12 +1,15 @@
 ﻿using MySql.Data.MySqlClient;
 using System.Data;
 using System;
+using CN_Modeling;
 
 namespace CN_Business
 {
    public class CinemaService
     {
         public MySqlConnection Connection;
+        DBConnection DBCon;
+        MySqlCommand cmd;
         MySqlDataAdapter adapter;
         MySqlConnection conn = new MySqlConnection("server=localhost; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True");
         string query;
@@ -23,6 +26,22 @@ namespace CN_Business
                 adapter.Fill(DataSetCinema);
                 conn.Close();
                 return DataSetCinema;
+            }
+            conn.Close();
+            return null;
+        }
+        public DataTable get_ALLMovies(DataTable dataTable)
+        {
+            DataTable DataTableCinema = new DataTable();
+            if (conn.State == ConnectionState.Closed)
+            {
+                conn.Open();
+                query = string.Format(@"select * from movies ");
+                adapter = new MySqlDataAdapter(query, conn);
+                DataTableCinema.Clear();
+                adapter.Fill(DataTableCinema);
+                conn.Close();
+                return DataTableCinema;
             }
             conn.Close();
             return null;
@@ -213,7 +232,7 @@ namespace CN_Business
             if (conn.State == ConnectionState.Closed)
             {
                 conn.Open();
-                query = string.Format(@"select movie_name,movie_image from movies where  isreleased=0 and movie_release <= '" + DateTime.Today.ToString("yyyy-MM-dd") + "' order by(movie_release)");
+                query = string.Format(@"select movie_name,movie_image from movies where  isreleased=0 and release_date <= '" + DateTime.Today.ToString("yyyy-MM-dd") + "' order by(release_date)");
                 adapter = new MySqlDataAdapter(query, conn);
                 dataset.Clear();
                 adapter.Fill(dataset);
@@ -282,6 +301,49 @@ namespace CN_Business
             }
             conn.Close();
             return null;
+        }
+
+        [Obsolete]
+        public bool Insert(Movie_Model movie_model)
+        {
+            bool result = false;
+            //{
+            //    DBCon = new DBConnection();
+            //    query = string.Format(@"INSERT INTO `movies`(`movie_name`,`movie_imdb`,`movie_description`,`slide_image`,`movie_image`,`Duration`,`Release_Date`,`isReleased`)
+            //                                VALUES ('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}');",movie_model.MovieName,movie_model.MovieIMDB,movie_model.MovieDescription,movie_model.SlideImage,movie_model.MovieImage,movie_model.Duration,movie_model.ReleasedDate,movie_model.IsReleased);
+            //    DBCon.ConnectionOpen();
+            //    cmd = new MySqlCommand(query, DBCon.Connection);
+            //    cmd.BeginExecuteNonQuery();
+            //    DBCon.ConnectionClose();
+            //}
+            //catch (Exception ex) { Console.WriteLine(ex); }
+            //return result;
+            query = "INSERT INTO `movies`(`movie_name`,`movie_imdb`,`movie_description`,`slide_image`,`movie_image`,`Duration`,`Release_Date`,`isReleased`)" +
+                                    "VALUES(@movie_name,@movie_imdb,@movie_description,@slide_image,@movie_image,@Duration,@Release_Date,@isReleased)";
+                                   
+            using (MySqlCommand cmd = new MySqlCommand(query, conn))
+            {
+                cmd.Parameters.Add("@movie_name", movie_model.MovieName);
+                cmd.Parameters.Add("@movie_imdb", movie_model.MovieIMDB);
+                cmd.Parameters.Add("@movie_description", movie_model.MovieDescription);
+                cmd.Parameters.Add("@slide_image", movie_model.SlideImage);
+                cmd.Parameters.Add("@movie_image", movie_model.MovieImage);
+                cmd.Parameters.Add("@Duration", movie_model.Duration);
+                cmd.Parameters.Add("@Release_Date", movie_model.ReleasedDate);
+                cmd.Parameters.Add("@isReleased", movie_model.IsReleased);
+                try
+                {
+                    conn.Open();
+                    cmd.ExecuteNonQuery();
+                    conn.Close();
+                    return result = true;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex);
+                    return result;
+                }
+            }
         }
     }
 }

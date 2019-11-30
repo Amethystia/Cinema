@@ -45,9 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AppService\MovieService.cs" />
     <Compile Include="AppService\CinemaApprovalService.cs" />
     <Compile Include="AppService\BookingService.cs" />
     <Compile Include="AppService\CinemaService.cs" />
+    <Compile Include="CRUD\Theather_CRUDServices.cs" />
+    <Compile Include="CRUD\BookingTicket_CRUDServices.cs" />
+    <Compile Include="CRUD\Ticket_CRUDServices.cs" />
+    <Compile Include="CRUD\Cinema_CRUDServices.cs" />
     <Compile Include="CRUD\User_CRUD.cs" />
     <Compile Include="AppService\LogInService.cs" />
     <Compile Include="Common\DBConnection.cs" />

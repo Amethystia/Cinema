@@ -120,6 +120,30 @@
     <Compile Include="Employee Module\Module\CinemaApproval.Designer.cs">
       <DependentUpon>CinemaApproval.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee Module\Module\EditBookingTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditBookingTickets.Designer.cs">
+      <DependentUpon>EditBookingTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditCinema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditCinema.Designer.cs">
+      <DependentUpon>EditCinema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditTickets.Designer.cs">
+      <DependentUpon>EditTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditTheather.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditTheather.Designer.cs">
+      <DependentUpon>EditTheather.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee Module\Module\EditSeats.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -181,6 +205,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Module\Module\CinemaApproval.resx">
       <DependentUpon>CinemaApproval.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\EditBookingTickets.resx">
+      <DependentUpon>EditBookingTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\EditCinema.resx">
+      <DependentUpon>EditCinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\EditTickets.resx">
+      <DependentUpon>EditTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\EditTheather.resx">
+      <DependentUpon>EditTheather.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Module\Module\EditSeats.resx">
       <DependentUpon>EditSeats.cs</DependentUpon>

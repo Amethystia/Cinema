@@ -42,6 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Model\BookingTicket_Model.cs" />
+    <Compile Include="Model\Theather_Model.cs" />
+    <Compile Include="Model\Ticket_Model.cs" />
+    <Compile Include="Model\Cinema_Model.cs" />
+    <Compile Include="Model\Movie_Model.cs" />
     <Compile Include="Model\Users_Model.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
