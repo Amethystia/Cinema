@@ -31,6 +31,8 @@
             this.btn_Display = new System.Windows.Forms.Button();
             this.btn_Save = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
             this.dtp_ReleaseDate = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_IsReleased = new System.Windows.Forms.TextBox();
@@ -50,8 +52,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.dg_main = new System.Windows.Forms.DataGridView();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -103,6 +103,26 @@
             this.groupBox1.Size = new System.Drawing.Size(311, 391);
             this.groupBox1.TabIndex = 18;
             this.groupBox1.TabStop = false;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(154, 250);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(80, 13);
+            this.label10.TabIndex = 34;
+            this.label10.Text = "Click For Import";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(153, 198);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(80, 13);
+            this.label9.TabIndex = 33;
+            this.label9.Text = "Click For Import";
             // 
             // dtp_ReleaseDate
             // 
@@ -284,26 +304,7 @@
             this.dg_main.Size = new System.Drawing.Size(506, 372);
             this.dg_main.TabIndex = 1;
             this.dg_main.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_main_CellClick);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(153, 198);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(80, 13);
-            this.label9.TabIndex = 33;
-            this.label9.Text = "Click For Import";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(154, 250);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(80, 13);
-            this.label10.TabIndex = 34;
-            this.label10.Text = "Click For Import";
+            this.dg_main.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_user_CellContentClick);
             // 
             // FrmEditMovie
             // 
@@ -327,12 +328,12 @@
         private System.Windows.Forms.Button btn_Display;
         private System.Windows.Forms.Button btn_Save;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox txt_Duration;
-        private System.Windows.Forms.TextBox txt_SlideImage;
-        private System.Windows.Forms.TextBox txt_MovieImage;
-        private System.Windows.Forms.TextBox txt_MovieDescription;
-        private System.Windows.Forms.TextBox txt_MovieIMDB;
-        private System.Windows.Forms.TextBox txt_MovieName;
+        public System.Windows.Forms.TextBox txt_Duration;
+        public System.Windows.Forms.TextBox txt_SlideImage;
+        public System.Windows.Forms.TextBox txt_MovieImage;
+        public System.Windows.Forms.TextBox txt_MovieDescription;
+        public System.Windows.Forms.TextBox txt_MovieIMDB;
+        public System.Windows.Forms.TextBox txt_MovieName;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -344,8 +345,8 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.DataGridView dg_main;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txt_IsReleased;
-        private System.Windows.Forms.DateTimePicker dtp_ReleaseDate;
+        public System.Windows.Forms.TextBox txt_IsReleased;
+        public System.Windows.Forms.DateTimePicker dtp_ReleaseDate;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
     }

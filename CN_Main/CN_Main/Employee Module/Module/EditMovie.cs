@@ -16,7 +16,9 @@ namespace CN_Main
     public partial class FrmEditMovie : Form
     {
         private CinemaService CinemaService;
+        private Movie_CRUDService Movie_CRUDService;
         private Movie_Model movie_Model;
+        public string Movie_Id;
         DataTable dt;
         private DataGridViewButtonColumn btnEdit, btnDelete;
 
@@ -117,7 +119,6 @@ namespace CN_Main
                 MessageBox.Show("ERROR!!! : " + ex.Message.ToString());
             }
         }
-
         public void ATB()
         {
             
@@ -142,8 +143,6 @@ namespace CN_Main
             movie_Model.ReleasedDate = dtp_ReleaseDate.Value.ToString("yyyy-MM-dd");
             if (txt_IsReleased.Text == "True") { movie_Model.IsReleased = "1"; } else { movie_Model.IsReleased = "0"; };
         }
-
-
         OpenFileDialog file = new OpenFileDialog();
         static string file_path, file_path2;
         public void getimage()
@@ -194,12 +193,10 @@ namespace CN_Main
         {
             getimage();
         }
-
         private void txt_SlideImage_Click(object sender, EventArgs e)
         {
             getimage2();
         }
-
         private void dg_main_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (dg_main.SelectedRows.Count > 0)
@@ -215,6 +212,33 @@ namespace CN_Main
             }
         }
 
+        private void dt_user_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            Movie_Id = dg_main.SelectedRows[0].Cells["Movie_Id"].Value.ToString();
+            if (dg_main.Columns[e.ColumnIndex] == btnDelete)
+            {
+                bool DialogDel = MessageBox.Show("Are you sure to delete this Data", "DELETE", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
+                if (DialogDel)
+                {
+                    Movie_CRUDService = new Movie_CRUDService();
+                    if (Movie_CRUDService.GetDeleteByID(Movie_Id))
+                    {
+                        MessageBox.Show("Data DELETED !!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Data FAILED TO DELETE !!");
+                    }
+                    displaydatagrid();
+                }
+            }
+            else if (dg_main.Columns[e.ColumnIndex] == btnEdit)
+            {
+                ATB();
+                FrmUpdateMovie frmupdateMovie = new FrmUpdateMovie();
+                frmupdateMovie.ShowDialog();
+            }
+        }
 
     }
 }

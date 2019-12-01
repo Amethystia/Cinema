@@ -49,6 +49,7 @@
     <Compile Include="AppService\CinemaApprovalService.cs" />
     <Compile Include="AppService\BookingService.cs" />
     <Compile Include="AppService\CinemaService.cs" />
+    <Compile Include="CRUD\Movie_CRUDServices.cs" />
     <Compile Include="CRUD\Theather_CRUDServices.cs" />
     <Compile Include="CRUD\BookingTicket_CRUDServices.cs" />
     <Compile Include="CRUD\Ticket_CRUDServices.cs" />

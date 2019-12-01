@@ -120,17 +120,47 @@
     <Compile Include="Employee Module\Module\CinemaApproval.Designer.cs">
       <DependentUpon>CinemaApproval.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee Module\Module\UpdateBookingTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\UpdateBookingTickets.Designer.cs">
+      <DependentUpon>UpdateBookingTickets.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee Module\Module\EditBookingTickets.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Employee Module\Module\EditBookingTickets.Designer.cs">
       <DependentUpon>EditBookingTickets.cs</DependentUpon>
     </Compile>
+    <Compile Include="Employee Module\Module\UpdateTickets.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\UpdateTickets.Designer.cs">
+      <DependentUpon>UpdateTickets.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Module\Module\UpdateTheather.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\UpdateTheather.Designer.cs">
+      <DependentUpon>UpdateTheather.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Module\Module\UpdateCinema.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\UpdateCinema.Designer.cs">
+      <DependentUpon>UpdateCinema.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee Module\Module\EditCinema.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Employee Module\Module\EditCinema.Designer.cs">
       <DependentUpon>EditCinema.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Module\Module\UpdateMovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\UpdateMovie.Designer.cs">
+      <DependentUpon>UpdateMovie.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee Module\Module\EditTickets.cs">
       <SubType>Form</SubType>
@@ -143,12 +173,6 @@
     </Compile>
     <Compile Include="Employee Module\Module\EditTheather.Designer.cs">
       <DependentUpon>EditTheather.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Employee Module\Module\EditSeats.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Employee Module\Module\EditSeats.Designer.cs">
-      <DependentUpon>EditSeats.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee Module\Module\EditMovie.cs">
       <SubType>Form</SubType>
@@ -206,20 +230,32 @@
     <EmbeddedResource Include="Employee Module\Module\CinemaApproval.resx">
       <DependentUpon>CinemaApproval.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\UpdateBookingTickets.resx">
+      <DependentUpon>UpdateBookingTickets.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee Module\Module\EditBookingTickets.resx">
       <DependentUpon>EditBookingTickets.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\UpdateTickets.resx">
+      <DependentUpon>UpdateTickets.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\UpdateTheather.resx">
+      <DependentUpon>UpdateTheather.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\UpdateCinema.resx">
+      <DependentUpon>UpdateCinema.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee Module\Module\EditCinema.resx">
       <DependentUpon>EditCinema.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\UpdateMovie.resx">
+      <DependentUpon>UpdateMovie.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Module\Module\EditTickets.resx">
       <DependentUpon>EditTickets.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Module\Module\EditTheather.resx">
       <DependentUpon>EditTheather.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Employee Module\Module\EditSeats.resx">
-      <DependentUpon>EditSeats.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee Module\Module\EditMovie.resx">
       <DependentUpon>EditMovie.cs</DependentUpon>

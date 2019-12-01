@@ -118,7 +118,6 @@ C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMovies.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.frm_user.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmMDI_Employee.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmCinemaApproval.resources
-C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmEditSeats.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmEditMovie.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.frm_user_employee_2.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.frm_user_employee.resources
@@ -131,3 +130,8 @@ C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmEditBookingTickets.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmEditCinema.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmEditTickets.resources
 C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmEditTheather.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmUpdateMovie.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmUpdateCinema.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmUpdateTheather.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmUpdateTickets.resources
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmUpdateBookingTickets.resources
