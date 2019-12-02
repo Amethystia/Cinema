@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CN_Business;
-
+using Stimulsoft.Report;
 namespace CN_Main
 {
     public partial class FrmTransactionHistoriees : Form
@@ -47,6 +47,21 @@ namespace CN_Main
             {
                 MessageBox.Show("ERROR!!! : " + ex.Message.ToString());
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            StiReport report = new StiReport();
+            //report.RegData(dataSet1);
+
+            report.Load("..\\..\\Reports\\SimpleList.mrt");
+            report.Render(true);
+
+            string file = "SimpleList.";
+
+                file += "pdf";
+                report.ExportDocument(StiExportFormat.Pdf, file);
+                System.Diagnostics.Process.Start(file);
         }
     }
 }

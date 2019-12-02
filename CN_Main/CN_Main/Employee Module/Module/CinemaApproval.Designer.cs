@@ -64,6 +64,8 @@
             this.panel1.SuspendLayout();
             this.gb_datagrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CinemaApproval)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Request
@@ -409,6 +411,7 @@
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "Rejected Request";
             this.tabPage3.UseVisualStyleBackColor = true;
+         
             // 
             // FrmCinemaApproval
             // 
@@ -425,6 +428,8 @@
             this.panel1.PerformLayout();
             this.gb_datagrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CinemaApproval)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

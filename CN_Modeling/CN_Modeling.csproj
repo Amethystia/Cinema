@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Model\BookingTicket_Model.cs" />
+    <Compile Include="Model\Promotion_Model.cs" />
     <Compile Include="Model\Theather_Model.cs" />
     <Compile Include="Model\Ticket_Model.cs" />
     <Compile Include="Model\Cinema_Model.cs" />

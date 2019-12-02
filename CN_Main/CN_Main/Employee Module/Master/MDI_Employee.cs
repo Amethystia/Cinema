@@ -60,7 +60,7 @@ namespace CN_Main
         private void btn_Promotion_Click(object sender, EventArgs e)
         {
             Panel_SideBar.Location = new Point(0, 285);
-            //OpenFormInPanel(new FrmPromo());
+            OpenFormInPanel(new FrmEditPromotion());
         }
         private void btn_Theather_Click(object sender, EventArgs e)
         {

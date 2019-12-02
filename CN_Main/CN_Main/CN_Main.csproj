@@ -35,8 +35,66 @@
     <Reference Include="MySql.Data, Version=6.8.8.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
       <HintPath>..\packages\MySql.Data.6.8.8\lib\net45\MySql.Data.dll</HintPath>
     </Reference>
+    <Reference Include="Stimulsoft.Base, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Controls.Win, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Controls.Win.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Data, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Database, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Database.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Design, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Editor, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Map, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Map.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Report.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Check, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Report.Check.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Design, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Report.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Helper, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Report.Helper.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Web, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Report.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Stimulsoft.Report.Win, Version=2019.3.4.0, Culture=neutral, PublicKeyToken=ebe6666cba19647a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Users\ASUS X441U\Downloads\Compressed\Stimulsoft Reports 2019.3.4\Reports.Net\.NET\Stimulsoft.Report.Win.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -119,6 +177,12 @@
     </Compile>
     <Compile Include="Employee Module\Module\CinemaApproval.Designer.cs">
       <DependentUpon>CinemaApproval.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditPromotion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee Module\Module\EditPromotion.Designer.cs">
+      <DependentUpon>EditPromotion.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee Module\Module\UpdateBookingTickets.cs">
       <SubType>Form</SubType>
@@ -230,6 +294,9 @@
     <EmbeddedResource Include="Employee Module\Module\CinemaApproval.resx">
       <DependentUpon>CinemaApproval.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Employee Module\Module\EditPromotion.resx">
+      <DependentUpon>EditPromotion.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Employee Module\Module\UpdateBookingTickets.resx">
       <DependentUpon>UpdateBookingTickets.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,6 +378,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Client Module\Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Report\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
