@@ -29,15 +29,15 @@ namespace CN_Main
             {
                 if (c is TextBox || c is ComboBox || c is RichTextBox)
                 {
-                    if (txt_SlideImage.Text != string.Empty)
-                    {
+                    //if (txt_SlideImage.Text != string.Empty)
+                    //{
                         if (string.IsNullOrWhiteSpace(c.Text))
                         {
                             MessageBox.Show(string.Format("Empty field {0 }", c.Name.Substring(4)));
                             c.Focus();
                             return false;
                         }
-                    }
+                    //}
                 }
                 else if (c is RadioButton)
                 {
@@ -59,8 +59,8 @@ namespace CN_Main
             txt_MovieName.Text = ((FrmEditMovie)f).txt_MovieName.Text;
             txt_MovieIMDB.Text = ((FrmEditMovie)f).txt_MovieIMDB.Text;
             txt_MovieDescription.Text = ((FrmEditMovie)f).txt_MovieDescription.Text;
-            txt_MovieImage.Text = ((FrmEditMovie)f).txt_MovieImage.Text;
-            txt_SlideImage.Text = ((FrmEditMovie)f).txt_SlideImage.Text;
+            //txt_MovieImage.Text = ((FrmEditMovie)f).txt_MovieImage.Text;
+            //txt_SlideImage.Text = ((FrmEditMovie)f).txt_SlideImage.Text;
             txt_Duration.Text = ((FrmEditMovie)f).txt_Duration.Text;
             dtp_ReleaseDate.Value = ((FrmEditMovie)f).dtp_ReleaseDate.Value;
             txt_IsReleased.Text = ((FrmEditMovie)f).txt_IsReleased.Text;
@@ -88,7 +88,7 @@ namespace CN_Main
                     bitmap.Save(Directory.GetCurrentDirectory() + @"\image\" + file.SafeFileName);
                     file_path = Directory.GetCurrentDirectory() + @"\image\" + file.SafeFileName;
                 }
-                txt_MovieImage.Text = file_path;
+                //txt_MovieImage.Text = file_path;
             }
         }
         public void getimage2()
@@ -110,7 +110,7 @@ namespace CN_Main
                     bitmap2.Save(Directory.GetCurrentDirectory() + @"\image\" + file.SafeFileName);
                     file_path2 = Directory.GetCurrentDirectory() + @"\image\" + file.SafeFileName;
                 }
-                txt_SlideImage.Text = file_path2;
+                //txt_SlideImage.Text = file_path2;
             }
         }
         private void txt_MovieImage_Click(object sender, EventArgs e)
@@ -122,6 +122,7 @@ namespace CN_Main
             getimage2();
         }
 
+        [Obsolete]
         private void Btn_Update_Click(object sender, EventArgs e)
         {
             movie_Model = new Movie_Model();
@@ -154,23 +155,23 @@ namespace CN_Main
         public void ATB()
         {
 
-            string slide = txt_SlideImage.Text;
-            if (slide.Contains(@"\"))
-            {
-                slide.Replace(@"\""", @"'\\'");
-            }
+            //string slide = txt_SlideImage.Text;
+            //if (slide.Contains(@"\"))
+            //{
+            //    slide.Replace(@"\""", @"'\\'");
+            //}
 
-            string movie = txt_MovieImage.Text;
-            if (movie.Contains(@"\"))
-            {
-                movie.Replace(@"\""", @"'\\\\'");
-            }
+            //string movie = txt_MovieImage.Text;
+            //if (movie.Contains(@"\"))
+            //{
+            //    movie.Replace(@"\""", @"'\\\\'");
+            //}
             movie_Model = new Movie_Model();
             movie_Model.MovieName = txt_MovieName.Text;
             movie_Model.MovieIMDB = txt_MovieIMDB.Text;
             movie_Model.MovieDescription = txt_MovieDescription.Text;
-            movie_Model.MovieImage = movie;
-            movie_Model.SlideImage = slide;
+            //movie_Model.MovieImage = movie;
+            //movie_Model.SlideImage = slide;
             movie_Model.Duration = txt_Duration.Text;
             movie_Model.ReleasedDate = dtp_ReleaseDate.Value.ToString("yyyy-MM-dd");
             if (txt_IsReleased.Text == "True") { movie_Model.IsReleased = "1"; } else { movie_Model.IsReleased = "0"; };

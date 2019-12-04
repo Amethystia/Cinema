@@ -85,28 +85,14 @@ namespace CN_Business
 
         public bool Update(Movie_Model movie_Model)
         {
+           
+
             bool result = false;
             try
             {
                 DBCon = new DBConnection();
-                query = string.Format(@"UPDATE `movies`
-                                        SET 
-                                            `movie_name` = '{0}',
-                                            `movie_imdb` = '{1}',
-                                            `movie_description` = '{2}',
-                                            `movie_image` = '{3}',
-                                            `slide_image` = '{4}',
-                                            `Duration` = '{5}',
-                                            `Release_Date` = '{6}'
-                                        WHERE `movie_id` = '{7}';",
-                                                    movie_Model.MovieName,
-                                                    movie_Model.MovieIMDB,
-                                                    movie_Model.MovieDescription,
-                                                    movie_Model.MovieImage,
-                                                    movie_Model.SlideImage,
-                                                    movie_Model.Duration,
-                                                    movie_Model.ReleasedDate,
-                                                    movie_Model.MovieID);
+                query = string.Format(@"UPDATE `movies` SET `movie_name` = '{0}',`movie_imdb` = '{1}',`movie_description` = '{2}',`Duration` = '{3}',`Release_Date` = '{4}',`IsReleased` = '{5}'WHERE `movie_id` = '{6}';",
+                                                    movie_Model.MovieName,movie_Model.MovieIMDB,movie_Model.MovieDescription,movie_Model.Duration,movie_Model.ReleasedDate,movie_Model.IsReleased,movie_Model.MovieID);
 
                 DBCon.ConnectionOpen();
                 cmd = new MySqlCommand(query, DBCon.Connection);
