@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CN_Business;
+using CN_Main.Report;
 
 namespace CN_Main
 {
@@ -79,7 +80,7 @@ namespace CN_Main
         }
         private void btn_Transaction_Click(object sender, EventArgs e)
         {
-            //OpenFormInPanel(new FrmTransactionHistoriees());
+            OpenFormInPanel(new FrmReport());
         }
         private void btn_Employee_Click(object sender, EventArgs e)
         {

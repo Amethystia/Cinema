@@ -179,3 +179,4 @@ C:\Cinema\CN_Main\CN_Main\bin\Debug\Stimulsoft.Report.Web.pdb
 C:\Cinema\CN_Main\CN_Main\bin\Debug\Stimulsoft.Report.Web.xml
 C:\Cinema\CN_Main\CN_Main\bin\Debug\Stimulsoft.Report.Win.pdb
 C:\Cinema\CN_Main\CN_Main\bin\Debug\Stimulsoft.Report.Win.xml
+C:\Cinema\CN_Main\CN_Main\obj\Debug\CN_Main.FrmReport.resources
