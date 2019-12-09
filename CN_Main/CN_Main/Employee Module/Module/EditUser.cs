@@ -15,6 +15,7 @@ namespace CN_Main
     public partial class frm_user_employee : Form
     {
         private Users_Model usr;
+        public string id_user;
         DataTable dt;
         private DataGridViewButtonColumn btnEdit, btnDelete;
 
@@ -45,7 +46,27 @@ namespace CN_Main
             usr._Sex = txt_Sex.Text;
             usr._BirthDate = dtp_BirthDate.Value;
             usr._Address = rtb_Address.Text;
-            usr._IsActive = cb_IsEmployee.Checked;
+            if (cb_IsEmployee.Checked)
+            {
+                usr.IsEmployee = "1";
+            }
+            else
+            {
+                usr.IsEmployee = "0";
+            }
+            id_user = dgv.SelectedRows[0].Cells["user_id"].Value.ToString();
+            usr.UserId = id_user;
+        }
+
+        public void Clear()
+        {
+
+            txt_Nama.Text =
+            txt_Password.Text =
+            txt_Status.Text =
+            txt_Sex.Text =
+            rtb_Address.Text = string.Empty;
+            cb_IsEmployee.Checked = false;
         }
 
         private bool PerformValidation(GroupBox gb)
@@ -97,17 +118,40 @@ namespace CN_Main
             displayTable();
         }
 
-        private void displayTable()
+        public void displayTable()
         {
             try
             {
                 User_CRUD CRUD = new User_CRUD();
                 dt = CRUD.getAllData();
+                dgv.DataSource = null;
                 dgv.DataSource = dt;
+                dgv.AllowUserToAddRows = false;
+                dgv.ReadOnly = true;
             }
             catch (Exception ex)
             {
                 MessageBox.Show("ERROR!!! : " + ex.Message.ToString());
+            }
+        }
+
+        private void dgv_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgv.SelectedRows.Count > 0)
+            {
+                txt_Nama.Text = dgv.SelectedRows[0].Cells["Name"].Value.ToString();
+                txt_Password.Text = dgv.SelectedRows[0].Cells["Password"].Value.ToString();
+                txt_Status.Text = dgv.SelectedRows[0].Cells["Status"].Value.ToString();
+                txt_Sex.Text = dgv.SelectedRows[0].Cells["Sex"].Value.ToString();
+                dtp_BirthDate.Text = dgv.SelectedRows[0].Cells["BirthDate"].Value.ToString();
+                rtb_Address.Text = dgv.SelectedRows[0].Cells["Address"].Value.ToString();
+                if (dgv.SelectedRows[0].Cells["IsEmployee"].Value.ToString() == "True"){
+                    cb_IsEmployee.Checked = true;
+                }
+                else
+                {
+                    cb_IsEmployee.Checked = false;
+                }
             }
         }
 

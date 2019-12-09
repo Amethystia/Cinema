@@ -79,7 +79,6 @@ namespace CN_Main
                 }
                 else
                 {
-                    MessageBox.Show("Wrong Password !!");
                 }
                 ((FrmEditCinema)f).displaydatagrid();
             }
