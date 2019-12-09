@@ -310,15 +310,15 @@
             this.btn_User.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_User.ForeColor = System.Drawing.Color.White;
             this.btn_User.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_User.Location = new System.Drawing.Point(557, 48);
+            this.btn_User.Location = new System.Drawing.Point(541, 34);
             this.btn_User.Margin = new System.Windows.Forms.Padding(0);
             this.btn_User.Name = "btn_User";
-            this.btn_User.Size = new System.Drawing.Size(64, 28);
+            this.btn_User.Size = new System.Drawing.Size(79, 42);
             this.btn_User.TabIndex = 19;
             this.btn_User.Text = "USER";
-            this.btn_User.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btn_User.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btn_User.UseVisualStyleBackColor = true;
+            this.btn_User.Click += new System.EventHandler(this.btn_User_Click);
             // 
             // btn_Close
             // 

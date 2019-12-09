@@ -27,6 +27,8 @@ namespace CN_Main.Report
         {
             CinemaApprovalViewer fcin = new CinemaApprovalViewer();
             fcin.ShowDialog();
+            //MyTransactionReport fr = new MyTransactionReport();
+            //fr.ShowDialog();
         }
     }
 }

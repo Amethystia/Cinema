@@ -57,22 +57,16 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.Request.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.gb_datagrid.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CinemaApproval)).BeginInit();
-            this.tabPage2.SuspendLayout();
-            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Request
             // 
             this.Request.Controls.Add(this.tabPage1);
-            this.Request.Controls.Add(this.tabPage2);
-            this.Request.Controls.Add(this.tabPage3);
             this.Request.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Request.Location = new System.Drawing.Point(0, 0);
             this.Request.Name = "Request";
@@ -392,27 +386,6 @@
             this.label9.Text = ":";
             this.label9.UseWaitCursor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(825, 424);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Aprroved Request";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(825, 424);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Rejected Request";
-            this.tabPage3.UseVisualStyleBackColor = true;
-         
-            // 
             // FrmCinemaApproval
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -428,8 +401,6 @@
             this.panel1.PerformLayout();
             this.gb_datagrid.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_CinemaApproval)).EndInit();
-            this.tabPage2.ResumeLayout(false);
-            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -465,7 +436,5 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabPage tabPage3;
     }
 }

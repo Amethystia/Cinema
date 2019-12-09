@@ -28,7 +28,7 @@ namespace CN_Business
                                                          `Sex`,
                                                          `BirthDate`,
                                                          `Address`,
-                                                         `IsActive`)
+                                                         `IsEmployee`)
                                             VALUES ('{0}',
                                                     '{1}',
                                                     '{2}',
@@ -42,7 +42,7 @@ namespace CN_Business
                                                     usr._Sex,
                                                     usr._BirthDate.ToString("yyyy-MM-dd"),
                                                     usr._Address,
-                                                    usr._IsActive);
+                                                    usr._IsEmployee);
                 DBCon.ConnectionOpen();
                 cmd = new MySqlCommand(sql, DBCon.Connection);
                 result = cmd.ExecuteNonQuery() == 1;
@@ -58,8 +58,8 @@ namespace CN_Business
             {
                 DBCon = new DBConnection();
                 sql = string.Format(@"DELETE
-                                    FROM `TOKO_BUKU`.`user`
-                                    WHERE `Id` = '{0}';", id);
+                                    FROM `user`
+                                    WHERE `USer_id` = '{0}';", id);
                 DBCon.ConnectionOpen();
                 cmd = new MySqlCommand(sql, DBCon.Connection);
                 result = cmd.ExecuteNonQuery() == 1;
@@ -94,29 +94,30 @@ namespace CN_Business
             try
             {
                 DBCon = new DBConnection();
-                sql = string.Format(@"UPDATE `user`
+               sql = string.Format(@"UPDATE `user`
                                         SET 
                                             `name`='{0}',
                                             `password` = '{1}',
                                             `status` = '{2}',
                                             `sex` = '{3}',
                                             `birthDate` = '{4}',
-                                            `Address` = '{5}'
+                                            `Address` = '{5}',
                                             `IsEmployee` = '{6}'
-                                        WHERE `Id` = '{0}';",
+                                        WHERE `user_Id` = '{7}';",
                                                     usr._Name,
                                                     usr._Password,
                                                     usr._Status,
                                                     usr._Sex,
                                                     usr._BirthDate.ToString("yyyy-MM-dd"),
                                                     usr.Address,
-                                                    usr.IsActive,
-                                                    usr._UserId);;
+                                                    usr.IsEmployee,
+                                                     usr.UserId);
 
-                DBCon.ConnectionOpen();
+                DBCon.ConnectionOpen(); 
                 cmd = new MySqlCommand(sql, DBCon.Connection);
                 result = cmd.ExecuteNonQuery() == 1;
                 DBCon.ConnectionClose();
+                
             }
             catch (Exception ex)
             {

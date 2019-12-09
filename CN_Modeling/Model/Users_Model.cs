@@ -13,6 +13,7 @@ namespace CN_Modeling
         public string Sex;
         public DateTime BirthDate;
         public Boolean IsActive;
+        public string IsEmployee;
 
         public String _UserId
         {
@@ -95,6 +96,12 @@ namespace CN_Modeling
                 IsActive = value;
             }
         }
-
+        public String _IsEmployee
+        {
+            get
+            { return IsEmployee; }
+            set
+            { IsEmployee = value; }
+        }
     }
 }

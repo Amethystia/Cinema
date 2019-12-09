@@ -30,139 +30,47 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_user_employee_2));
             this.gb_Main = new System.Windows.Forms.GroupBox();
-            this.btn_Save = new System.Windows.Forms.Button();
-            this.cb_IsEmployee = new System.Windows.Forms.CheckBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.dtp_BirthDate = new System.Windows.Forms.DateTimePicker();
-            this.rtb_Address = new System.Windows.Forms.RichTextBox();
-            this.txt_Sex = new System.Windows.Forms.TextBox();
-            this.txt_Status = new System.Windows.Forms.TextBox();
-            this.txt_Password = new System.Windows.Forms.TextBox();
-            this.txt_Nama = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Save = new System.Windows.Forms.Button();
+            this.cb_IsEmployee = new System.Windows.Forms.CheckBox();
+            this.txt_Nama = new System.Windows.Forms.TextBox();
+            this.txt_Password = new System.Windows.Forms.TextBox();
+            this.txt_Status = new System.Windows.Forms.TextBox();
+            this.txt_Sex = new System.Windows.Forms.TextBox();
+            this.rtb_Address = new System.Windows.Forms.RichTextBox();
             this.gb_Main.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // gb_Main
             // 
             this.gb_Main.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.gb_Main.Controls.Add(this.btn_Save);
-            this.gb_Main.Controls.Add(this.cb_IsEmployee);
-            this.gb_Main.Controls.Add(this.panel6);
-            this.gb_Main.Controls.Add(this.panel5);
-            this.gb_Main.Controls.Add(this.panel4);
-            this.gb_Main.Controls.Add(this.panel3);
-            this.gb_Main.Controls.Add(this.panel2);
-            this.gb_Main.Controls.Add(this.panel1);
-            this.gb_Main.Controls.Add(this.dtp_BirthDate);
             this.gb_Main.Controls.Add(this.rtb_Address);
             this.gb_Main.Controls.Add(this.txt_Sex);
             this.gb_Main.Controls.Add(this.txt_Status);
             this.gb_Main.Controls.Add(this.txt_Password);
             this.gb_Main.Controls.Add(this.txt_Nama);
+            this.gb_Main.Controls.Add(this.dtp_BirthDate);
             this.gb_Main.Controls.Add(this.label6);
             this.gb_Main.Controls.Add(this.label5);
             this.gb_Main.Controls.Add(this.label4);
             this.gb_Main.Controls.Add(this.label3);
             this.gb_Main.Controls.Add(this.label2);
             this.gb_Main.Controls.Add(this.label1);
-            this.gb_Main.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gb_Main.Location = new System.Drawing.Point(0, 0);
+            this.gb_Main.Location = new System.Drawing.Point(0, 1);
             this.gb_Main.Margin = new System.Windows.Forms.Padding(2);
             this.gb_Main.Name = "gb_Main";
             this.gb_Main.Padding = new System.Windows.Forms.Padding(2);
-            this.gb_Main.Size = new System.Drawing.Size(302, 333);
+            this.gb_Main.Size = new System.Drawing.Size(302, 229);
             this.gb_Main.TabIndex = 15;
             this.gb_Main.TabStop = false;
-            // 
-            // btn_Save
-            // 
-            this.btn_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(110)))), ((int)(((byte)(99)))));
-            this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Save.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Save.Location = new System.Drawing.Point(41, 241);
-            this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(192, 28);
-            this.btn_Save.TabIndex = 34;
-            this.btn_Save.Text = "Save";
-            this.btn_Save.UseVisualStyleBackColor = false;
-            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
-            // 
-            // cb_IsEmployee
-            // 
-            this.cb_IsEmployee.AutoSize = true;
-            this.cb_IsEmployee.Location = new System.Drawing.Point(41, 219);
-            this.cb_IsEmployee.Name = "cb_IsEmployee";
-            this.cb_IsEmployee.Size = new System.Drawing.Size(80, 17);
-            this.cb_IsEmployee.TabIndex = 31;
-            this.cb_IsEmployee.Text = "IsEmployee";
-            this.cb_IsEmployee.UseVisualStyleBackColor = true;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel6.Location = new System.Drawing.Point(136, 201);
-            this.panel6.Margin = new System.Windows.Forms.Padding(2);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(143, 1);
-            this.panel6.TabIndex = 30;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel5.Location = new System.Drawing.Point(136, 186);
-            this.panel5.Margin = new System.Windows.Forms.Padding(2);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(143, 1);
-            this.panel5.TabIndex = 30;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Location = new System.Drawing.Point(136, 127);
-            this.panel4.Margin = new System.Windows.Forms.Padding(2);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(143, 1);
-            this.panel4.TabIndex = 30;
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Location = new System.Drawing.Point(136, 99);
-            this.panel3.Margin = new System.Windows.Forms.Padding(2);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(143, 1);
-            this.panel3.TabIndex = 30;
-            // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel2.Location = new System.Drawing.Point(136, 71);
-            this.panel2.Margin = new System.Windows.Forms.Padding(2);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(143, 1);
-            this.panel2.TabIndex = 30;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel1.Location = new System.Drawing.Point(136, 42);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(143, 1);
-            this.panel1.TabIndex = 30;
             // 
             // dtp_BirthDate
             // 
@@ -174,63 +82,6 @@
             this.dtp_BirthDate.Size = new System.Drawing.Size(135, 20);
             this.dtp_BirthDate.TabIndex = 26;
             this.dtp_BirthDate.Value = new System.DateTime(2019, 11, 1, 0, 0, 0, 0);
-            // 
-            // rtb_Address
-            // 
-            this.rtb_Address.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.rtb_Address.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtb_Address.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.rtb_Address.Location = new System.Drawing.Point(138, 171);
-            this.rtb_Address.Margin = new System.Windows.Forms.Padding(2);
-            this.rtb_Address.Name = "rtb_Address";
-            this.rtb_Address.Size = new System.Drawing.Size(143, 34);
-            this.rtb_Address.TabIndex = 27;
-            this.rtb_Address.Text = "";
-            // 
-            // txt_Sex
-            // 
-            this.txt_Sex.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.txt_Sex.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Sex.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.txt_Sex.Location = new System.Drawing.Point(136, 114);
-            this.txt_Sex.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Sex.Name = "txt_Sex";
-            this.txt_Sex.Size = new System.Drawing.Size(143, 15);
-            this.txt_Sex.TabIndex = 25;
-            // 
-            // txt_Status
-            // 
-            this.txt_Status.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.txt_Status.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Status.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.txt_Status.Location = new System.Drawing.Point(136, 86);
-            this.txt_Status.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Status.Name = "txt_Status";
-            this.txt_Status.Size = new System.Drawing.Size(143, 15);
-            this.txt_Status.TabIndex = 24;
-            // 
-            // txt_Password
-            // 
-            this.txt_Password.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.txt_Password.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Password.Font = new System.Drawing.Font("Segoe UI", 8F);
-            this.txt_Password.Location = new System.Drawing.Point(136, 58);
-            this.txt_Password.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Password.Name = "txt_Password";
-            this.txt_Password.Size = new System.Drawing.Size(143, 15);
-            this.txt_Password.TabIndex = 23;
-            this.txt_Password.UseSystemPasswordChar = true;
-            // 
-            // txt_Nama
-            // 
-            this.txt_Nama.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.txt_Nama.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_Nama.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_Nama.Location = new System.Drawing.Point(136, 27);
-            this.txt_Nama.Margin = new System.Windows.Forms.Padding(2);
-            this.txt_Nama.Name = "txt_Nama";
-            this.txt_Nama.Size = new System.Drawing.Size(143, 15);
-            this.txt_Nama.TabIndex = 22;
             // 
             // label6
             // 
@@ -298,11 +149,87 @@
             this.label1.TabIndex = 15;
             this.label1.Text = "Username";
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.groupBox1.Controls.Add(this.btn_Save);
+            this.groupBox1.Controls.Add(this.cb_IsEmployee);
+            this.groupBox1.Cursor = System.Windows.Forms.Cursors.Default;
+            this.groupBox1.Location = new System.Drawing.Point(0, 217);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Size = new System.Drawing.Size(302, 115);
+            this.groupBox1.TabIndex = 35;
+            this.groupBox1.TabStop = false;
+            // 
+            // btn_Save
+            // 
+            this.btn_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(110)))), ((int)(((byte)(99)))));
+            this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Save.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Save.Location = new System.Drawing.Point(48, 54);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(192, 28);
+            this.btn_Save.TabIndex = 34;
+            this.btn_Save.Text = "Save";
+            this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
+            // 
+            // cb_IsEmployee
+            // 
+            this.cb_IsEmployee.AutoSize = true;
+            this.cb_IsEmployee.Location = new System.Drawing.Point(48, 18);
+            this.cb_IsEmployee.Name = "cb_IsEmployee";
+            this.cb_IsEmployee.Size = new System.Drawing.Size(80, 17);
+            this.cb_IsEmployee.TabIndex = 31;
+            this.cb_IsEmployee.Text = "IsEmployee";
+            this.cb_IsEmployee.UseVisualStyleBackColor = true;
+            // 
+            // txt_Nama
+            // 
+            this.txt_Nama.Location = new System.Drawing.Point(134, 23);
+            this.txt_Nama.Name = "txt_Nama";
+            this.txt_Nama.Size = new System.Drawing.Size(145, 20);
+            this.txt_Nama.TabIndex = 31;
+            // 
+            // txt_Password
+            // 
+            this.txt_Password.Location = new System.Drawing.Point(134, 53);
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.Size = new System.Drawing.Size(145, 20);
+            this.txt_Password.TabIndex = 32;
+            // 
+            // txt_Status
+            // 
+            this.txt_Status.Location = new System.Drawing.Point(134, 79);
+            this.txt_Status.Name = "txt_Status";
+            this.txt_Status.Size = new System.Drawing.Size(145, 20);
+            this.txt_Status.TabIndex = 33;
+            // 
+            // txt_Sex
+            // 
+            this.txt_Sex.Location = new System.Drawing.Point(134, 109);
+            this.txt_Sex.Name = "txt_Sex";
+            this.txt_Sex.Size = new System.Drawing.Size(145, 20);
+            this.txt_Sex.TabIndex = 34;
+            // 
+            // rtb_Address
+            // 
+            this.rtb_Address.Location = new System.Drawing.Point(134, 168);
+            this.rtb_Address.Name = "rtb_Address";
+            this.rtb_Address.Size = new System.Drawing.Size(137, 43);
+            this.rtb_Address.TabIndex = 35;
+            this.rtb_Address.Text = "";
+            // 
             // frm_user_employee_2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(302, 333);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gb_Main);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -310,6 +237,8 @@
             this.Text = "Form Register";
             this.gb_Main.ResumeLayout(false);
             this.gb_Main.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -318,24 +247,19 @@
 
         private System.Windows.Forms.GroupBox gb_Main;
         private System.Windows.Forms.DateTimePicker dtp_BirthDate;
-        private System.Windows.Forms.TextBox txt_Sex;
-        private System.Windows.Forms.TextBox txt_Status;
-        private System.Windows.Forms.TextBox txt_Password;
-        private System.Windows.Forms.TextBox txt_Nama;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.RichTextBox rtb_Address;
-        private System.Windows.Forms.CheckBox cb_IsEmployee;
+        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button btn_Save;
+        private System.Windows.Forms.CheckBox cb_IsEmployee;
+        private System.Windows.Forms.RichTextBox rtb_Address;
+        private System.Windows.Forms.TextBox txt_Sex;
+        private System.Windows.Forms.TextBox txt_Status;
+        private System.Windows.Forms.TextBox txt_Password;
+        private System.Windows.Forms.TextBox txt_Nama;
     }
 }
