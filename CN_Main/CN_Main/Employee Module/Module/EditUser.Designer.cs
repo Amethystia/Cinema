@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_user_employee));
             this.gb_Main = new System.Windows.Forms.GroupBox();
+            this.btn_Save = new System.Windows.Forms.Button();
             this.btn_display = new System.Windows.Forms.Button();
             this.dgv = new System.Windows.Forms.DataGridView();
             this.cb_IsEmployee = new System.Windows.Forms.CheckBox();
@@ -51,7 +52,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.btn_Save = new System.Windows.Forms.Button();
             this.gb_Main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
             this.SuspendLayout();
@@ -90,6 +90,21 @@
             this.gb_Main.TabIndex = 15;
             this.gb_Main.TabStop = false;
             // 
+            // btn_Save
+            // 
+            this.btn_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(110)))), ((int)(((byte)(99)))));
+            this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Save.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Save.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.btn_Save.Location = new System.Drawing.Point(592, 257);
+            this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Save.Name = "btn_Save";
+            this.btn_Save.Size = new System.Drawing.Size(192, 28);
+            this.btn_Save.TabIndex = 34;
+            this.btn_Save.Text = "Save";
+            this.btn_Save.UseVisualStyleBackColor = false;
+            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
+            // 
             // btn_display
             // 
             this.btn_display.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(110)))), ((int)(((byte)(99)))));
@@ -110,6 +125,7 @@
             this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv.Location = new System.Drawing.Point(316, 24);
             this.dgv.Name = "dgv";
+            this.dgv.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgv.Size = new System.Drawing.Size(468, 212);
             this.dgv.TabIndex = 32;
             this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dt_user_CellContentClick);
@@ -311,21 +327,6 @@
             this.label1.Size = new System.Drawing.Size(70, 19);
             this.label1.TabIndex = 15;
             this.label1.Text = "Username";
-            // 
-            // btn_Save
-            // 
-            this.btn_Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(43)))), ((int)(((byte)(110)))), ((int)(((byte)(99)))));
-            this.btn_Save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Save.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Save.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btn_Save.Location = new System.Drawing.Point(592, 257);
-            this.btn_Save.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Save.Name = "btn_Save";
-            this.btn_Save.Size = new System.Drawing.Size(192, 28);
-            this.btn_Save.TabIndex = 34;
-            this.btn_Save.Text = "Save";
-            this.btn_Save.UseVisualStyleBackColor = false;
-            this.btn_Save.Click += new System.EventHandler(this.btn_Save_Click);
             // 
             // frm_user_employee
             // 

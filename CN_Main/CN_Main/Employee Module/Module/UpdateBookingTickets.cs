@@ -14,14 +14,13 @@ namespace CN_Main
 {
     public partial class FrmUpdateBookingTickets : Form
     {
-        DataTable dt;
-        private DataGridViewButtonColumn btnEdit, btnDelete;
         private BookingTicket_CRUDService bookingticketCRUD;
         private BookingTicket_Model BookingTicket_Model;
         System.Windows.Forms.Form f = System.Windows.Forms.Application.OpenForms["FrmEditBookingTickets"];
         public FrmUpdateBookingTickets()
         {
             InitializeComponent();
+            clear();
             LoadForm();
         }
         public void LoadForm()
@@ -35,6 +34,17 @@ namespace CN_Main
             txt_SeatNumber.Text = ((FrmEditBookingTickets)f).txt_SeatNumber.Text;
             txt_Price.Text = ((FrmEditBookingTickets)f).txt_Price.Text;
             txt_BookOn.Text = ((FrmEditBookingTickets)f).txt_BookOn.Text;
+        }
+        public void clear()
+        {
+            txt_BookBy.Text =
+            txt_CinemaName.Text =
+            txt_Theather.Text =
+            txt_MovieName.Text =
+            txt_Time.Text =
+            txt_SeatNumber.Text =
+            txt_Price.Text =
+            txt_BookOn.Text = string.Empty;
         }
         public void ATB()
         {

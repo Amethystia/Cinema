@@ -28,7 +28,7 @@ namespace CN_Business
                                                          `Sex`,
                                                          `BirthDate`,
                                                          `Address`,
-                                                         `IsActive`)
+                                                         `IsEmployee`)
                                             VALUES ('{0}',
                                                     '{1}',
                                                     '{2}',
@@ -58,8 +58,8 @@ namespace CN_Business
             {
                 DBCon = new DBConnection();
                 sql = string.Format(@"DELETE
-                                    FROM `TOKO_BUKU`.`user`
-                                    WHERE `Id` = '{0}';", id);
+                                    FROM `user`
+                                    WHERE `USer_id` = '{0}';", id);
                 DBCon.ConnectionOpen();
                 cmd = new MySqlCommand(sql, DBCon.Connection);
                 result = cmd.ExecuteNonQuery() == 1;

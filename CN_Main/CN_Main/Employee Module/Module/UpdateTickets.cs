@@ -20,6 +20,7 @@ namespace CN_Main
         public FrmUpdateTickets()
         {
             InitializeComponent();
+            clear();
             LoadForm();
         }
         public void ATB()
@@ -38,7 +39,12 @@ namespace CN_Main
             txt_Price.Text = ((FrmEditTickets)f).txt_Price.Text;
             txt_Type.Text = ((FrmEditTickets)f).txt_Type.Text;
         }
-
+        public void clear()
+        {
+            txt_DayCode.Text =
+            txt_Price.Text =
+            txt_Type.Text = string.Empty;
+        }
         private bool PerformValidation(GroupBox gb)
         {
             foreach (Control c in gb.Controls.Cast<Control>().OrderBy(c => c.TabIndex))

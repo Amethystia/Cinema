@@ -20,6 +20,7 @@ namespace CN_Main
         public FrmUpdateTheather()
         {
             InitializeComponent();
+            clear();
             LoadForm();
         }
 
@@ -96,6 +97,11 @@ namespace CN_Main
             txt_Seats.Text = ((FrmEditTheather)f).txt_Seats.Text;
             txt_TheatherName.Text = ((FrmEditTheather)f).txt_TheatherName.Text;
         }
-
+        public void clear()
+        {
+            txt_Cinema.Text =
+            txt_Seats.Text =
+            txt_TheatherName.Text = string.Empty;
+        }
     }
 }

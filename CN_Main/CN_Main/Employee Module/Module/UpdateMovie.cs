@@ -21,6 +21,7 @@ namespace CN_Main
         public FrmUpdateMovie()
         {
             InitializeComponent();
+            clear();
             LoadForm();
         }
         private bool PerformValidation(GroupBox gb)
@@ -64,6 +65,16 @@ namespace CN_Main
             txt_Duration.Text = ((FrmEditMovie)f).txt_Duration.Text;
             dtp_ReleaseDate.Value = ((FrmEditMovie)f).dtp_ReleaseDate.Value;
             txt_IsReleased.Text = ((FrmEditMovie)f).txt_IsReleased.Text;
+        }
+
+        public void clear()
+        {
+            txt_MovieName.Text =
+            txt_MovieIMDB.Text =
+            txt_MovieDescription.Text =
+            txt_Duration.Text =
+            txt_IsReleased.Text = string.Empty;
+            dtp_ReleaseDate.Text = null;
         }
 
 

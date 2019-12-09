@@ -95,5 +95,10 @@ namespace CN_Main
         {
             this.Close();
         }
+
+        private void btn_User_Click(object sender, EventArgs e)
+        {
+            OpenFormInPanel(new frm_user_employee());
+        }
     }
 }

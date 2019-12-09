@@ -22,6 +22,7 @@ namespace CN_Main
         public FrmUpdateCinema()
         {
             InitializeComponent();
+            Clear();
             LoadForm();
         }
 
@@ -34,6 +35,15 @@ namespace CN_Main
             txt_Time.Text = ((FrmEditCinema)f).txt_Time.Text;
             txt_Class.Text = ((FrmEditCinema)f).txt_Class.Text;
         }
+        public void Clear()
+        {
+            txt_CinemaName.Text =
+            txt_MovieName.Text =
+            txt_Theather.Text =
+            txt_Time.Text =
+            txt_Class.Text = string.Empty;
+        }
+
         public void ATB()
         {
             cinema_Model = new Cinema_Model();

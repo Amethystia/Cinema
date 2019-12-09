@@ -21,6 +21,18 @@ namespace CN_Main
         public frm_user_employee()
         {
             InitializeComponent();
+            btnEdit = new DataGridViewButtonColumn();
+            btnEdit.UseColumnTextForButtonValue = true;
+            btnEdit.Width = 70;
+            btnEdit.Text = "Edit";
+            dgv.Columns.Add(btnEdit);
+            btnDelete = new DataGridViewButtonColumn();
+
+            btnDelete.UseColumnTextForButtonValue = true;
+            btnDelete.Width = 70;
+            btnDelete.Text = "Delete";
+            dgv.Columns.Add(btnDelete);
+            displayTable();
         }
 
 
@@ -82,7 +94,7 @@ namespace CN_Main
             User_CRUD CRUD = new User_CRUD();
             CRUD.Insert(usr);
             MessageBox.Show("Registered Successfully!");
-            this.Close();
+            displayTable();
         }
 
         private void displayTable()
@@ -91,18 +103,7 @@ namespace CN_Main
             {
                 User_CRUD CRUD = new User_CRUD();
                 dt = CRUD.getAllData();
-
-                btnEdit = new DataGridViewButtonColumn();
-                btnEdit.UseColumnTextForButtonValue = true;
-                btnEdit.Width = 70;
-                btnEdit.Text = "Edit";
-                dgv.Columns.Add(btnEdit);
-                btnDelete = new DataGridViewButtonColumn();
-
-                btnDelete.UseColumnTextForButtonValue = true;
-                btnDelete.Width = 70;
-                btnDelete.Text = "Delete";
-                dgv.Columns.Add(btnDelete);
+                dgv.DataSource = dt;
             }
             catch (Exception ex)
             {
@@ -112,21 +113,20 @@ namespace CN_Main
 
         private void dt_user_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            string KodeProduct = dgv.SelectedRows[0].Cells["KodeProduct"].Value.ToString();
+            string KodeProduct = dgv.SelectedRows[0].Cells["User_Id"].Value.ToString();
             if (dgv.Columns[e.ColumnIndex] == btnDelete)
             {
                 bool DialogDel = MessageBox.Show("Are you sure to delete this Data", "DELETE", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes;
                 if (DialogDel)
                 {
                     User_CRUD CRUD = new User_CRUD();
-                    //prod = new Product();
                     if (CRUD.GetDeleteByID(KodeProduct))
                     {
-                        MessageBox.Show("Data For NPM: " + KodeProduct + " DELETED !!");
+                        MessageBox.Show("Data For ID: " + KodeProduct + " DELETED !!");
                     }
                     else
                     {
-                        MessageBox.Show("Data For NPM " + KodeProduct + " FAILED TO DELETE !!");
+                        MessageBox.Show("Data For ID " + KodeProduct + " FAILED TO DELETE !!");
                     }
                     displayTable();
                 }
@@ -134,8 +134,8 @@ namespace CN_Main
             else if (dgv.Columns[e.ColumnIndex] == btnEdit)
             {
                 FRM2BL();
-                //FrmEditProduct frmEditProduct = new FrmEditProduct();
-                //frmEditProduct.ShowDialog();
+                frm_user_employee_2 frmEditProduct = new frm_user_employee_2();
+                frmEditProduct.ShowDialog();
             }
         }
     }

@@ -47,13 +47,16 @@ namespace CN_Main
         {
             foreach (Control c in gb.Controls.Cast<Control>().OrderBy(c => c.TabIndex))
             {
-                if (c is TextBox || c is ComboBox || c is RichTextBox)
+                if (txt_SlideImage.Text != string.Empty)
                 {
-                    if (string.IsNullOrWhiteSpace(c.Text))
+                    if (c is TextBox || c is ComboBox || c is RichTextBox)
                     {
-                        MessageBox.Show(string.Format("Empty field {0 }", c.Name.Substring(4)));
-                        c.Focus();
-                        return false;
+                        if (string.IsNullOrWhiteSpace(c.Text))
+                        {
+                            MessageBox.Show(string.Format("Empty field {0 }", c.Name.Substring(4)));
+                            c.Focus();
+                            return false;
+                        }
                     }
                 }
                 else if (c is RadioButton)
