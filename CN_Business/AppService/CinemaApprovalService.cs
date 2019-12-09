@@ -12,7 +12,7 @@ namespace CN_Business
         DataTable dt;
         string sql;
         public MySqlConnection Connection;
-        MySqlConnection conn = new MySqlConnection("server=localhost; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True");
+        MySqlConnection conn = new MySqlConnection("server=localhost;port=3307; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True");
         string query;
         public DataTable getrequestdata()
         {

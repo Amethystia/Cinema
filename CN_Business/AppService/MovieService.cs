@@ -7,7 +7,7 @@ namespace CN_Business
     public class MovieService
     {
         public MySqlConnection Connection;
-        MySqlConnection conn = new MySqlConnection("server=localhost; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True");
+        MySqlConnection conn = new MySqlConnection("server=localhost;port=3307; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True");
         DataTable dataTable = new DataTable();
         string query;
         public string get_ticket_data(string result, string type,string Daycode)

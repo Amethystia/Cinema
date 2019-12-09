@@ -7,8 +7,8 @@ namespace CN_Business
     public class DBConnection
     {
         public MySqlConnection Connection;
-        string constring = "server=localhost; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True";
-        MySqlConnection conn = new MySqlConnection("server=localhost; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True");
+        string constring = "server=localhost;port=3307; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True";
+        MySqlConnection conn = new MySqlConnection("server=localhost;port=3307; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True");
         MySqlCommand cmd;
         MySqlDataAdapter adapter;
 

@@ -49,19 +49,5 @@ namespace CN_Main
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            StiReport report = new StiReport();
-            //report.RegData(dataSet1);
-
-            report.Load("..\\..\\Reports\\SimpleList.mrt");
-            report.Render(true);
-
-            string file = "SimpleList.";
-
-                file += "pdf";
-                report.ExportDocument(StiExportFormat.Pdf, file);
-                System.Diagnostics.Process.Start(file);
-        }
     }
 }

@@ -19,8 +19,14 @@ namespace CN_Main.Report
 
         private void btnMyTrans_Click(object sender, EventArgs e)
         {
-            MyTransactionReport fr = new MyTransactionReport();
-            fr.ShowDialog();
+            MyTransactionViewer ftrans = new MyTransactionViewer();
+            ftrans.ShowDialog();
+        }
+
+        private void btnApproval_Click(object sender, EventArgs e)
+        {
+            CinemaApprovalViewer fcin = new CinemaApprovalViewer();
+            fcin.ShowDialog();
         }
     }
 }

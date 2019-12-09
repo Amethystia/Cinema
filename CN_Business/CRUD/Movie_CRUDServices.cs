@@ -12,7 +12,7 @@ namespace CN_Business
         DBConnection DBCon;
         MySqlCommand cmd;
         MySqlDataAdapter adapter;
-        MySqlConnection conn = new MySqlConnection("server=localhost; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True");
+        MySqlConnection conn = new MySqlConnection("server=localhost;port=3307; database=cinema_simd;  uid=root; pwd=;convert zero datetime=True");
         string query;
         public DataTable get_AllBooking(DataTable dataTable)
         {
