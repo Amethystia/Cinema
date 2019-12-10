@@ -113,6 +113,7 @@ namespace CN_Main
                     if (seats.Contains(btn.Text))
                     {
                         btn.BackColor = Color.FromArgb(255, 111, 111);
+                        btn.Enabled = false;
                         full_seat++;
                     }
                 }

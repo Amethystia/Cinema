@@ -19,7 +19,7 @@ namespace CN_Business
             try
             {
                 DBCon = new DBConnection();
-                sql = string.Format(@"SELECT Cinema_bookId,book_by,cinema_name,movie_name,class,date,price,RequestStatus FROM `bookingcinema` where requeststatus = 'waiting'");
+                sql = string.Format(@"SELECT Cinema_bookId,book_by,cinema_name,movie_name,class,date,price,RequestStatus FROM `bookingcinema`");
                 dt = new DataTable();
                 DBCon.ConnectionOpen();
                 cmd = new MySqlCommand(sql, DBCon.Connection);

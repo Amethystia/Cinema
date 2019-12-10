@@ -115,6 +115,7 @@
             // txt_Price
             // 
             this.txt_Price.BackColor = System.Drawing.SystemColors.Control;
+            this.txt_Price.Enabled = false;
             this.txt_Price.Location = new System.Drawing.Point(810, 437);
             this.txt_Price.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_Price.Name = "txt_Price";

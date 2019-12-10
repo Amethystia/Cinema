@@ -52,7 +52,7 @@ namespace CN_Main
 
         public void clearall()
         {
-            txt_cinema.Text = txt_class.Text = txt_moviename.Text = txt_price.Text = txt_requestor.Text  = string.Empty;
+            txt_cinema.Text = txt_class.Text = txt_moviename.Text = txt_price.Text = txt_requestor.Text  =txt_Status.Text= string.Empty;
         }
 
         private void btn_approve_Click(object sender, EventArgs e)
@@ -89,6 +89,7 @@ namespace CN_Main
                 txt_class.Text = dgv_CinemaApproval.SelectedRows[0].Cells["class"].Value.ToString();
                 dtp_date.Text = dgv_CinemaApproval.SelectedRows[0].Cells["date"].Value.ToString();
                 txt_price.Text = dgv_CinemaApproval.SelectedRows[0].Cells["price"].Value.ToString();
+                txt_Status.Text = dgv_CinemaApproval.SelectedRows[0].Cells["RequestStatus"].Value.ToString();
             }
             btn_reject.Enabled = btn_approve.Enabled = true;
             LoadCB_Theather();
